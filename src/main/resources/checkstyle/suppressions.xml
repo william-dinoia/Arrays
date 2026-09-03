@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suppressions PUBLIC "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN" "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+<suppressions>
+  <suppress checks="AtclauseOrderCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="InvalidJavadocPositionCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocBlockTagLocationCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocContentLocationCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocMethodCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocMissingLeadingAsteriskCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocMissingWhitespaceAfterAsteriskCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocPackageCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocParagraphCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocStyleCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocTagContinuationIndentationCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocTypeCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="JavadocVariableCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="MissingJavadocMethodCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="MissingJavadocPackageCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="MissingJavadocTypeCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="NonEmptyAtclauseDescriptionCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="RequireEmptyLineBeforeBlockTagGroupCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="SingleLineJavadocCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="SummaryJavadocCheck" files="[\\/]test[\\/]"/>
+  <suppress checks="WriteTagCheck" files="[\\/]test[\\/]"/>
+</suppressions>
