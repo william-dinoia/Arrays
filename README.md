@@ -13,6 +13,12 @@ This project mirrors a subset of methods from the Java utility class, util.Array
 
 ## Examples
 
+### Checkstyle
+
+```shell
+mvn checkstyle:check
+```
+
 ### JavaDoc
 
 ```shell
