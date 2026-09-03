@@ -13,6 +13,12 @@ This project mirrors a subset of methods from the Java utility class, util.Array
 
 ## Examples
 
+### JavaDoc
+
+```shell
+mvn javadoc:javadoc
+```
+
 ### Spotless
 
 ```shell
