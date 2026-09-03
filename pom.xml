@@ -10,4 +10,38 @@
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.diffplug.spotless</groupId>
+        <artifactId>spotless-maven-plugin</artifactId>
+        <version>3.10.1</version>
+        <configuration>
+          <java>
+            <includes>
+              <include>**/*.java</include>
+            </includes>
+            <palantirJavaFormat>
+              <style>PALANTIR</style>
+            </palantirJavaFormat>
+            <trimTrailingWhitespace/>
+          </java>
+          <markdown>
+            <includes>
+              <include>**/*.md</include>
+            </includes>
+            <flexmark/>
+            <trimTrailingWhitespace/>
+          </markdown>
+          <pom>
+            <includes>
+              <include>**/pom.xml</include>
+            </includes>
+            <sortPom/>
+            <trimTrailingWhitespace/>
+          </pom>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
