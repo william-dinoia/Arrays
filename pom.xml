@@ -44,6 +44,16 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <configLocation>src/main/resources/checkstyle/configuration.xml</configLocation>
+          <includeTestSourceDirectory>true</includeTestSourceDirectory>
+          <suppressionsLocation>src/main/resources/checkstyle/suppressions.xml</suppressionsLocation>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.12.0</version>
       </plugin>
