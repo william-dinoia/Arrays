@@ -25,6 +25,12 @@ mvn checkstyle:check
 mvn javadoc:javadoc
 ```
 
+### JUnit
+
+```shell
+mvn test
+```
+
 ### Spotless
 
 ```shell
