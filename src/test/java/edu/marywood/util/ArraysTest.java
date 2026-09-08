@@ -5,4 +5,5 @@ package edu.marywood.util;
  * @author William DiNoia
  */
 public class ArraysTest {
+    static final boolean MAX_BOOLEAN = true;
 }
