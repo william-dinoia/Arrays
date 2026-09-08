@@ -6,4 +6,5 @@ package edu.marywood.util;
  */
 public class ArraysTest {
     static final boolean MAX_BOOLEAN = true;
+    static final boolean MIN_BOOLEAN = false;
 }
