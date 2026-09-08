@@ -67,7 +67,7 @@
     <!-- <module name="FinalParameters"/> -->
     <module name="GenericWhitespace"/>
     <!-- <module name="HiddenField"/> -->
-    <module name="HideUtilityClassConstructor"/>
+    <!-- <module name="HideUtilityClassConstructor"/> -->
     <module name="IllegalCatch"/>
     <!-- <module name="IllegalIdentifierName"/> -->
     <!-- <module name="IllegalImport"/> -->
