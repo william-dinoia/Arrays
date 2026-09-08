@@ -6,12 +6,6 @@ package edu.marywood.util;
  */
 public class Arrays {
     /**
-     * Hides the constructor.
-     */
-    private Arrays() {
-        throw new UnsupportedOperationException();
-    }
-    /**
      * Converts a {@code boolean[]} to a {@link String}.
      *
      * @param booleanArray {@code boolean[]}
