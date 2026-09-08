@@ -1,4 +1,7 @@
 package edu.marywood.util;
+
+import org.junit.jupiter.api.Assertions;
+
 /**
  * Defines {@link ArraysTest}.
  *
