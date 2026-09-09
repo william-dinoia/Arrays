@@ -62,4 +62,23 @@ public class Arrays {
         }
         return string;
     }
+    /**
+     * Converts a {@code double[]} to a {@link String}.
+     *
+     * @param doubleArray {@code double[]}
+     * @return {@link String}
+     */
+    public static String toString(double[] doubleArray) {
+        String string;
+        if (doubleArray == null) {
+            string = "null";
+        } else {
+            String[] stringArray = new String[doubleArray.length];
+            for (int index = 0; index < doubleArray.length; index += 1) {
+                stringArray[index] = Double.toString(doubleArray[index]);
+            }
+            string = "[" + String.join(", ", stringArray) + "]";
+        }
+        return string;
+    }
 }
