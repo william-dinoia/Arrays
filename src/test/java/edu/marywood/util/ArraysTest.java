@@ -12,6 +12,7 @@ public class ArraysTest {
     static final boolean MAX_BOOLEAN = true;
     static final byte MAX_BYTE = Byte.MAX_VALUE;
     static final boolean MIN_BOOLEAN = false;
+    static final byte MIN_BYTE = Byte.MIN_VALUE;
     /**
      * Tests {@link Arrays.toString(boolean[])}.
      */
