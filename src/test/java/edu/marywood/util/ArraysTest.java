@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class ArraysTest {
-    static final boolean MAX_BOOLEAN = true;
+    static final boolean MAX_BOOLEAN = Boolean.TRUE;
     static final byte MAX_BYTE = Byte.MAX_VALUE;
     static final boolean MIN_BOOLEAN = false;
     static final byte MIN_BYTE = Byte.MIN_VALUE;
