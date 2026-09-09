@@ -12,6 +12,7 @@ public class ArraysTest {
     static final boolean MAX_BOOLEAN = true;
     static final byte MAX_BYTE = Byte.MAX_VALUE;
     static final char MAX_CHAR = Character.MAX_VALUE;
+    static final double MAX_DOUBLE = Double.MAX_VALUE;
     static final boolean MIN_BOOLEAN = false;
     static final byte MIN_BYTE = Byte.MIN_VALUE;
     static final char MIN_CHAR = Character.MIN_VALUE;
