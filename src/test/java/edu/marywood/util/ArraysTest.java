@@ -14,6 +14,7 @@ public class ArraysTest {
     static final char MAX_CHARACTER = Character.MAX_VALUE;
     static final boolean MIN_BOOLEAN = Boolean.FALSE;
     static final byte MIN_BYTE = Byte.MIN_VALUE;
+    static final char MIN_CHARACTER = Character.MIN_VALUE;
     /**
      * Tests {@link Arrays.toString(boolean[])}.
      */
