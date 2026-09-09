@@ -16,6 +16,7 @@ public class ArraysTest {
     static final boolean MIN_BOOLEAN = false;
     static final byte MIN_BYTE = Byte.MIN_VALUE;
     static final char MIN_CHAR = Character.MIN_VALUE;
+    static final double MIN_DOUBLE = Double.MIN_VALUE;
     /**
      * Tests {@link Arrays.toString(boolean[])}.
      */
