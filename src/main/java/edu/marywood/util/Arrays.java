@@ -43,4 +43,23 @@ public class Arrays {
         }
         return string;
     }
+    /**
+     * Converts a {@code char[]} to a {@link String}.
+     *
+     * @param charArray {@code char[]}
+     * @return {@link String}
+     */
+    public static String toString(char[] charArray) {
+        String string;
+        if (charArray == null) {
+            string = "null";
+        } else {
+            String[] stringArray = new String[charArray.length];
+            for (int index = 0; index < charArray.length; index += 1) {
+                stringArray[index] = Character.toString(charArray[index]);
+            }
+            string = "[" + String.join(", ", stringArray) + "]";
+        }
+        return string;
+    }
 }
