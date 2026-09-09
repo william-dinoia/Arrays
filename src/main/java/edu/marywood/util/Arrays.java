@@ -24,4 +24,23 @@ public class Arrays {
         }
         return string;
     }
+    /**
+     * Converts a {@code byte[]} to a {@link String}.
+     *
+     * @param byteArray {@code byte[]}
+     * @return {@link String}
+     */
+    private static String toString(byte[] byteArray) {
+        String string;
+        if (byteArray == null) {
+            string = "null";
+        } else {
+            String[] stringArray = new String[byteArray.length];
+            for (int index = 0; index < byteArray.length; index += 1) {
+                stringArray[index] = Byte.toString(byteArray[index]);
+            }
+            string = "[" + String.join(", ", stringArray) + "]";
+        }
+        return string;
+    }
 }
