@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 public class ArraysTest {
     static final boolean MAX_BOOLEAN = true;
+    static final byte MAX_BYTE = Byte.MAX_VALUE;
     static final boolean MIN_BOOLEAN = false;
     /**
      * Tests {@link Arrays.toString(boolean[])}.
