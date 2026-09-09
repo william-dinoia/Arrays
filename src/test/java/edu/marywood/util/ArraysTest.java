@@ -28,4 +28,19 @@ public class ArraysTest {
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(rangeBooleanArray)
                 .equals(java.util.Arrays.toString(rangeBooleanArray)));
     }
+    /**
+     * Tests {@link Arrays.toString(byte[])}.
+     */
+    @Test
+    public void toStringByteArray() {
+        byte[] blankByteArray = null;
+        byte[] emptyByteArray = new byte[] {};
+        byte[] rangeByteArray = new byte[] {MIN_BYTE, MAX_BYTE};
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(blankByteArray).equals(java.util.Arrays.toString(blankByteArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(emptyByteArray).equals(java.util.Arrays.toString(emptyByteArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(rangeByteArray).equals(java.util.Arrays.toString(rangeByteArray)));
+    }
 }
