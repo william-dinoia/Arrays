@@ -30,7 +30,7 @@ public class Arrays {
      * @param byteArray {@code byte[]}
      * @return {@link String}
      */
-    private static String toString(byte[] byteArray) {
+    public static String toString(byte[] byteArray) {
         String string;
         if (byteArray == null) {
             string = "null";
