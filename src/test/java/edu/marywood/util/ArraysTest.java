@@ -96,4 +96,19 @@ public class ArraysTest {
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(rangeFloatArray).equals(java.util.Arrays.toString(rangeFloatArray)));
     }
+    /**
+     * Tests {@link Arrays.toString(int[])}.
+     */
+    @Test
+    public void toStringIntArray() {
+        int[] blankIntArray = null;
+        int[] emptyIntArray = new int[] {};
+        int[] rangeIntArray = new int[] {MIN_INT, MAX_INT};
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(blankIntArray).equals(java.util.Arrays.toString(blankIntArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(emptyIntArray).equals(java.util.Arrays.toString(emptyIntArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(rangeIntArray).equals(java.util.Arrays.toString(rangeIntArray)));
+    }
 }
