@@ -100,4 +100,23 @@ public class Arrays {
         }
         return string;
     }
+    /**
+     * Converts a {@code int[]} to a {@link String}.
+     *
+     * @param intArray {@code int[]}
+     * @return {@link String}
+     */
+    public static String toString(int[] intArray) {
+        String string;
+        if (intArray == null) {
+            string = "null";
+        } else {
+            String[] stringArray = new String[intArray.length];
+            for (int index = 0; index < intArray.length; index += 1) {
+                stringArray[index] = Integer.toString(intArray[index]);
+            }
+            string = "[" + String.join(", ", stringArray) + "]";
+        }
+        return string;
+    }
 }
