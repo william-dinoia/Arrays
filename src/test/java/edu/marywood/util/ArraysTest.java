@@ -14,7 +14,7 @@ public class ArraysTest {
     static final char MAX_CHAR = Character.MAX_VALUE;
     static final double MAX_DOUBLE = Double.MAX_VALUE;
     static final float MAX_FLOAT = Float.MAX_VALUE;
-    static final int MAX_INTEGER = Integer.MAX_VALUE;
+    static final int MAX_INT = Integer.MAX_VALUE;
     static final boolean MIN_BOOLEAN = false;
     static final byte MIN_BYTE = Byte.MIN_VALUE;
     static final char MIN_CHAR = Character.MIN_VALUE;
