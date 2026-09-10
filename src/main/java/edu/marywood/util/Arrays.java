@@ -87,7 +87,7 @@ public class Arrays {
      * @param floatArray {@code float[]}
      * @return {@link String}
      */
-    private static String toString(float[] floatArray) {
+    public static String toString(float[] floatArray) {
         String string;
         if (floatArray == null) {
             string = "null";
