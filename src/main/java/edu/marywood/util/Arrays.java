@@ -81,4 +81,23 @@ public class Arrays {
         }
         return string;
     }
+    /**
+     * Converts a {@code float[]} to a {@link String}.
+     *
+     * @param floatArray {@code float[]}
+     * @return {@link String}
+     */
+    private static String toString(float[] floatArray) {
+        String string;
+        if (floatArray == null) {
+            string = "null";
+        } else {
+            String[] stringArray = new String[floatArray.length];
+            for (int index = 0; index < floatArray.length; index += 1) {
+                stringArray[index] = Float.toString(floatArray[index]);
+            }
+            string = "[" + String.join(", ", stringArray) + "]";
+        }
+        return string;
+    }
 }
