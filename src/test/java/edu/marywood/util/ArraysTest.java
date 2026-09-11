@@ -130,4 +130,19 @@ public class ArraysTest {
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(rangeLongArray).equals(java.util.Arrays.toString(rangeLongArray)));
     }
+    /**
+     * Tests {@link Arrays.toString(short[])}.
+     */
+    @Test
+    public void toStringShortArray() {
+        short[] blankShortArray = null;
+        short[] emptyShortArray = new short[] {};
+        short[] rangeShortArray = new short[] {MIN_SHORT, MAX_SHORT};
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(blankShortArray).equals(java.util.Arrays.toString(blankShortArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(emptyShortArray).equals(java.util.Arrays.toString(emptyShortArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(rangeShortArray).equals(java.util.Arrays.toString(rangeShortArray)));
+    }
 }
