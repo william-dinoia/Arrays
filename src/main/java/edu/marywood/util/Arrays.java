@@ -138,4 +138,23 @@ public class Arrays {
         }
         return string;
     }
+    /**
+     * Converts a {@code short[]} to a {@link String}.
+     *
+     * @param shortArray {@code short[]}
+     * @return {@link String}
+     */
+    public static String toString(short[] shortArray) {
+        String string;
+        if (shortArray == null) {
+            string = "null";
+        } else {
+            String[] stringArray = new String[shortArray.length];
+            for (int index = 0; index < shortArray.length; index += 1) {
+                stringArray[index] = Short.toString(shortArray[index]);
+            }
+            string = "[" + String.join(", ", stringArray) + "]";
+        }
+        return string;
+    }
 }
