@@ -13,16 +13,16 @@ This project mirrors a subset of methods from the Java utility class, util.Array
 
 ## Examples
 
+### Spotless
+
+```shell
+mvn spotless:apply
+```
+
 ### Checkstyle
 
 ```shell
 mvn checkstyle:check
-```
-
-### JavaDoc
-
-```shell
-mvn javadoc:javadoc
 ```
 
 ### JUnit
@@ -31,10 +31,9 @@ mvn javadoc:javadoc
 mvn test
 ```
 
-### Spotless
+### JavaDoc
 
 ```shell
-mvn spotless:check
-mvn spotless:apply
+mvn javadoc:javadoc
 ```
 
