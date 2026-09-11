@@ -22,7 +22,7 @@ public class ArraysTest {
     static final double MIN_DOUBLE = Double.MIN_VALUE;
     static final float MIN_FLOAT = Float.MIN_VALUE;
     static final int MIN_INT = Integer.MIN_VALUE;
-    static final int MIN_LONG = Long.MIN_VALUE;
+    static final long MIN_LONG = Long.MIN_VALUE;
     /**
      * Tests {@link Arrays.toString(boolean[])}.
      */
