@@ -24,6 +24,7 @@ public class ArraysTest {
     static final float MIN_FLOAT = Float.MIN_VALUE;
     static final int MIN_INT = Integer.MIN_VALUE;
     static final long MIN_LONG = Long.MIN_VALUE;
+    static final short MIN_SHORT = Short.MIN_VALUE;
     /**
      * Tests {@link Arrays.toString(boolean[])}.
      */
