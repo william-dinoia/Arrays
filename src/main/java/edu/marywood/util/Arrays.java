@@ -119,4 +119,23 @@ public class Arrays {
         }
         return string;
     }
+    /**
+     * Converts a {@code long[]} to a {@link String}.
+     *
+     * @param longArray {@code long[]}
+     * @return {@link String}
+     */
+    public static String toString(long[] longArray) {
+        String string;
+        if (longArray == null) {
+            string = "null";
+        } else {
+            String[] stringArray = new String[longArray.length];
+            for (int index = 0; index < longArray.length; index += 1) {
+                stringArray[index] = Long.toString(longArray[index]);
+            }
+            string = "[" + String.join(", ", stringArray) + "]";
+        }
+        return string;
+    }
 }
