@@ -50,11 +50,14 @@ public class ArraysTest {
     public void toStringByteArray() {
         byte[] blankByteArray = null;
         byte[] emptyByteArray = new byte[] {};
+        byte[] lonerByteArray = new byte[] {MIN_BYTE};
         byte[] rangeByteArray = new byte[] {MIN_BYTE, MAX_BYTE};
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(blankByteArray).equals(java.util.Arrays.toString(blankByteArray)));
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(emptyByteArray).equals(java.util.Arrays.toString(emptyByteArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(lonerByteArray).equals(java.util.Arrays.toString(lonerByteArray)));
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(rangeByteArray).equals(java.util.Arrays.toString(rangeByteArray)));
     }
