@@ -11,7 +11,14 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  * @author William DiNoia
  */
 public class Benchmarks {
-
+    private boolean[] booleanArray;
+    private byte[] byteArray;
+    private char[] charArray;
+    private double[] doubleArray;
+    private float[] floatArray;
+    private int[] intArray;
+    private long[] longArray;
+    private short[] shortArray;
     /**
      * The main method of {@link Benchmarks}.
      */
