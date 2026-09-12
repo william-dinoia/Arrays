@@ -32,11 +32,14 @@ public class ArraysTest {
     public void toStringBooleanArray() {
         boolean[] blankBooleanArray = null;
         boolean[] emptyBooleanArray = new boolean[] {};
+        boolean[] lonerBooleanArray = new boolean[] {MIN_BOOLEAN};
         boolean[] rangeBooleanArray = new boolean[] {MIN_BOOLEAN, MAX_BOOLEAN};
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(blankBooleanArray)
                 .equals(java.util.Arrays.toString(blankBooleanArray)));
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(emptyBooleanArray)
                 .equals(java.util.Arrays.toString(emptyBooleanArray)));
+        Assertions.assertTrue(edu.marywood.util.Arrays.toString(lonerBooleanArray)
+                .equals(java.util.Arrays.toString(lonerBooleanArray)));
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(rangeBooleanArray)
                 .equals(java.util.Arrays.toString(rangeBooleanArray)));
     }
