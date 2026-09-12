@@ -86,11 +86,14 @@ public class ArraysTest {
     public void toStringDoubleArray() {
         double[] blankDoubleArray = null;
         double[] emptyDoubleArray = new double[] {};
+        double[] lonerDoubleArray = new double[] {MIN_DOUBLE};
         double[] rangeDoubleArray = new double[] {MIN_DOUBLE, MAX_DOUBLE};
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(blankDoubleArray)
                 .equals(java.util.Arrays.toString(blankDoubleArray)));
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(emptyDoubleArray)
                 .equals(java.util.Arrays.toString(emptyDoubleArray)));
+        Assertions.assertTrue(edu.marywood.util.Arrays.toString(lonerDoubleArray)
+                .equals(java.util.Arrays.toString(lonerDoubleArray)));
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(rangeDoubleArray)
                 .equals(java.util.Arrays.toString(rangeDoubleArray)));
     }
