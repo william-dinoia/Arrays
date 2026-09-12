@@ -68,11 +68,14 @@ public class ArraysTest {
     public void toStringCharArray() {
         char[] blankCharArray = null;
         char[] emptyCharArray = new char[] {};
+        char[] lonerCharArray = new char[] {MIN_CHAR};
         char[] rangeCharArray = new char[] {MIN_CHAR, MAX_CHAR};
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(blankCharArray).equals(java.util.Arrays.toString(blankCharArray)));
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(emptyCharArray).equals(java.util.Arrays.toString(emptyCharArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(lonerCharArray).equals(java.util.Arrays.toString(lonerCharArray)));
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(rangeCharArray).equals(java.util.Arrays.toString(rangeCharArray)));
     }
