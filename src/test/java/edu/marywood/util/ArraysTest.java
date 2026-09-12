@@ -140,11 +140,14 @@ public class ArraysTest {
     public void toStringLongArray() {
         long[] blankLongArray = null;
         long[] emptyLongArray = new long[] {};
+        long[] lonerLongArray = new long[] {MIN_LONG};
         long[] rangeLongArray = new long[] {MIN_LONG, MAX_LONG};
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(blankLongArray).equals(java.util.Arrays.toString(blankLongArray)));
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(emptyLongArray).equals(java.util.Arrays.toString(emptyLongArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(lonerLongArray).equals(java.util.Arrays.toString(lonerLongArray)));
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(rangeLongArray).equals(java.util.Arrays.toString(rangeLongArray)));
     }
