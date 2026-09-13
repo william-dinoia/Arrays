@@ -31,6 +31,13 @@ mvn checkstyle:check
 mvn test
 ```
 
+### JMH
+
+```shell
+mvn clean package
+java -jar target/Arrays-1.0.0-SNAPSHOT.jar
+```
+
 ### JavaDoc
 
 ```shell
