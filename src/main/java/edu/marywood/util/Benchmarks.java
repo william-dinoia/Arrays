@@ -33,8 +33,10 @@ public class Benchmarks {
     private short[] shortArray;
     /**
      * The main method of {@link Benchmarks}.
+     *
+     * @param stringArray {@link String}{@code []}
      */
-    public static void main() throws RunnerException {
+    public static void main(String[] stringArray) throws RunnerException {
         Options options =
                 new OptionsBuilder().include(Benchmarks.class.getSimpleName()).build();
         Runner runner = new Runner(options);
