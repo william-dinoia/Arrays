@@ -12,17 +12,22 @@ public class Arrays {
      * @return {@link String}
      */
     public static String toString(boolean[] booleanArray) {
-        String string;
         if (booleanArray == null) {
-            string = "null";
+            return "null";
         } else {
-            String[] stringArray = new String[booleanArray.length];
-            for (int index = 0; index < booleanArray.length; index += 1) {
-                stringArray[index] = Boolean.toString(booleanArray[index]);
+            StringBuilder stringBuilder = new StringBuilder().append('[');
+            for (int index = 0, lastIndex = booleanArray.length - 1; index < booleanArray.length; index += 1) {
+                if (index < lastIndex) {
+                    stringBuilder
+                            .append(Boolean.toString(booleanArray[index]))
+                            .append(',')
+                            .append(' ');
+                } else {
+                    stringBuilder.append(Boolean.toString(booleanArray[index]));
+                }
             }
-            string = "[" + String.join(", ", stringArray) + "]";
+            return stringBuilder.append(']').toString();
         }
-        return string;
     }
     /**
      * Converts a {@code byte[]} to a {@link String}.
