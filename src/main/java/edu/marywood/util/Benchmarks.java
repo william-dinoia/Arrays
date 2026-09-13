@@ -1,5 +1,9 @@
 package edu.marywood.util;
 
+import java.util.concurrent.TimeUnit;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -10,6 +14,9 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  *
  * @author William DiNoia
  */
+@State(Scope.Group)
+@BenchmarkMode(Mode.AverageTime)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class Benchmarks {
     private boolean[] booleanArray;
     private byte[] byteArray;
