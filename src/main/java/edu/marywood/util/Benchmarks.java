@@ -3,12 +3,15 @@ package edu.marywood.util;
 import java.util.concurrent.TimeUnit;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Group;
+import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -21,7 +24,10 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  */
 @State(Scope.Group)
 @BenchmarkMode(Mode.AverageTime)
+@Fork(value = 3)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
+@Measurement(iterations = 2)
+@Warmup(iterations = 1)
 public class Benchmarks {
     private boolean[] booleanArray;
     private byte[] byteArray;
