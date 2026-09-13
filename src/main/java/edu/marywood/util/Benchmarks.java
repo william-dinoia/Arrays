@@ -58,4 +58,12 @@ public class Benchmarks {
     public void marywoodToStringBooleanArray() {
         edu.marywood.util.Arrays.toString(booleanArray);
     }
+    /**
+     * OpenJDK toString(boolean[]) Benchmark.
+     */
+    @Benchmark
+    @Group("toStringBooleanArray")
+    public void openJDKToStringBooleanArray() {
+        java.util.Arrays.toString(booleanArray);
+    }
 }
