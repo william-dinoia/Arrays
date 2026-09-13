@@ -35,4 +35,14 @@ public class Benchmarks {
         Runner runner = new Runner(options);
         runner.run();
     }
+    /**
+     * The setup method of {@link Benchmarks}.
+     */
+    @Setup
+    public void setup() {
+        booleanArray = new boolean[100];
+        for (int index = 0; index < booleanArray.length; index += 1) {
+            booleanArray[index] = false;
+        }
+    }
 }
