@@ -22,9 +22,9 @@ public class Arrays {
             StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
             for (int index = 0, lastIndex = booleanArray.length - 1; index < booleanArray.length; index += 1) {
                 if (index < lastIndex) {
-                    stringBuilder.append(String.valueOf(booleanArray[index])).append(DELIMITER);
+                    stringBuilder.append(booleanArray[index]).append(DELIMITER);
                 } else {
-                    stringBuilder.append(String.valueOf(booleanArray[index]));
+                    stringBuilder.append(booleanArray[index]);
                 }
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
