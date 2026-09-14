@@ -17,20 +17,17 @@ public class Arrays {
      */
     public static String toString(boolean[] booleanArray) {
         if (booleanArray == null) {
-            return "null";
+            return NULL;
         } else {
-            StringBuilder stringBuilder = new StringBuilder().append('[');
+            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
             for (int index = 0, lastIndex = booleanArray.length - 1; index < booleanArray.length; index += 1) {
                 if (index < lastIndex) {
-                    stringBuilder
-                            .append(Boolean.toString(booleanArray[index]))
-                            .append(',')
-                            .append(' ');
+                    stringBuilder.append(Boolean.toString(booleanArray[index])).append(DELIMITER);
                 } else {
                     stringBuilder.append(Boolean.toString(booleanArray[index]));
                 }
             }
-            return stringBuilder.append(']').toString();
+            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
     }
     /**
