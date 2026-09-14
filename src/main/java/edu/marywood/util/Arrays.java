@@ -5,6 +5,7 @@ package edu.marywood.util;
  * @author William DiNoia
  */
 public class Arrays {
+    private static final char[] DELIMITER = {',', ' '};
     /**
      * Converts a {@code boolean[]} to a {@link String}.
      *
