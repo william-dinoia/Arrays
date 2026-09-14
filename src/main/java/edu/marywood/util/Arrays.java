@@ -8,6 +8,7 @@ public class Arrays {
     private static final char[] DELIMITER = {',', ' '};
     private static final char LEFT_SQUARE_BRACKET = '[';
     private static final String NULL = "null";
+    private static final char RIGHT_SQUARE_BRACKET = ']';
     /**
      * Converts a {@code boolean[]} to a {@link String}.
      *
