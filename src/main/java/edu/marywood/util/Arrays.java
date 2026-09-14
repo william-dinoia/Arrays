@@ -6,6 +6,7 @@ package edu.marywood.util;
  */
 public class Arrays {
     private static final char[] DELIMITER = {',', ' '};
+    private static final char LEFT_SQUARE_BRACKET = '[';
     /**
      * Converts a {@code boolean[]} to a {@link String}.
      *
