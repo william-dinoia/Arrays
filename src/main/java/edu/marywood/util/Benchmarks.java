@@ -63,10 +63,12 @@ public class Benchmarks {
         booleanArray = new boolean[size];
         byteArray = new byte[size];
         charArray = new char[size];
+        doubleArray = new double[size];
         for (int index = 0; index < size; index += 1) {
             booleanArray[index] = false;
             byteArray[index] = Byte.MIN_VALUE;
             charArray[index] = Character.MIN_VALUE;
+            doubleArray[index] = Double.MIN_VALUE;
         }
     }
     /**
