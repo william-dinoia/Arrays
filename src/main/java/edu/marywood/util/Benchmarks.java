@@ -30,6 +30,12 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Measurement(iterations = 2)
 @Warmup(iterations = 1)
 public class Benchmarks {
+    /**
+     * The size parameter.
+     */
+    @Param("1000")
+    private static int size;
+
     private boolean[] booleanArray;
     private byte[] byteArray;
     private char[] charArray;
@@ -38,11 +44,6 @@ public class Benchmarks {
     private int[] intArray;
     private long[] longArray;
     private short[] shortArray;
-    /**
-     * The size parameter.
-     */
-    @Param({"1000"})
-    public int size;
     /**
      * The main method of {@link Benchmarks}.
      *
