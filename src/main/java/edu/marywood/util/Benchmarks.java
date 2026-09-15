@@ -83,4 +83,12 @@ public class Benchmarks {
     public void openJDKToStringBooleanArray() {
         java.util.Arrays.toString(booleanArray);
     }
+    /**
+     * Marywood toString(byte[]) Benchmark.
+     */
+    @Benchmark
+    @Group("toStringByteArray")
+    public void marywoodToStringByteArray() {
+        edu.marywood.util.Arrays.toString(byteArray);
+    }
 }
