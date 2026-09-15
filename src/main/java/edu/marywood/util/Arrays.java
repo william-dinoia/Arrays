@@ -37,17 +37,19 @@ public class Arrays {
      * @return {@link String}
      */
     public static String toString(byte[] byteArray) {
-        String string;
         if (byteArray == null) {
-            string = "null";
+            return NULL;
         } else {
-            String[] stringArray = new String[byteArray.length];
-            for (int index = 0; index < byteArray.length; index += 1) {
-                stringArray[index] = Byte.toString(byteArray[index]);
+            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            for (int index = 0, lastIndex = byteArray.length - 1; index < byteArray.length; index += 1) {
+                if (index < lastIndex) {
+                    stringBuilder.append(byteArray[index]).append(DELIMITER);
+                } else {
+                    stringBuilder.append(byteArray[index]);
+                }
             }
-            string = "[" + String.join(", ", stringArray) + "]";
+            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
-        return string;
     }
     /**
      * Converts a {@code char[]} to a {@link String}.
