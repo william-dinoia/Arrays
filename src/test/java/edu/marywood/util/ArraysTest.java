@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class ArraysTest {
-    static final boolean MAX_BOOLEAN = true;
     static final byte MAX_BYTE = Byte.MAX_VALUE;
     static final char MAX_CHAR = Character.MAX_VALUE;
     static final double MAX_DOUBLE = Double.MAX_VALUE;
@@ -33,7 +32,7 @@ public class ArraysTest {
         boolean[] blankBooleanArray = null;
         boolean[] emptyBooleanArray = new boolean[] {};
         boolean[] lonerBooleanArray = new boolean[] {MIN_BOOLEAN};
-        boolean[] rangeBooleanArray = new boolean[] {MIN_BOOLEAN, MAX_BOOLEAN};
+        boolean[] rangeBooleanArray = new boolean[] {MIN_BOOLEAN, true};
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(blankBooleanArray)
                 .equals(java.util.Arrays.toString(blankBooleanArray)));
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(emptyBooleanArray)
