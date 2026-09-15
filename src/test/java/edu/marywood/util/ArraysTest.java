@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class ArraysTest {
-    static final int MAX_INT = Integer.MAX_VALUE;
     static final long MAX_LONG = Long.MAX_VALUE;
     static final short MAX_SHORT = Short.MAX_VALUE;
     static final int MIN_INT = Integer.MIN_VALUE;
@@ -113,7 +112,7 @@ public class ArraysTest {
         int[] blankIntArray = null;
         int[] emptyIntArray = new int[] {};
         int[] lonerIntArray = new int[] {MIN_INT};
-        int[] rangeIntArray = new int[] {MIN_INT, MAX_INT};
+        int[] rangeIntArray = new int[] {MIN_INT, Integer.MAX_VALUE};
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(blankIntArray).equals(java.util.Arrays.toString(blankIntArray)));
         Assertions.assertTrue(
