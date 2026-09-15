@@ -127,4 +127,12 @@ public class Benchmarks {
     public void marywoodToStringDoubleArray() {
         edu.marywood.util.Arrays.toString(doubleArray);
     }
+    /**
+     * OpenJDK toString(double[]) Benchmark.
+     */
+    @Benchmark
+    @Group("toStringDoubleArray")
+    public void openJDKToStringDoubleArray() {
+        java.util.Arrays.toString(doubleArray);
+    }
 }
