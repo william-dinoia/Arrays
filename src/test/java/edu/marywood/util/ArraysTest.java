@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class ArraysTest {
-    static final char MAX_CHAR = Character.MAX_VALUE;
     static final double MAX_DOUBLE = Double.MAX_VALUE;
     static final float MAX_FLOAT = Float.MAX_VALUE;
     static final int MAX_INT = Integer.MAX_VALUE;
@@ -65,7 +64,7 @@ public class ArraysTest {
         char[] blankCharArray = null;
         char[] emptyCharArray = new char[] {};
         char[] lonerCharArray = new char[] {MIN_CHAR};
-        char[] rangeCharArray = new char[] {MIN_CHAR, MAX_CHAR};
+        char[] rangeCharArray = new char[] {MIN_CHAR, Character.MAX_VALUE};
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(blankCharArray).equals(java.util.Arrays.toString(blankCharArray)));
         Assertions.assertTrue(
