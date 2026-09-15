@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class ArraysTest {
-    static final short MAX_SHORT = Short.MAX_VALUE;
     static final short MIN_SHORT = Short.MIN_VALUE;
     /**
      * Tests {@link Arrays.toString(boolean[])}.
@@ -145,7 +144,7 @@ public class ArraysTest {
         short[] blankShortArray = null;
         short[] emptyShortArray = new short[] {};
         short[] lonerShortArray = new short[] {MIN_SHORT};
-        short[] rangeShortArray = new short[] {MIN_SHORT, MAX_SHORT};
+        short[] rangeShortArray = new short[] {MIN_SHORT, Short.MAX_VALUE};
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(blankShortArray).equals(java.util.Arrays.toString(blankShortArray)));
         Assertions.assertTrue(
