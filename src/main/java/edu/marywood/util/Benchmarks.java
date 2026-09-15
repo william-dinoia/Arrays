@@ -8,6 +8,7 @@ import org.openjdk.jmh.annotations.Group;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
@@ -37,6 +38,11 @@ public class Benchmarks {
     private int[] intArray;
     private long[] longArray;
     private short[] shortArray;
+    /**
+     * The size parameter.
+     */
+    @Param({"1000"})
+    public int size;
     /**
      * The main method of {@link Benchmarks}.
      *
