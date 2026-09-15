@@ -16,7 +16,6 @@ public class ArraysTest {
     static final int MAX_INT = Integer.MAX_VALUE;
     static final long MAX_LONG = Long.MAX_VALUE;
     static final short MAX_SHORT = Short.MAX_VALUE;
-    static final boolean MIN_BOOLEAN = false;
     static final byte MIN_BYTE = Byte.MIN_VALUE;
     static final char MIN_CHAR = Character.MIN_VALUE;
     static final double MIN_DOUBLE = Double.MIN_VALUE;
@@ -31,8 +30,8 @@ public class ArraysTest {
     public void toStringBooleanArray() {
         boolean[] blankBooleanArray = null;
         boolean[] emptyBooleanArray = new boolean[] {};
-        boolean[] lonerBooleanArray = new boolean[] {MIN_BOOLEAN};
-        boolean[] rangeBooleanArray = new boolean[] {MIN_BOOLEAN, true};
+        boolean[] lonerBooleanArray = new boolean[] {false};
+        boolean[] rangeBooleanArray = new boolean[] {false, true};
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(blankBooleanArray)
                 .equals(java.util.Arrays.toString(blankBooleanArray)));
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(emptyBooleanArray)
