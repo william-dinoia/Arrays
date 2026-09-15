@@ -13,7 +13,6 @@ public class ArraysTest {
     static final int MAX_INT = Integer.MAX_VALUE;
     static final long MAX_LONG = Long.MAX_VALUE;
     static final short MAX_SHORT = Short.MAX_VALUE;
-    static final double MIN_DOUBLE = Double.MIN_VALUE;
     static final float MIN_FLOAT = Float.MIN_VALUE;
     static final int MIN_INT = Integer.MIN_VALUE;
     static final long MIN_LONG = Long.MIN_VALUE;
@@ -79,8 +78,8 @@ public class ArraysTest {
     public void toStringDoubleArray() {
         double[] blankDoubleArray = null;
         double[] emptyDoubleArray = new double[] {};
-        double[] lonerDoubleArray = new double[] {MIN_DOUBLE};
-        double[] rangeDoubleArray = new double[] {MIN_DOUBLE, Double.MAX_VALUE};
+        double[] lonerDoubleArray = new double[] {Double.MIN_VALUE};
+        double[] rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(blankDoubleArray)
                 .equals(java.util.Arrays.toString(blankDoubleArray)));
         Assertions.assertTrue(edu.marywood.util.Arrays.toString(emptyDoubleArray)
