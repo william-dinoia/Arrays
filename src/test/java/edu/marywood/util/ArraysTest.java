@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class ArraysTest {
-    static final long MAX_LONG = Long.MAX_VALUE;
     static final short MAX_SHORT = Short.MAX_VALUE;
     static final long MIN_LONG = Long.MIN_VALUE;
     static final short MIN_SHORT = Short.MIN_VALUE;
@@ -129,7 +128,7 @@ public class ArraysTest {
         long[] blankLongArray = null;
         long[] emptyLongArray = new long[] {};
         long[] lonerLongArray = new long[] {MIN_LONG};
-        long[] rangeLongArray = new long[] {MIN_LONG, MAX_LONG};
+        long[] rangeLongArray = new long[] {MIN_LONG, Long.MAX_VALUE};
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(blankLongArray).equals(java.util.Arrays.toString(blankLongArray)));
         Assertions.assertTrue(
