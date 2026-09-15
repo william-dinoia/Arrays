@@ -59,9 +59,11 @@ public class Benchmarks {
      */
     @Setup
     public void setup() {
-        booleanArray = new boolean[100];
-        for (int index = 0; index < booleanArray.length; index += 1) {
+        booleanArray = new boolean[size];
+        byteArray = new byte[size];
+        for (int index = 0; index < size; index += 1) {
             booleanArray[index] = false;
+            byteArray[index] = Byte.MIN_VALUE;
         }
     }
     /**
