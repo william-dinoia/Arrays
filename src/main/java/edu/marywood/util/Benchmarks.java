@@ -101,4 +101,12 @@ public class Benchmarks {
     public void openJDKToStringByteArray() {
         java.util.Arrays.toString(byteArray);
     }
+    /**
+     * Marywood toString(char[]) Benchmark.
+     */
+    @Benchmark
+    @Group("toStringCharArray")
+    public void marywoodToStringCharArray() {
+        edu.marywood.util.Arrays.toString(charArray);
+    }
 }
