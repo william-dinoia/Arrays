@@ -109,4 +109,12 @@ public class Benchmarks {
     public void marywoodToStringCharArray() {
         edu.marywood.util.Arrays.toString(charArray);
     }
+    /**
+     * OpenJDK toString(char[]) Benchmark.
+     */
+    @Benchmark
+    @Group("toStringCharArray")
+    public void openJDKToStringCharArray() {
+        java.util.Arrays.toString(charArray);
+    }
 }
