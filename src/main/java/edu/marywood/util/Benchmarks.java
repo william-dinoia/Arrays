@@ -25,10 +25,10 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  */
 @State(Scope.Group)
 @BenchmarkMode(Mode.AverageTime)
-@Fork(value = 3)
+@Fork(value = 2)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Measurement(iterations = 2)
-@Warmup(iterations = 1)
+@Warmup(iterations = 2)
 public class Benchmarks {
     /**
      * The size parameter.
