@@ -40,9 +40,9 @@
             <includes>
               <include>**/*.java</include>
             </includes>
-            <palantirJavaFormat>
-              <style>PALANTIR</style>
-            </palantirJavaFormat>
+            <googleJavaFormat>
+              <style>AOSP</style>
+            </googleJavaFormat>
             <trimTrailingWhitespace/>
           </java>
           <markdown>
