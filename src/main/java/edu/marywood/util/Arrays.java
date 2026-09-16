@@ -124,17 +124,25 @@ public class Arrays {
      * @return {@link String}
      */
     public static String toString(float[] floatArray) {
-        String string;
         if (floatArray == null) {
-            string = "null";
+            return NULL;
         } else {
-            String[] stringArray = new String[floatArray.length];
-            for (int index = 0; index < floatArray.length; index += 1) {
-                stringArray[index] = Float.toString(floatArray[index]);
+            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            switch (floatArray.length) {
+                case 0:
+                    break;
+                case 1:
+                    stringBuilder.append(floatArray[0]);
+                    break;
+                default:
+                    stringBuilder.append(floatArray[0]);
+                    for (int index = 1; index < floatArray.length; index += 1) {
+                        stringBuilder.append(DELIMITER).append(floatArray[index]);
+                    }
+                    break;
             }
-            string = "[" + String.join(", ", stringArray) + "]";
+            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
-        return string;
     }
     /**
      * Converts a {@code int[]} to a {@link String}.
