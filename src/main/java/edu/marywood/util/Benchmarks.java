@@ -30,7 +30,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Measurement(iterations = 2)
 @Warmup(iterations = 2)
 public class Benchmarks {
-    /** The size parameter. */
+
     @Param("1000")
     private static int size;
 
