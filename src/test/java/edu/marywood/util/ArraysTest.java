@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class ArraysTest {
+
     /** Tests {@link Arrays.toString(boolean[])}. */
     @Test
     public void toStringBooleanArray() {
