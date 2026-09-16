@@ -97,7 +97,6 @@ public class Arrays {
      * @return {@link String}
      */
     public static String toString(double[] doubleArray) {
-        String string;
         if (doubleArray == null) {
             return NULL;
         } else {
