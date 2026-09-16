@@ -124,4 +124,11 @@ public class Benchmarks {
     public void openJDKToStringDoubleArray() {
         java.util.Arrays.toString(doubleArray);
     }
+
+    /** Marywood toString(float[]) Benchmark. */
+    @Benchmark
+    @Group("toStringFloatArray")
+    public void marywoodToStringFloatArray() {
+        edu.marywood.util.Arrays.toString(floatArray);
+    }
 }
