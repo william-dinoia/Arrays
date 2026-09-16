@@ -20,12 +20,11 @@ public class Arrays {
             return NULL;
         } else {
             StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
-            for (int index = 0, lastIndex = booleanArray.length - 1; index < booleanArray.length; index += 1) {
-                if (index < lastIndex) {
-                    stringBuilder.append(booleanArray[index]).append(DELIMITER);
-                } else {
-                    stringBuilder.append(booleanArray[index]);
-                }
+            if (booleanArray.length > 0) {
+                stringBuilder.append(booleanArray[0]);
+            }
+            for (int index = 1; index < booleanArray.length; index += 1) {
+                stringBuilder.append(DELIMITER).append(booleanArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
