@@ -205,16 +205,24 @@ public class Arrays {
      * @return {@link String}
      */
     public static String toString(short[] shortArray) {
-        String string;
         if (shortArray == null) {
-            string = "null";
+            return NULL;
         } else {
-            String[] stringArray = new String[shortArray.length];
-            for (int index = 0; index < shortArray.length; index += 1) {
-                stringArray[index] = Short.toString(shortArray[index]);
+            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            switch (shortArray.length) {
+                case 0:
+                    break;
+                case 1:
+                    stringBuilder.append(shortArray[0]);
+                    break;
+                default:
+                    stringBuilder.append(shortArray[0]);
+                    for (int index = 1; index < shortArray.length; index += 1) {
+                        stringBuilder.append(DELIMITER).append(shortArray[index]);
+                    }
+                    break;
             }
-            string = "[" + String.join(", ", stringArray) + "]";
+            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
-        return string;
     }
 }
