@@ -70,7 +70,6 @@ public class Arrays {
      * @return {@link String}
      */
     public static String toString(char[] charArray) {
-        String string;
         if (charArray == null) {
             return NULL;
         } else {
