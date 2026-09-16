@@ -72,15 +72,24 @@ public class Arrays {
     public static String toString(char[] charArray) {
         String string;
         if (charArray == null) {
-            string = "null";
+            return NULL;
         } else {
-            String[] stringArray = new String[charArray.length];
-            for (int index = 0; index < charArray.length; index += 1) {
-                stringArray[index] = Character.toString(charArray[index]);
+            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            switch (charArray.length) {
+                case 0:
+                    break;
+                case 1:
+                    stringBuilder.append(charArray[0]);
+                    break;
+                default:
+                    stringBuilder.append(charArray[0]);
+                    for (int index = 1; index < charArray.length; index += 1) {
+                        stringBuilder.append(DELIMITER).append(charArray[index]);
+                    }
+                    break;
             }
-            string = "[" + String.join(", ", stringArray) + "]";
+            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
-        return string;
     }
     /**
      * Converts a {@code double[]} to a {@link String}.
