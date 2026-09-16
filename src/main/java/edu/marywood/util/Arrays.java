@@ -47,12 +47,18 @@ public class Arrays {
             return NULL;
         } else {
             StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
-            for (int index = 0, lastIndex = byteArray.length - 1; index < byteArray.length; index += 1) {
-                if (index < lastIndex) {
-                    stringBuilder.append(byteArray[index]).append(DELIMITER);
-                } else {
-                    stringBuilder.append(byteArray[index]);
-                }
+            switch (byteArray.length) {
+                case 0:
+                    break;
+                case 1:
+                    stringBuilder.append(byteArray[0]);
+                    break;
+                default:
+                    stringBuilder.append(byteArray[0]);
+                    for (int index = 1; index < byteArray.length; index += 1) {
+                        stringBuilder.append(DELIMITER).append(byteArray[index]);
+                    }
+                    break;
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
