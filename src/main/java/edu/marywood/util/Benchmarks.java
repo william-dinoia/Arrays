@@ -152,4 +152,11 @@ public class Benchmarks {
     public void openJDKToStringIntArray() {
         java.util.Arrays.toString(intArray);
     }
+
+    /** Marywood toString(long[]) Benchmark. */
+    @Benchmark
+    @Group("toStringLongArray")
+    public void marywoodToStringLongArray() {
+        edu.marywood.util.Arrays.toString(longArray);
+    }
 }
