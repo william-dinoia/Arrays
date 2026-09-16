@@ -151,17 +151,25 @@ public class Arrays {
      * @return {@link String}
      */
     public static String toString(int[] intArray) {
-        String string;
         if (intArray == null) {
-            string = "null";
+            return NULL;
         } else {
-            String[] stringArray = new String[intArray.length];
-            for (int index = 0; index < intArray.length; index += 1) {
-                stringArray[index] = Integer.toString(intArray[index]);
+            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            switch (intArray.length) {
+                case 0:
+                    break;
+                case 1:
+                    stringBuilder.append(intArray[0]);
+                    break;
+                default:
+                    stringBuilder.append(intArray[0]);
+                    for (int index = 1; index < intArray.length; index += 1) {
+                        stringBuilder.append(DELIMITER).append(intArray[index]);
+                    }
+                    break;
             }
-            string = "[" + String.join(", ", stringArray) + "]";
+            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
-        return string;
     }
     /**
      * Converts a {@code long[]} to a {@link String}.
