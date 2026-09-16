@@ -100,15 +100,24 @@ public class Arrays {
     public static String toString(double[] doubleArray) {
         String string;
         if (doubleArray == null) {
-            string = "null";
+            return NULL;
         } else {
-            String[] stringArray = new String[doubleArray.length];
-            for (int index = 0; index < doubleArray.length; index += 1) {
-                stringArray[index] = Double.toString(doubleArray[index]);
+            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            switch (doubleArray.length) {
+                case 0:
+                    break;
+                case 1:
+                    stringBuilder.append(doubleArray[0]);
+                    break;
+                default:
+                    stringBuilder.append(doubleArray[0]);
+                    for (int index = 1; index < doubleArray.length; index += 1) {
+                        stringBuilder.append(DELIMITER).append(doubleArray[index]);
+                    }
+                    break;
             }
-            string = "[" + String.join(", ", stringArray) + "]";
+            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
-        return string;
     }
     /**
      * Converts a {@code float[]} to a {@link String}.
