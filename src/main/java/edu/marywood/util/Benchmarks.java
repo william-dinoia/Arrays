@@ -30,9 +30,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Measurement(iterations = 2)
 @Warmup(iterations = 2)
 public class Benchmarks {
-    /**
-     * The size parameter.
-     */
+    /** The size parameter. */
     @Param("1000")
     private static int size;
 
@@ -44,20 +42,19 @@ public class Benchmarks {
     private int[] intArray;
     private long[] longArray;
     private short[] shortArray;
+
     /**
      * The main method of {@link Benchmarks}.
      *
      * @param stringArray {@link String}{@code []}
      */
     public static void main(String[] stringArray) throws RunnerException {
-        Options options =
-                new OptionsBuilder().include(Benchmarks.class.getSimpleName()).build();
+        Options options = new OptionsBuilder().include(Benchmarks.class.getSimpleName()).build();
         Runner runner = new Runner(options);
         runner.run();
     }
-    /**
-     * The setup method of {@link Benchmarks}.
-     */
+
+    /** The setup method of {@link Benchmarks}. */
     @Setup
     public void setup() {
         booleanArray = new boolean[size];
@@ -71,65 +68,57 @@ public class Benchmarks {
             doubleArray[index] = Double.MIN_VALUE;
         }
     }
-    /**
-     * Marywood toString(boolean[]) Benchmark.
-     */
+
+    /** Marywood toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
     public void marywoodToStringBooleanArray() {
         edu.marywood.util.Arrays.toString(booleanArray);
     }
-    /**
-     * OpenJDK toString(boolean[]) Benchmark.
-     */
+
+    /** OpenJDK toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
     public void openJDKToStringBooleanArray() {
         java.util.Arrays.toString(booleanArray);
     }
-    /**
-     * Marywood toString(byte[]) Benchmark.
-     */
+
+    /** Marywood toString(byte[]) Benchmark. */
     @Benchmark
     @Group("toStringByteArray")
     public void marywoodToStringByteArray() {
         edu.marywood.util.Arrays.toString(byteArray);
     }
-    /**
-     * OpenJDK toString(byte[]) Benchmark.
-     */
+
+    /** OpenJDK toString(byte[]) Benchmark. */
     @Benchmark
     @Group("toStringByteArray")
     public void openJDKToStringByteArray() {
         java.util.Arrays.toString(byteArray);
     }
-    /**
-     * Marywood toString(char[]) Benchmark.
-     */
+
+    /** Marywood toString(char[]) Benchmark. */
     @Benchmark
     @Group("toStringCharArray")
     public void marywoodToStringCharArray() {
         edu.marywood.util.Arrays.toString(charArray);
     }
-    /**
-     * OpenJDK toString(char[]) Benchmark.
-     */
+
+    /** OpenJDK toString(char[]) Benchmark. */
     @Benchmark
     @Group("toStringCharArray")
     public void openJDKToStringCharArray() {
         java.util.Arrays.toString(charArray);
     }
-    /**
-     * Marywood toString(double[]) Benchmark.
-     */
+
+    /** Marywood toString(double[]) Benchmark. */
     @Benchmark
     @Group("toStringDoubleArray")
     public void marywoodToStringDoubleArray() {
         edu.marywood.util.Arrays.toString(doubleArray);
     }
-    /**
-     * OpenJDK toString(double[]) Benchmark.
-     */
+
+    /** OpenJDK toString(double[]) Benchmark. */
     @Benchmark
     @Group("toStringDoubleArray")
     public void openJDKToStringDoubleArray() {
