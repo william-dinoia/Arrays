@@ -1,4 +1,5 @@
 package edu.marywood.util;
+
 /**
  * Defines {@link Arrays}.
  *
@@ -9,6 +10,7 @@ public class Arrays {
     private static final char LEFT_SQUARE_BRACKET = '[';
     private static final String NULL = "null";
     private static final char RIGHT_SQUARE_BRACKET = ']';
+
     /**
      * Converts a {@code boolean[]} to a {@link String}.
      *
@@ -36,6 +38,7 @@ public class Arrays {
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
     }
+
     /**
      * Converts a {@code byte[]} to a {@link String}.
      *
@@ -63,6 +66,7 @@ public class Arrays {
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
     }
+
     /**
      * Converts a {@code char[]} to a {@link String}.
      *
@@ -90,6 +94,7 @@ public class Arrays {
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
     }
+
     /**
      * Converts a {@code double[]} to a {@link String}.
      *
@@ -117,6 +122,7 @@ public class Arrays {
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
     }
+
     /**
      * Converts a {@code float[]} to a {@link String}.
      *
@@ -144,6 +150,7 @@ public class Arrays {
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
     }
+
     /**
      * Converts a {@code int[]} to a {@link String}.
      *
@@ -171,6 +178,7 @@ public class Arrays {
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
     }
+
     /**
      * Converts a {@code long[]} to a {@link String}.
      *
@@ -198,6 +206,7 @@ public class Arrays {
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
     }
+
     /**
      * Converts a {@code short[]} to a {@link String}.
      *
