@@ -145,4 +145,11 @@ public class Benchmarks {
     public void marywoodToStringIntArray() {
         edu.marywood.util.Arrays.toString(intArray);
     }
+
+    /** OpenJDK toString(int[]) Benchmark. */
+    @Benchmark
+    @Group("toStringIntArray")
+    public void openJDKToStringIntArray() {
+        java.util.Arrays.toString(intArray);
+    }
 }
