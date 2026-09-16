@@ -173,4 +173,11 @@ public class Benchmarks {
     public void marywoodToStringShortArray() {
         edu.marywood.util.Arrays.toString(shortArray);
     }
+
+    /** OpenJDK toString(short[]) Benchmark. */
+    @Benchmark
+    @Group("toStringShortArray")
+    public void openJDKToStringShortArray() {
+        java.util.Arrays.toString(shortArray);
+    }
 }
