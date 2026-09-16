@@ -61,11 +61,19 @@ public class Benchmarks {
         byteArray = new byte[size];
         charArray = new char[size];
         doubleArray = new double[size];
+        floatArray = new float[size];
+        intArray = new int[size];
+        longArray = new long[size];
+        shortArray = new short[size];
         for (int index = 0; index < size; index += 1) {
-            booleanArray[index] = false;
-            byteArray[index] = Byte.MIN_VALUE;
-            charArray[index] = Character.MIN_VALUE;
-            doubleArray[index] = Double.MIN_VALUE;
+            booleanArray[index] = (index % 2 == 0) ? false : true;
+            byteArray[index] = (index % 2 == 0) ? Byte.MIN_VALUE : Byte.MAX_VALUE;
+            charArray[index] = (index % 2 == 0) ? Character.MIN_VALUE : Character.MAX_VALUE;
+            doubleArray[index] = (index % 2 == 0) ? Double.MIN_VALUE : Double.MAX_VALUE;
+            floatArray[index] = (index % 2 == 0) ? Float.MIN_VALUE : Float.MAX_VALUE;
+            intArray[index] = (index % 2 == 0) ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+            longArray[index] = (index % 2 == 0) ? Long.MIN_VALUE : Long.MAX_VALUE;
+            shortArray[index] = (index % 2 == 0) ? Short.MIN_VALUE : Short.MAX_VALUE;
         }
     }
 
