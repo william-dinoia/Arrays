@@ -79,7 +79,8 @@ public class Arrays {
         if (charArray == null) {
             return NULL;
         } else {
-            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            StringBuilder stringBuilder =
+                    new StringBuilder(charArray.length).append(LEFT_SQUARE_BRACKET);
             switch (charArray.length) {
                 case 0:
                     break;
