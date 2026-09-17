@@ -50,7 +50,8 @@ public class Arrays {
         if (byteArray == null) {
             return NULL;
         } else {
-            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            StringBuilder stringBuilder =
+                    new StringBuilder(byteArray.length).append(LEFT_SQUARE_BRACKET);
             switch (byteArray.length) {
                 case 0:
                     break;
