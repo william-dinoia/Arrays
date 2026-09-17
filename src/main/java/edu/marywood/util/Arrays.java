@@ -137,7 +137,8 @@ public class Arrays {
         if (floatArray == null) {
             return NULL;
         } else {
-            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            StringBuilder stringBuilder =
+                    new StringBuilder(floatArray.length).append(LEFT_SQUARE_BRACKET);
             switch (floatArray.length) {
                 case 0:
                     break;
