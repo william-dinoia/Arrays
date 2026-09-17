@@ -108,7 +108,8 @@ public class Arrays {
         if (doubleArray == null) {
             return NULL;
         } else {
-            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            StringBuilder stringBuilder =
+                    new StringBuilder(doubleArray.length).append(LEFT_SQUARE_BRACKET);
             switch (doubleArray.length) {
                 case 0:
                     break;
