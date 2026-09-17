@@ -195,7 +195,8 @@ public class Arrays {
         if (longArray == null) {
             return NULL;
         } else {
-            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            StringBuilder stringBuilder =
+                    new StringBuilder(longArray.length).append(LEFT_SQUARE_BRACKET);
             switch (longArray.length) {
                 case 0:
                     break;
