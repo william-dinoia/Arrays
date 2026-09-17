@@ -166,7 +166,8 @@ public class Arrays {
         if (intArray == null) {
             return NULL;
         } else {
-            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            StringBuilder stringBuilder =
+                    new StringBuilder(intArray.length).append(LEFT_SQUARE_BRACKET);
             switch (intArray.length) {
                 case 0:
                     break;
