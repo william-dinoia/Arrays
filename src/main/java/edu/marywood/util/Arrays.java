@@ -224,7 +224,8 @@ public class Arrays {
         if (shortArray == null) {
             return NULL;
         } else {
-            StringBuilder stringBuilder = new StringBuilder().append(LEFT_SQUARE_BRACKET);
+            StringBuilder stringBuilder =
+                    new StringBuilder(shortArray.length).append(LEFT_SQUARE_BRACKET);
             switch (shortArray.length) {
                 case 0:
                     break;
