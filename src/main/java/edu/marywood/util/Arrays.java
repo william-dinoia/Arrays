@@ -42,21 +42,13 @@ public class Arrays {
     public static String toString(byte[] byteArray) {
         if (byteArray == null) {
             return NULL;
+        } else if (byteArray.length == 0) {
+            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
         } else {
-            StringBuilder stringBuilder =
-                    new StringBuilder(byteArray.length).append(LEFT_SQUARE_BRACKET);
-            switch (byteArray.length) {
-                case 0:
-                    break;
-                case 1:
-                    stringBuilder.append(byteArray[0]);
-                    break;
-                default:
-                    stringBuilder.append(byteArray[0]);
-                    for (int index = 1; index < byteArray.length; index += 1) {
-                        stringBuilder.append(DELIMITER).append(byteArray[index]);
-                    }
-                    break;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(LEFT_SQUARE_BRACKET).append(byteArray[0]);
+            for (int index = 1; index < byteArray.length; index += 1) {
+                stringBuilder.append(DELIMITER).append(byteArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
