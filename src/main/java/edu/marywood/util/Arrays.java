@@ -105,21 +105,13 @@ public class Arrays {
     public static String toString(float[] floatArray) {
         if (floatArray == null) {
             return NULL;
+        } else if (floatArray.length == 0) {
+            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
         } else {
-            StringBuilder stringBuilder =
-                    new StringBuilder(floatArray.length).append(LEFT_SQUARE_BRACKET);
-            switch (floatArray.length) {
-                case 0:
-                    break;
-                case 1:
-                    stringBuilder.append(floatArray[0]);
-                    break;
-                default:
-                    stringBuilder.append(floatArray[0]);
-                    for (int index = 1; index < floatArray.length; index += 1) {
-                        stringBuilder.append(DELIMITER).append(floatArray[index]);
-                    }
-                    break;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(LEFT_SQUARE_BRACKET).append(floatArray[0]);
+            for (int index = 1; index < floatArray.length; index += 1) {
+                stringBuilder.append(DELIMITER).append(floatArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
