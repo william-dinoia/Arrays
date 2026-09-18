@@ -113,7 +113,7 @@ public class Arrays {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(floatArray[0]);
             for (int index = 1; index < floatArray.length; index += 1) {
-                stringBuilder.append(DELIMITER).append(floatArray[index]);
+                stringBuilder.append(COMMA).append(SPACE).append(floatArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
