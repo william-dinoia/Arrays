@@ -92,7 +92,7 @@ public class Arrays {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(doubleArray[0]);
             for (int index = 1; index < doubleArray.length; index += 1) {
-                stringBuilder.append(DELIMITER).append(doubleArray[index]);
+                stringBuilder.append(COMMA).append(SPACE).append(doubleArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
