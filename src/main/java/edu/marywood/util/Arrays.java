@@ -176,7 +176,7 @@ public class Arrays {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(shortArray[0]);
             for (int index = 1; index < shortArray.length; index += 1) {
-                stringBuilder.append(DELIMITER).append(shortArray[index]);
+                stringBuilder.append(COMMA).append(SPACE).append(shortArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
