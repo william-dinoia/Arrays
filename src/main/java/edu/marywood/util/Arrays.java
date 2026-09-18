@@ -63,21 +63,13 @@ public class Arrays {
     public static String toString(char[] charArray) {
         if (charArray == null) {
             return NULL;
+        } else if (charArray.length == 0) {
+            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
         } else {
-            StringBuilder stringBuilder =
-                    new StringBuilder(charArray.length).append(LEFT_SQUARE_BRACKET);
-            switch (charArray.length) {
-                case 0:
-                    break;
-                case 1:
-                    stringBuilder.append(charArray[0]);
-                    break;
-                default:
-                    stringBuilder.append(charArray[0]);
-                    for (int index = 1; index < charArray.length; index += 1) {
-                        stringBuilder.append(DELIMITER).append(charArray[index]);
-                    }
-                    break;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(LEFT_SQUARE_BRACKET).append(charArray[0]);
+            for (int index = 1; index < charArray.length; index += 1) {
+                stringBuilder.append(DELIMITER).append(charArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
