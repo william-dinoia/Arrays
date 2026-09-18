@@ -84,21 +84,13 @@ public class Arrays {
     public static String toString(double[] doubleArray) {
         if (doubleArray == null) {
             return NULL;
+        } else if (doubleArray.length == 0) {
+            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
         } else {
-            StringBuilder stringBuilder =
-                    new StringBuilder(doubleArray.length).append(LEFT_SQUARE_BRACKET);
-            switch (doubleArray.length) {
-                case 0:
-                    break;
-                case 1:
-                    stringBuilder.append(doubleArray[0]);
-                    break;
-                default:
-                    stringBuilder.append(doubleArray[0]);
-                    for (int index = 1; index < doubleArray.length; index += 1) {
-                        stringBuilder.append(DELIMITER).append(doubleArray[index]);
-                    }
-                    break;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(LEFT_SQUARE_BRACKET).append(doubleArray[0]);
+            for (int index = 1; index < doubleArray.length; index += 1) {
+                stringBuilder.append(DELIMITER).append(doubleArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
