@@ -155,7 +155,7 @@ public class Arrays {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(longArray[0]);
             for (int index = 1; index < longArray.length; index += 1) {
-                stringBuilder.append(DELIMITER).append(longArray[index]);
+                stringBuilder.append(COMMA).append(SPACE).append(longArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
