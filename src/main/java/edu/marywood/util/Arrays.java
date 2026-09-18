@@ -29,7 +29,7 @@ public class Arrays {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(booleanArray[0]);
             for (int index = 1; index < booleanArray.length; index += 1) {
-                stringBuilder.append(DELIMITER).append(booleanArray[index]);
+                stringBuilder.append(COMMA).append(SPACE).append(booleanArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
