@@ -50,7 +50,7 @@ public class Arrays {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(byteArray[0]);
             for (int index = 1; index < byteArray.length; index += 1) {
-                stringBuilder.append(DELIMITER).append(byteArray[index]);
+                stringBuilder.append(COMMA).append(SPACE).append(byteArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
