@@ -21,21 +21,13 @@ public class Arrays {
     public static String toString(boolean[] booleanArray) {
         if (booleanArray == null) {
             return NULL;
+        } else if (booleanArray.length == 0) {
+            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
         } else {
-            StringBuilder stringBuilder =
-                    new StringBuilder(booleanArray.length).append(LEFT_SQUARE_BRACKET);
-            switch (booleanArray.length) {
-                case 0:
-                    break;
-                case 1:
-                    stringBuilder.append(booleanArray[0]);
-                    break;
-                default:
-                    stringBuilder.append(booleanArray[0]);
-                    for (int index = 1; index < booleanArray.length; index += 1) {
-                        stringBuilder.append(DELIMITER).append(booleanArray[index]);
-                    }
-                    break;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(LEFT_SQUARE_BRACKET).append(booleanArray[0]);
+            for (int index = 1; index < booleanArray.length; index += 1) {
+                stringBuilder.append(DELIMITER).append(booleanArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
