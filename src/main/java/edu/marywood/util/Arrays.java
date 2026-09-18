@@ -134,7 +134,7 @@ public class Arrays {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(intArray[0]);
             for (int index = 1; index < intArray.length; index += 1) {
-                stringBuilder.append(DELIMITER).append(intArray[index]);
+                stringBuilder.append(COMMA).append(SPACE).append(intArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
