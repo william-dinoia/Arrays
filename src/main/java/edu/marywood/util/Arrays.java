@@ -8,7 +8,7 @@ package edu.marywood.util;
 public class Arrays {
     private static final char COMMA = ',';
     private static final char LEFT_SQUARE_BRACKET = '[';
-    private static final String LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET = "[]";
+    private static final String EMPTY_ARRAY = "[]";
     private static final String NULL = "null";
     private static final char RIGHT_SQUARE_BRACKET = ']';
     private static final char SPACE = ' ';
@@ -23,7 +23,7 @@ public class Arrays {
         if (booleanArray == null) {
             return NULL;
         } else if (booleanArray.length == 0) {
-            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
+            return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(booleanArray[0]);
@@ -44,7 +44,7 @@ public class Arrays {
         if (byteArray == null) {
             return NULL;
         } else if (byteArray.length == 0) {
-            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
+            return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(byteArray[0]);
@@ -65,7 +65,7 @@ public class Arrays {
         if (charArray == null) {
             return NULL;
         } else if (charArray.length == 0) {
-            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
+            return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(charArray[0]);
@@ -86,7 +86,7 @@ public class Arrays {
         if (doubleArray == null) {
             return NULL;
         } else if (doubleArray.length == 0) {
-            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
+            return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(doubleArray[0]);
@@ -107,7 +107,7 @@ public class Arrays {
         if (floatArray == null) {
             return NULL;
         } else if (floatArray.length == 0) {
-            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
+            return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(floatArray[0]);
@@ -128,7 +128,7 @@ public class Arrays {
         if (intArray == null) {
             return NULL;
         } else if (intArray.length == 0) {
-            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
+            return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(intArray[0]);
@@ -149,7 +149,7 @@ public class Arrays {
         if (longArray == null) {
             return NULL;
         } else if (longArray.length == 0) {
-            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
+            return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(longArray[0]);
@@ -170,7 +170,7 @@ public class Arrays {
         if (shortArray == null) {
             return NULL;
         } else if (shortArray.length == 0) {
-            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
+            return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET).append(shortArray[0]);
