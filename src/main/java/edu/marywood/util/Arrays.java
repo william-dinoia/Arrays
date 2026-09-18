@@ -6,7 +6,6 @@ package edu.marywood.util;
  * @author William DiNoia
  */
 public class Arrays {
-    private static final char[] DELIMITER = {',', ' '};
     private static final char COMMA = ',';
     private static final char LEFT_SQUARE_BRACKET = '[';
     private static final String LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET = "[]";
