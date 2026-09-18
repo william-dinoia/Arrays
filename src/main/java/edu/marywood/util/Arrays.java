@@ -168,21 +168,13 @@ public class Arrays {
     public static String toString(short[] shortArray) {
         if (shortArray == null) {
             return NULL;
+        } else if (shortArray.length == 0) {
+            return LEFT_SQUARE_BRACKET_RIGHT_SQUARE_BRACKET;
         } else {
-            StringBuilder stringBuilder =
-                    new StringBuilder(shortArray.length).append(LEFT_SQUARE_BRACKET);
-            switch (shortArray.length) {
-                case 0:
-                    break;
-                case 1:
-                    stringBuilder.append(shortArray[0]);
-                    break;
-                default:
-                    stringBuilder.append(shortArray[0]);
-                    for (int index = 1; index < shortArray.length; index += 1) {
-                        stringBuilder.append(DELIMITER).append(shortArray[index]);
-                    }
-                    break;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(LEFT_SQUARE_BRACKET).append(shortArray[0]);
+            for (int index = 1; index < shortArray.length; index += 1) {
+                stringBuilder.append(DELIMITER).append(shortArray[index]);
             }
             return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
         }
