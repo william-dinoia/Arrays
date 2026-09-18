@@ -60,7 +60,7 @@ public class Benchmarks {
         longArray = new long[size];
         shortArray = new short[size];
         for (int index = 0; index < size; index += 1) {
-            booleanArray[index] = (index % 2 == 0) ? false : true;
+            booleanArray[index] = index % 2 == 0;
             byteArray[index] = (index % 2 == 0) ? Byte.MIN_VALUE : Byte.MAX_VALUE;
             charArray[index] = (index % 2 == 0) ? Character.MIN_VALUE : Character.MAX_VALUE;
             doubleArray[index] = (index % 2 == 0) ? Double.MIN_VALUE : Double.MAX_VALUE;
