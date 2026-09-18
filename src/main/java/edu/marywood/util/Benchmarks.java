@@ -20,9 +20,9 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  * @author William DiNoia
  */
 @State(Scope.Group)
-@Fork(value = 2)
-@Measurement(iterations = 2)
-@Warmup(iterations = 2)
+@Fork(value = 1)
+@Measurement(iterations = 1)
+@Warmup(iterations = 1)
 public class Benchmarks {
 
     @Param({"0", "1", "100000"})
