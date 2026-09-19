@@ -7,6 +7,7 @@ package edu.marywood.util;
  */
 public class Arrays {
     private static final char COMMA = ',';
+    private static final String DELIMITER = ", ";
     private static final String EMPTY_ARRAY = "[]";
     private static final char LEFT_SQUARE_BRACKET = '[';
     private static final String NULL = "null";
