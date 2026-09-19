@@ -6,7 +6,6 @@ package edu.marywood.util;
  * @author William DiNoia
  */
 public class Arrays {
-    private static final String EMPTY_ARRAY = "[]";
     private static final char LEFT_SQUARE_BRACKET = '[';
     private static final String NULL = "null";
     private static final char RIGHT_SQUARE_BRACKET = ']';
@@ -44,7 +43,7 @@ public class Arrays {
         if (booleanArray == null) {
             return NULL;
         } else if (booleanArray.length == 0) {
-            return EMPTY_ARRAY;
+            return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET);
@@ -68,7 +67,7 @@ public class Arrays {
         if (byteArray == null) {
             return NULL;
         } else if (byteArray.length == 0) {
-            return EMPTY_ARRAY;
+            return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET);
@@ -92,7 +91,7 @@ public class Arrays {
         if (charArray == null) {
             return NULL;
         } else if (charArray.length == 0) {
-            return EMPTY_ARRAY;
+            return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET);
@@ -116,7 +115,7 @@ public class Arrays {
         if (doubleArray == null) {
             return NULL;
         } else if (doubleArray.length == 0) {
-            return EMPTY_ARRAY;
+            return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET);
@@ -140,7 +139,7 @@ public class Arrays {
         if (floatArray == null) {
             return NULL;
         } else if (floatArray.length == 0) {
-            return EMPTY_ARRAY;
+            return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET);
@@ -164,7 +163,7 @@ public class Arrays {
         if (intArray == null) {
             return NULL;
         } else if (intArray.length == 0) {
-            return EMPTY_ARRAY;
+            return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET);
@@ -188,7 +187,7 @@ public class Arrays {
         if (longArray == null) {
             return NULL;
         } else if (longArray.length == 0) {
-            return EMPTY_ARRAY;
+            return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET);
@@ -212,7 +211,7 @@ public class Arrays {
         if (shortArray == null) {
             return NULL;
         } else if (shortArray.length == 0) {
-            return EMPTY_ARRAY;
+            return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(LEFT_SQUARE_BRACKET);
