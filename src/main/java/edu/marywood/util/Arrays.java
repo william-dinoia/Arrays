@@ -49,11 +49,14 @@ public class Arrays {
             return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append(LEFT_SQUARE_BRACKET).append(booleanArray[0]);
+            stringBuilder.append(LEFT_SQUARE_BRACKET);
+            stringBuilder.append(booleanArray[0]);
             for (int index = 1; index < booleanArray.length; index += 1) {
-                stringBuilder.append(COMMA).append(SPACE).append(booleanArray[index]);
+                stringBuilder.append(DELIMITER);
+                stringBuilder.append(booleanArray[index]);
             }
-            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
+            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            return stringBuilder.toString();
         }
     }
 
