@@ -193,11 +193,14 @@ public class Arrays {
             return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append(LEFT_SQUARE_BRACKET).append(longArray[0]);
+            stringBuilder.append(LEFT_SQUARE_BRACKET);
+            stringBuilder.append(longArray[0]);
             for (int index = 1; index < longArray.length; index += 1) {
-                stringBuilder.append(COMMA).append(SPACE).append(longArray[index]);
+                stringBuilder.append(DELIMITER);
+                stringBuilder.append(longArray[index]);
             }
-            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
+            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            return stringBuilder.toString();
         }
     }
 
