@@ -25,7 +25,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Warmup(iterations = 1)
 public class Benchmarks {
 
-    @Param({"0", "1", "10", "100", "1000", "10000", "100000"})
+    @Param({"0", "1", "10", "100", "1000", "100000"})
     private static int size;
 
     private boolean[] booleanArray;
