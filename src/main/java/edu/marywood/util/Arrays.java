@@ -14,6 +14,28 @@ public class Arrays {
     private static final char SPACE = ' ';
 
     /**
+     * Converts an {@link Object}{@code []} to a {@link String}.
+     *
+     * @param objectArray {@link Object}{@code []}
+     * @return {@link String}
+     */
+    public static String toString(Object[] objectArray) {
+        if (objectArray == null) {
+            return NULL;
+        } else {
+            String[] stringArray = new String[objectArray.length];
+            for (int index = 0; index < objectArray.length; index += 1) {
+                if (objectArray[index] == null) {
+                    stringArray[index] = NULL;
+                } else {
+                    stringArray[index] = objectArray[index].toString();
+                }
+            }
+            return "[" + String.join(", ", stringArray) + "]";
+        }
+    }
+
+    /**
      * Converts a {@code boolean[]} to a {@link String}.
      *
      * @param booleanArray {@code boolean[]}
