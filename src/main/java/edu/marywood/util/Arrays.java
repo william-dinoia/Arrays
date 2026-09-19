@@ -97,11 +97,14 @@ public class Arrays {
             return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append(LEFT_SQUARE_BRACKET).append(charArray[0]);
+            stringBuilder.append(LEFT_SQUARE_BRACKET);
+            stringBuilder.append(charArray[0]);
             for (int index = 1; index < charArray.length; index += 1) {
-                stringBuilder.append(COMMA).append(SPACE).append(charArray[index]);
+                stringBuilder.append(DELIMITER);
+                stringBuilder.append(charArray[index]);
             }
-            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
+            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            return stringBuilder.toString();
         }
     }
 
