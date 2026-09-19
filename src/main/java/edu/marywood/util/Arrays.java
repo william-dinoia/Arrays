@@ -6,7 +6,6 @@ package edu.marywood.util;
  * @author William DiNoia
  */
 public class Arrays {
-    private static final String DELIMITER = ", ";
     private static final String EMPTY_ARRAY = "[]";
     private static final char LEFT_SQUARE_BRACKET = '[';
     private static final String NULL = "null";
@@ -51,7 +50,7 @@ public class Arrays {
             stringBuilder.append(LEFT_SQUARE_BRACKET);
             stringBuilder.append(booleanArray[0]);
             for (int index = 1; index < booleanArray.length; index += 1) {
-                stringBuilder.append(DELIMITER);
+                stringBuilder.append(", ");
                 stringBuilder.append(booleanArray[index]);
             }
             stringBuilder.append(RIGHT_SQUARE_BRACKET);
@@ -75,7 +74,7 @@ public class Arrays {
             stringBuilder.append(LEFT_SQUARE_BRACKET);
             stringBuilder.append(byteArray[0]);
             for (int index = 1; index < byteArray.length; index += 1) {
-                stringBuilder.append(DELIMITER);
+                stringBuilder.append(", ");
                 stringBuilder.append(byteArray[index]);
             }
             stringBuilder.append(RIGHT_SQUARE_BRACKET);
@@ -99,7 +98,7 @@ public class Arrays {
             stringBuilder.append(LEFT_SQUARE_BRACKET);
             stringBuilder.append(charArray[0]);
             for (int index = 1; index < charArray.length; index += 1) {
-                stringBuilder.append(DELIMITER);
+                stringBuilder.append(", ");
                 stringBuilder.append(charArray[index]);
             }
             stringBuilder.append(RIGHT_SQUARE_BRACKET);
@@ -123,7 +122,7 @@ public class Arrays {
             stringBuilder.append(LEFT_SQUARE_BRACKET);
             stringBuilder.append(doubleArray[0]);
             for (int index = 1; index < doubleArray.length; index += 1) {
-                stringBuilder.append(DELIMITER);
+                stringBuilder.append(", ");
                 stringBuilder.append(doubleArray[index]);
             }
             stringBuilder.append(RIGHT_SQUARE_BRACKET);
@@ -147,7 +146,7 @@ public class Arrays {
             stringBuilder.append(LEFT_SQUARE_BRACKET);
             stringBuilder.append(floatArray[0]);
             for (int index = 1; index < floatArray.length; index += 1) {
-                stringBuilder.append(DELIMITER);
+                stringBuilder.append(", ");
                 stringBuilder.append(floatArray[index]);
             }
             stringBuilder.append(RIGHT_SQUARE_BRACKET);
@@ -171,7 +170,7 @@ public class Arrays {
             stringBuilder.append(LEFT_SQUARE_BRACKET);
             stringBuilder.append(intArray[0]);
             for (int index = 1; index < intArray.length; index += 1) {
-                stringBuilder.append(DELIMITER);
+                stringBuilder.append(", ");
                 stringBuilder.append(intArray[index]);
             }
             stringBuilder.append(RIGHT_SQUARE_BRACKET);
@@ -195,7 +194,7 @@ public class Arrays {
             stringBuilder.append(LEFT_SQUARE_BRACKET);
             stringBuilder.append(longArray[0]);
             for (int index = 1; index < longArray.length; index += 1) {
-                stringBuilder.append(DELIMITER);
+                stringBuilder.append(", ");
                 stringBuilder.append(longArray[index]);
             }
             stringBuilder.append(RIGHT_SQUARE_BRACKET);
@@ -219,7 +218,7 @@ public class Arrays {
             stringBuilder.append(LEFT_SQUARE_BRACKET);
             stringBuilder.append(shortArray[0]);
             for (int index = 1; index < shortArray.length; index += 1) {
-                stringBuilder.append(DELIMITER);
+                stringBuilder.append(", ");
                 stringBuilder.append(shortArray[index]);
             }
             stringBuilder.append(RIGHT_SQUARE_BRACKET);
