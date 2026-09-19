@@ -73,11 +73,14 @@ public class Arrays {
             return EMPTY_ARRAY;
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append(LEFT_SQUARE_BRACKET).append(byteArray[0]);
+            stringBuilder.append(LEFT_SQUARE_BRACKET);
+            stringBuilder.append(byteArray[0]);
             for (int index = 1; index < byteArray.length; index += 1) {
-                stringBuilder.append(COMMA).append(SPACE).append(byteArray[index]);
+                stringBuilder.append(DELIMITER);
+                stringBuilder.append(byteArray[index]);
             }
-            return stringBuilder.append(RIGHT_SQUARE_BRACKET).toString();
+            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            return stringBuilder.toString();
         }
     }
 
