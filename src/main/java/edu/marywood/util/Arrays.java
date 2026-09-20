@@ -6,7 +6,6 @@ package edu.marywood.util;
  * @author William DiNoia
  */
 public class Arrays {
-    private static final char RIGHT_SQUARE_BRACKET = ']';
     private static final char SPACE = ' ';
 
     /**
@@ -50,7 +49,7 @@ public class Arrays {
                 stringBuilder.append(", ");
                 stringBuilder.append(booleanArray[index]);
             }
-            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            stringBuilder.append(']');
             return stringBuilder.toString();
         }
     }
@@ -74,7 +73,7 @@ public class Arrays {
                 stringBuilder.append(", ");
                 stringBuilder.append(byteArray[index]);
             }
-            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            stringBuilder.append(']');
             return stringBuilder.toString();
         }
     }
@@ -98,7 +97,7 @@ public class Arrays {
                 stringBuilder.append(", ");
                 stringBuilder.append(charArray[index]);
             }
-            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            stringBuilder.append(']');
             return stringBuilder.toString();
         }
     }
@@ -122,7 +121,7 @@ public class Arrays {
                 stringBuilder.append(", ");
                 stringBuilder.append(doubleArray[index]);
             }
-            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            stringBuilder.append(']');
             return stringBuilder.toString();
         }
     }
@@ -146,7 +145,7 @@ public class Arrays {
                 stringBuilder.append(", ");
                 stringBuilder.append(floatArray[index]);
             }
-            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            stringBuilder.append(']');
             return stringBuilder.toString();
         }
     }
@@ -170,7 +169,7 @@ public class Arrays {
                 stringBuilder.append(", ");
                 stringBuilder.append(intArray[index]);
             }
-            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            stringBuilder.append(']');
             return stringBuilder.toString();
         }
     }
@@ -194,7 +193,7 @@ public class Arrays {
                 stringBuilder.append(", ");
                 stringBuilder.append(longArray[index]);
             }
-            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            stringBuilder.append(']');
             return stringBuilder.toString();
         }
     }
@@ -218,7 +217,7 @@ public class Arrays {
                 stringBuilder.append(", ");
                 stringBuilder.append(shortArray[index]);
             }
-            stringBuilder.append(RIGHT_SQUARE_BRACKET);
+            stringBuilder.append(']');
             return stringBuilder.toString();
         }
     }
