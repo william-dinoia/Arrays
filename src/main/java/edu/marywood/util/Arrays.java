@@ -13,6 +13,46 @@ public class Arrays {
      * @param objectArray {@link Object}{@code []}
      * @return {@link String}
      */
+    public static String deepToString(Object[] objectArray) {
+        if (objectArray == null) {
+            return "null";
+        } else {
+            String[] stringArray = new String[objectArray.length];
+            for (int index = 0; index < objectArray.length; index += 1) {
+                if (objectArray[index] == null) {
+                    stringArray[index] = "null";
+                } else if (objectArray[index] instanceof Object[]) {
+                    stringArray[index] = Arrays.toString((Object[]) objectArray[index]);
+                } else if (objectArray[index] instanceof boolean[]) {
+                    stringArray[index] = Arrays.toString((boolean[]) objectArray[index]);
+                } else if (objectArray[index] instanceof byte[]) {
+                    stringArray[index] = Arrays.toString((byte[]) objectArray[index]);
+                } else if (objectArray[index] instanceof char[]) {
+                    stringArray[index] = Arrays.toString((char[]) objectArray[index]);
+                } else if (objectArray[index] instanceof double[]) {
+                    stringArray[index] = Arrays.toString((double[]) objectArray[index]);
+                } else if (objectArray[index] instanceof float[]) {
+                    stringArray[index] = Arrays.toString((float[]) objectArray[index]);
+                } else if (objectArray[index] instanceof int[]) {
+                    stringArray[index] = Arrays.toString((int[]) objectArray[index]);
+                } else if (objectArray[index] instanceof long[]) {
+                    stringArray[index] = Arrays.toString((long[]) objectArray[index]);
+                } else if (objectArray[index] instanceof short[]) {
+                    stringArray[index] = Arrays.toString((short[]) objectArray[index]);
+                } else {
+                    stringArray[index] = objectArray[index].toString();
+                }
+            }
+            return '[' + String.join(", ", stringArray) + ']';
+        }
+    }
+
+    /**
+     * Converts an {@link Object}{@code []} to a {@link String}.
+     *
+     * @param objectArray {@link Object}{@code []}
+     * @return {@link String}
+     */
     public static String toString(Object[] objectArray) {
         if (objectArray == null) {
             return "null";
