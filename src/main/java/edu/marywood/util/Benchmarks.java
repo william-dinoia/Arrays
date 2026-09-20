@@ -119,6 +119,13 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(shortArray);
     }
 
+    /** OpenJDK deepToString(Object[]) Benchmark. */
+    @Benchmark
+    @Group("deepToStringObjectArray")
+    public void openJDKDeepToStringObjectArray() {
+        java.util.Arrays.deepToString(objectArray);
+    }
+
     /** OpenJDK toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
