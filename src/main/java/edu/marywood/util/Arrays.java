@@ -6,7 +6,6 @@ package edu.marywood.util;
  * @author William DiNoia
  */
 public class Arrays {
-    private static final char SPACE = ' ';
 
     /**
      * Converts an {@link Object}{@code []} to a {@link String}.
