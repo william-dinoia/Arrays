@@ -94,6 +94,13 @@ public class Benchmarks {
         }
     }
 
+    /** Marywood toString(Object[]) Benchmark. */
+    @Benchmark
+    @Group("toStringObjectArray")
+    public void marywoodToStringObjectArray() {
+        edu.marywood.util.Arrays.toString(objectArray);
+    }
+
     /** Marywood toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
