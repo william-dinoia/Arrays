@@ -49,6 +49,132 @@ public class Benchmarks {
         runner.run();
     }
 
+    /** Marywood toString(boolean[]) Benchmark. */
+    @Benchmark
+    @Group("toStringBooleanArray")
+    public void marywoodToStringBooleanArray() {
+        edu.marywood.util.Arrays.toString(booleanArray);
+    }
+
+    /** Marywood toString(byte[]) Benchmark. */
+    @Benchmark
+    @Group("toStringByteArray")
+    public void marywoodToStringByteArray() {
+        edu.marywood.util.Arrays.toString(byteArray);
+    }
+
+    /** Marywood toString(char[]) Benchmark. */
+    @Benchmark
+    @Group("toStringCharArray")
+    public void marywoodToStringCharArray() {
+        edu.marywood.util.Arrays.toString(charArray);
+    }
+
+    /** Marywood toString(double[]) Benchmark. */
+    @Benchmark
+    @Group("toStringDoubleArray")
+    public void marywoodToStringDoubleArray() {
+        edu.marywood.util.Arrays.toString(doubleArray);
+    }
+
+    /** Marywood toString(float[]) Benchmark. */
+    @Benchmark
+    @Group("toStringFloatArray")
+    public void marywoodToStringFloatArray() {
+        edu.marywood.util.Arrays.toString(floatArray);
+    }
+
+    /** Marywood toString(int[]) Benchmark. */
+    @Benchmark
+    @Group("toStringIntArray")
+    public void marywoodToStringIntArray() {
+        edu.marywood.util.Arrays.toString(intArray);
+    }
+
+    /** Marywood toString(long[]) Benchmark. */
+    @Benchmark
+    @Group("toStringLongArray")
+    public void marywoodToStringLongArray() {
+        edu.marywood.util.Arrays.toString(longArray);
+    }
+
+    /** Marywood toString(Object[]) Benchmark. */
+    @Benchmark
+    @Group("toStringObjectArray")
+    public void marywoodToStringObjectArray() {
+        edu.marywood.util.Arrays.toString(objectArray);
+    }
+
+    /** Marywood toString(short[]) Benchmark. */
+    @Benchmark
+    @Group("toStringShortArray")
+    public void marywoodToStringShortArray() {
+        edu.marywood.util.Arrays.toString(shortArray);
+    }
+
+    /** OpenJDK toString(boolean[]) Benchmark. */
+    @Benchmark
+    @Group("toStringBooleanArray")
+    public void openJDKToStringBooleanArray() {
+        java.util.Arrays.toString(booleanArray);
+    }
+
+    /** OpenJDK toString(byte[]) Benchmark. */
+    @Benchmark
+    @Group("toStringByteArray")
+    public void openJDKToStringByteArray() {
+        java.util.Arrays.toString(byteArray);
+    }
+
+    /** OpenJDK toString(char[]) Benchmark. */
+    @Benchmark
+    @Group("toStringCharArray")
+    public void openJDKToStringCharArray() {
+        java.util.Arrays.toString(charArray);
+    }
+
+    /** OpenJDK toString(double[]) Benchmark. */
+    @Benchmark
+    @Group("toStringDoubleArray")
+    public void openJDKToStringDoubleArray() {
+        java.util.Arrays.toString(doubleArray);
+    }
+
+    /** OpenJDK toString(float[]) Benchmark. */
+    @Benchmark
+    @Group("toStringFloatArray")
+    public void openJDKToStringFloatArray() {
+        java.util.Arrays.toString(floatArray);
+    }
+
+    /** OpenJDK toString(int[]) Benchmark. */
+    @Benchmark
+    @Group("toStringIntArray")
+    public void openJDKToStringIntArray() {
+        java.util.Arrays.toString(intArray);
+    }
+
+    /** OpenJDK toString(long[]) Benchmark. */
+    @Benchmark
+    @Group("toStringLongArray")
+    public void openJDKToStringLongArray() {
+        java.util.Arrays.toString(longArray);
+    }
+
+    /** OpenJDK toString(Object[]) Benchmark. */
+    @Benchmark
+    @Group("toStringObjectArray")
+    public void openJDKToStringObjectArray() {
+        java.util.Arrays.toString(objectArray);
+    }
+
+    /** OpenJDK toString(short[]) Benchmark. */
+    @Benchmark
+    @Group("toStringShortArray")
+    public void openJDKToStringShortArray() {
+        java.util.Arrays.toString(shortArray);
+    }
+
     /** The setup method of {@link Benchmarks}. */
     @Setup
     public void setup() {
@@ -92,131 +218,5 @@ public class Benchmarks {
 
             shortArray[index] = (index % 2 == 0) ? Short.MIN_VALUE : Short.MAX_VALUE;
         }
-    }
-
-    /** Marywood toString(Object[]) Benchmark. */
-    @Benchmark
-    @Group("toStringObjectArray")
-    public void marywoodToStringObjectArray() {
-        edu.marywood.util.Arrays.toString(objectArray);
-    }
-
-    /** OpenJDK toString(Object[]) Benchmark. */
-    @Benchmark
-    @Group("toStringObjectArray")
-    public void openJDKToStringObjectArray() {
-        java.util.Arrays.toString(objectArray);
-    }
-
-    /** Marywood toString(boolean[]) Benchmark. */
-    @Benchmark
-    @Group("toStringBooleanArray")
-    public void marywoodToStringBooleanArray() {
-        edu.marywood.util.Arrays.toString(booleanArray);
-    }
-
-    /** OpenJDK toString(boolean[]) Benchmark. */
-    @Benchmark
-    @Group("toStringBooleanArray")
-    public void openJDKToStringBooleanArray() {
-        java.util.Arrays.toString(booleanArray);
-    }
-
-    /** Marywood toString(byte[]) Benchmark. */
-    @Benchmark
-    @Group("toStringByteArray")
-    public void marywoodToStringByteArray() {
-        edu.marywood.util.Arrays.toString(byteArray);
-    }
-
-    /** OpenJDK toString(byte[]) Benchmark. */
-    @Benchmark
-    @Group("toStringByteArray")
-    public void openJDKToStringByteArray() {
-        java.util.Arrays.toString(byteArray);
-    }
-
-    /** Marywood toString(char[]) Benchmark. */
-    @Benchmark
-    @Group("toStringCharArray")
-    public void marywoodToStringCharArray() {
-        edu.marywood.util.Arrays.toString(charArray);
-    }
-
-    /** OpenJDK toString(char[]) Benchmark. */
-    @Benchmark
-    @Group("toStringCharArray")
-    public void openJDKToStringCharArray() {
-        java.util.Arrays.toString(charArray);
-    }
-
-    /** Marywood toString(double[]) Benchmark. */
-    @Benchmark
-    @Group("toStringDoubleArray")
-    public void marywoodToStringDoubleArray() {
-        edu.marywood.util.Arrays.toString(doubleArray);
-    }
-
-    /** OpenJDK toString(double[]) Benchmark. */
-    @Benchmark
-    @Group("toStringDoubleArray")
-    public void openJDKToStringDoubleArray() {
-        java.util.Arrays.toString(doubleArray);
-    }
-
-    /** Marywood toString(float[]) Benchmark. */
-    @Benchmark
-    @Group("toStringFloatArray")
-    public void marywoodToStringFloatArray() {
-        edu.marywood.util.Arrays.toString(floatArray);
-    }
-
-    /** OpenJDK toString(float[]) Benchmark. */
-    @Benchmark
-    @Group("toStringFloatArray")
-    public void openJDKToStringFloatArray() {
-        java.util.Arrays.toString(floatArray);
-    }
-
-    /** Marywood toString(int[]) Benchmark. */
-    @Benchmark
-    @Group("toStringIntArray")
-    public void marywoodToStringIntArray() {
-        edu.marywood.util.Arrays.toString(intArray);
-    }
-
-    /** OpenJDK toString(int[]) Benchmark. */
-    @Benchmark
-    @Group("toStringIntArray")
-    public void openJDKToStringIntArray() {
-        java.util.Arrays.toString(intArray);
-    }
-
-    /** Marywood toString(long[]) Benchmark. */
-    @Benchmark
-    @Group("toStringLongArray")
-    public void marywoodToStringLongArray() {
-        edu.marywood.util.Arrays.toString(longArray);
-    }
-
-    /** OpenJDK toString(long[]) Benchmark. */
-    @Benchmark
-    @Group("toStringLongArray")
-    public void openJDKToStringLongArray() {
-        java.util.Arrays.toString(longArray);
-    }
-
-    /** Marywood toString(short[]) Benchmark. */
-    @Benchmark
-    @Group("toStringShortArray")
-    public void marywoodToStringShortArray() {
-        edu.marywood.util.Arrays.toString(shortArray);
-    }
-
-    /** OpenJDK toString(short[]) Benchmark. */
-    @Benchmark
-    @Group("toStringShortArray")
-    public void openJDKToStringShortArray() {
-        java.util.Arrays.toString(shortArray);
     }
 }
