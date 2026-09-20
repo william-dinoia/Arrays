@@ -19,28 +19,40 @@ public class Arrays {
         } else {
             String[] stringArray = new String[objectArray.length];
             for (int index = 0; index < objectArray.length; index += 1) {
-                if (objectArray[index] == null) {
-                    stringArray[index] = "null";
-                } else if (objectArray[index] instanceof Object[]) {
-                    stringArray[index] = Arrays.toString((Object[]) objectArray[index]);
-                } else if (objectArray[index] instanceof boolean[]) {
-                    stringArray[index] = Arrays.toString((boolean[]) objectArray[index]);
-                } else if (objectArray[index] instanceof byte[]) {
-                    stringArray[index] = Arrays.toString((byte[]) objectArray[index]);
-                } else if (objectArray[index] instanceof char[]) {
-                    stringArray[index] = Arrays.toString((char[]) objectArray[index]);
-                } else if (objectArray[index] instanceof double[]) {
-                    stringArray[index] = Arrays.toString((double[]) objectArray[index]);
-                } else if (objectArray[index] instanceof float[]) {
-                    stringArray[index] = Arrays.toString((float[]) objectArray[index]);
-                } else if (objectArray[index] instanceof int[]) {
-                    stringArray[index] = Arrays.toString((int[]) objectArray[index]);
-                } else if (objectArray[index] instanceof long[]) {
-                    stringArray[index] = Arrays.toString((long[]) objectArray[index]);
-                } else if (objectArray[index] instanceof short[]) {
-                    stringArray[index] = Arrays.toString((short[]) objectArray[index]);
-                } else {
-                    stringArray[index] = objectArray[index].toString();
+                switch (objectArray[index]) {
+                    case Object[] objects -> {
+                        stringArray[index] = Arrays.deepToString((Object[]) objectArray[index]);
+                    }
+                    case boolean[] booleans -> {
+                        stringArray[index] = Arrays.toString((boolean[]) objectArray[index]);
+                    }
+                    case byte[] bytes -> {
+                        stringArray[index] = Arrays.toString((byte[]) objectArray[index]);
+                    }
+                    case char[] chars -> {
+                        stringArray[index] = Arrays.toString((char[]) objectArray[index]);
+                    }
+                    case double[] doubles -> {
+                        stringArray[index] = Arrays.toString((double[]) objectArray[index]);
+                    }
+                    case float[] floats -> {
+                        stringArray[index] = Arrays.toString((float[]) objectArray[index]);
+                    }
+                    case int[] ints -> {
+                        stringArray[index] = Arrays.toString((int[]) objectArray[index]);
+                    }
+                    case long[] longs -> {
+                        stringArray[index] = Arrays.toString((long[]) objectArray[index]);
+                    }
+                    case null -> {
+                        stringArray[index] = "null";
+                    }
+                    case short[] shorts -> {
+                        stringArray[index] = Arrays.toString((short[]) objectArray[index]);
+                    }
+                    default -> {
+                        stringArray[index] = objectArray[index].toString();
+                    }
                 }
             }
             return '[' + String.join(", ", stringArray) + ']';
