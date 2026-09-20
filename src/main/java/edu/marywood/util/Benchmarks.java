@@ -11,7 +11,6 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
-import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 /**
@@ -44,8 +43,9 @@ public class Benchmarks {
      * @param stringArray {@link String}{@code []}
      */
     public static void main(String[] stringArray) throws RunnerException {
-        Options options = new OptionsBuilder().include(Benchmarks.class.getSimpleName()).build();
-        Runner runner = new Runner(options);
+        OptionsBuilder optionsBuilder = new OptionsBuilder();
+        optionsBuilder.include(Benchmarks.class.getSimpleName());
+        Runner runner = new Runner(optionsBuilder.build());
         runner.run();
     }
 
