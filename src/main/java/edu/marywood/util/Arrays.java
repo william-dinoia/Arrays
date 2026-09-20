@@ -19,41 +19,7 @@ public class Arrays {
         } else {
             String[] stringArray = new String[objectArray.length];
             for (int index = 0; index < objectArray.length; index += 1) {
-                switch (objectArray[index]) {
-                    case Object[] objects -> {
-                        stringArray[index] = Arrays.deepToString((Object[]) objectArray[index]);
-                    }
-                    case boolean[] booleans -> {
-                        stringArray[index] = Arrays.toString((boolean[]) objectArray[index]);
-                    }
-                    case byte[] bytes -> {
-                        stringArray[index] = Arrays.toString((byte[]) objectArray[index]);
-                    }
-                    case char[] chars -> {
-                        stringArray[index] = Arrays.toString((char[]) objectArray[index]);
-                    }
-                    case double[] doubles -> {
-                        stringArray[index] = Arrays.toString((double[]) objectArray[index]);
-                    }
-                    case float[] floats -> {
-                        stringArray[index] = Arrays.toString((float[]) objectArray[index]);
-                    }
-                    case int[] ints -> {
-                        stringArray[index] = Arrays.toString((int[]) objectArray[index]);
-                    }
-                    case long[] longs -> {
-                        stringArray[index] = Arrays.toString((long[]) objectArray[index]);
-                    }
-                    case null -> {
-                        stringArray[index] = "null";
-                    }
-                    case short[] shorts -> {
-                        stringArray[index] = Arrays.toString((short[]) objectArray[index]);
-                    }
-                    default -> {
-                        stringArray[index] = objectArray[index].toString();
-                    }
-                }
+                stringArray[index] = Arrays.deepToString(objectArray[index]);
             }
             return '[' + String.join(", ", stringArray) + ']';
         }
