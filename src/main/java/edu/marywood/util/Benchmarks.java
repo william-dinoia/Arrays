@@ -35,6 +35,7 @@ public class Benchmarks {
     private float[] floatArray;
     private int[] intArray;
     private long[] longArray;
+    private Object[] objectArray;
     private short[] shortArray;
 
     /**
