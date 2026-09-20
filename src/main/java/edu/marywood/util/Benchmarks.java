@@ -49,6 +49,13 @@ public class Benchmarks {
         runner.run();
     }
 
+    /** Marywood deepToString(Object[]) Benchmark. */
+    @Benchmark
+    @Group("deepToStringObjectArray")
+    public void marywoodDeepToStringObjectArray() {
+        edu.marywood.util.Arrays.deepToString(objectArray);
+    }
+
     /** Marywood toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
