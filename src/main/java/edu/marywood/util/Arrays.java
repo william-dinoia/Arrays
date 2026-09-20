@@ -6,7 +6,6 @@ package edu.marywood.util;
  * @author William DiNoia
  */
 public class Arrays {
-    private static final String NULL = "null";
     private static final char RIGHT_SQUARE_BRACKET = ']';
     private static final char SPACE = ' ';
 
@@ -18,12 +17,12 @@ public class Arrays {
      */
     public static String toString(Object[] objectArray) {
         if (objectArray == null) {
-            return NULL;
+            return "null";
         } else {
             String[] stringArray = new String[objectArray.length];
             for (int index = 0; index < objectArray.length; index += 1) {
                 if (objectArray[index] == null) {
-                    stringArray[index] = NULL;
+                    stringArray[index] = "null";
                 } else {
                     stringArray[index] = objectArray[index].toString();
                 }
@@ -40,7 +39,7 @@ public class Arrays {
      */
     public static String toString(boolean[] booleanArray) {
         if (booleanArray == null) {
-            return NULL;
+            return "null";
         } else if (booleanArray.length == 0) {
             return "[]";
         } else {
@@ -64,7 +63,7 @@ public class Arrays {
      */
     public static String toString(byte[] byteArray) {
         if (byteArray == null) {
-            return NULL;
+            return "null";
         } else if (byteArray.length == 0) {
             return "[]";
         } else {
@@ -88,7 +87,7 @@ public class Arrays {
      */
     public static String toString(char[] charArray) {
         if (charArray == null) {
-            return NULL;
+            return "null";
         } else if (charArray.length == 0) {
             return "[]";
         } else {
@@ -112,7 +111,7 @@ public class Arrays {
      */
     public static String toString(double[] doubleArray) {
         if (doubleArray == null) {
-            return NULL;
+            return "null";
         } else if (doubleArray.length == 0) {
             return "[]";
         } else {
@@ -136,7 +135,7 @@ public class Arrays {
      */
     public static String toString(float[] floatArray) {
         if (floatArray == null) {
-            return NULL;
+            return "null";
         } else if (floatArray.length == 0) {
             return "[]";
         } else {
@@ -160,7 +159,7 @@ public class Arrays {
      */
     public static String toString(int[] intArray) {
         if (intArray == null) {
-            return NULL;
+            return "null";
         } else if (intArray.length == 0) {
             return "[]";
         } else {
@@ -184,7 +183,7 @@ public class Arrays {
      */
     public static String toString(long[] longArray) {
         if (longArray == null) {
-            return NULL;
+            return "null";
         } else if (longArray.length == 0) {
             return "[]";
         } else {
@@ -208,7 +207,7 @@ public class Arrays {
      */
     public static String toString(short[] shortArray) {
         if (shortArray == null) {
-            return NULL;
+            return "null";
         } else if (shortArray.length == 0) {
             return "[]";
         } else {
