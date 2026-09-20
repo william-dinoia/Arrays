@@ -16,12 +16,18 @@ public class Arrays {
     public static String deepToString(Object[] objectArray) {
         if (objectArray == null) {
             return "null";
+        } else if (objectArray.length == 0) {
+            return "[]";
         } else {
-            String[] stringArray = new String[objectArray.length];
-            for (int index = 0; index < objectArray.length; index += 1) {
-                stringArray[index] = Arrays.deepToString(objectArray[index]);
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append('[');
+            stringBuilder.append(Arrays.deepToString(objectArray[0]));
+            for (int index = 1; index < objectArray.length; index += 1) {
+                stringBuilder.append(", ");
+                stringBuilder.append(Arrays.deepToString(objectArray[index]));
             }
-            return '[' + String.join(", ", stringArray) + ']';
+            stringBuilder.append(']');
+            return stringBuilder.toString();
         }
     }
 
