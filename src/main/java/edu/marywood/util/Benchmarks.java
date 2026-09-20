@@ -59,6 +59,7 @@ public class Benchmarks {
         floatArray = new float[size];
         intArray = new int[size];
         longArray = new long[size];
+        objectArray = new Object[size];
         shortArray = new short[size];
         for (int index = 0; index < size; index += 1) {
             booleanArray[index] = index % 2 == 0;
@@ -68,6 +69,27 @@ public class Benchmarks {
             floatArray[index] = (index % 2 == 0) ? Float.MIN_VALUE : Float.MAX_VALUE;
             intArray[index] = (index % 2 == 0) ? Integer.MIN_VALUE : Integer.MAX_VALUE;
             longArray[index] = (index % 2 == 0) ? Long.MIN_VALUE : Long.MAX_VALUE;
+            objectArray[index] =
+                    (index % 2 == 0)
+                            ? new Object[] {
+                                true,
+                                Byte.MIN_VALUE,
+                                Character.MIN_VALUE,
+                                Double.MIN_VALUE,
+                                Float.MIN_VALUE,
+                                Integer.MIN_VALUE,
+                                Long.MIN_VALUE
+                            }
+                            : new Object[] {
+                                false,
+                                Byte.MAX_VALUE,
+                                Character.MAX_VALUE,
+                                Double.MAX_VALUE,
+                                Float.MAX_VALUE,
+                                Integer.MAX_VALUE,
+                                Long.MAX_VALUE
+                            };
+
             shortArray[index] = (index % 2 == 0) ? Short.MIN_VALUE : Short.MAX_VALUE;
         }
     }
