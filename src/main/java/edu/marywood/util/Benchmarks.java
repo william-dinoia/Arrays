@@ -101,6 +101,13 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(objectArray);
     }
 
+    /** OpenJDK toString(Object[]) Benchmark. */
+    @Benchmark
+    @Group("toStringObjectArray")
+    public void openJDKToStringObjectArray() {
+        java.util.Arrays.toString(objectArray);
+    }
+
     /** Marywood toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
