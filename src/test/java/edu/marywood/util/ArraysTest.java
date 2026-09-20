@@ -10,52 +10,6 @@ import org.junit.jupiter.api.Test;
  */
 public class ArraysTest {
 
-    /** Tests {@link Arrays.toString(Object[])}. */
-    @Test
-    public void toStringObjectArray() {
-        Object[] blankObjectArray = null;
-        Object[] emptyObjectArray = new Object[] {};
-        Object[] lonerObjectArray = new Object[] {new Object()};
-        Object[] omegaObjectArray = new Object[1];
-        Object[] rangeObjectArray =
-                new Object[] {
-                    null,
-                    emptyObjectArray,
-                    new boolean[] {true, false},
-                    new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE},
-                    new char[] {Character.MIN_VALUE, Character.MAX_VALUE},
-                    new double[] {Double.MIN_VALUE, Double.MAX_VALUE},
-                    new float[] {Float.MIN_VALUE, Float.MAX_VALUE},
-                    new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE},
-                    new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
-                    new short[] {Short.MIN_VALUE, Short.MAX_VALUE},
-                    true,
-                    Byte.MIN_VALUE,
-                    Character.MIN_VALUE,
-                    Double.MIN_VALUE,
-                    Float.MIN_VALUE,
-                    Integer.MIN_VALUE,
-                    Long.MIN_VALUE,
-                    Short.MIN_VALUE
-                };
-        omegaObjectArray[0] = omegaObjectArray;
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(blankObjectArray)
-                        .equals(java.util.Arrays.toString(blankObjectArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(emptyObjectArray)
-                        .equals(java.util.Arrays.toString(emptyObjectArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(lonerObjectArray)
-                        .equals(java.util.Arrays.toString(lonerObjectArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(omegaObjectArray)
-                        .equals(java.util.Arrays.toString(omegaObjectArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(rangeObjectArray)
-                        .equals(java.util.Arrays.toString(rangeObjectArray)));
-    }
-
     /** Tests {@link Arrays.toString(boolean[])}. */
     @Test
     public void toStringBooleanArray() {
@@ -201,6 +155,52 @@ public class ArraysTest {
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(rangeLongArray)
                         .equals(java.util.Arrays.toString(rangeLongArray)));
+    }
+
+    /** Tests {@link Arrays.toString(Object[])}. */
+    @Test
+    public void toStringObjectArray() {
+        Object[] blankObjectArray = null;
+        Object[] emptyObjectArray = new Object[] {};
+        Object[] lonerObjectArray = new Object[] {new Object()};
+        Object[] omegaObjectArray = new Object[1];
+        Object[] rangeObjectArray =
+                new Object[] {
+                    null,
+                    emptyObjectArray,
+                    new boolean[] {true, false},
+                    new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE},
+                    new char[] {Character.MIN_VALUE, Character.MAX_VALUE},
+                    new double[] {Double.MIN_VALUE, Double.MAX_VALUE},
+                    new float[] {Float.MIN_VALUE, Float.MAX_VALUE},
+                    new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE},
+                    new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
+                    new short[] {Short.MIN_VALUE, Short.MAX_VALUE},
+                    true,
+                    Byte.MIN_VALUE,
+                    Character.MIN_VALUE,
+                    Double.MIN_VALUE,
+                    Float.MIN_VALUE,
+                    Integer.MIN_VALUE,
+                    Long.MIN_VALUE,
+                    Short.MIN_VALUE
+                };
+        omegaObjectArray[0] = omegaObjectArray;
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(blankObjectArray)
+                        .equals(java.util.Arrays.toString(blankObjectArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(emptyObjectArray)
+                        .equals(java.util.Arrays.toString(emptyObjectArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(lonerObjectArray)
+                        .equals(java.util.Arrays.toString(lonerObjectArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(omegaObjectArray)
+                        .equals(java.util.Arrays.toString(omegaObjectArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.toString(rangeObjectArray)
+                        .equals(java.util.Arrays.toString(rangeObjectArray)));
     }
 
     /** Tests {@link Arrays.toString(short[])}. */
