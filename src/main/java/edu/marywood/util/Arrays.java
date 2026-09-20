@@ -16,16 +16,18 @@ public class Arrays {
     public static String toString(Object[] objectArray) {
         if (objectArray == null) {
             return "null";
+        } else if (objectArray.length == 0) {
+            return "[]";
         } else {
-            String[] stringArray = new String[objectArray.length];
-            for (int index = 0; index < objectArray.length; index += 1) {
-                if (objectArray[index] == null) {
-                    stringArray[index] = "null";
-                } else {
-                    stringArray[index] = objectArray[index].toString();
-                }
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append('[');
+            stringBuilder.append(String.valueOf(objectArray[0]));
+            for (int index = 1; index < objectArray.length; index += 1) {
+                stringBuilder.append(", ");
+                stringBuilder.append(String.valueOf(objectArray[index]));
             }
-            return "[" + String.join(", ", stringArray) + "]";
+            stringBuilder.append(']');
+            return stringBuilder.toString();
         }
     }
 
