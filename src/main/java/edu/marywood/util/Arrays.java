@@ -255,39 +255,17 @@ public class Arrays {
      */
     private static String deepToString(Object object) {
         return switch (object) {
-            case Object[] objectArray -> {
-                yield Arrays.deepToString(objectArray);
-            }
-            case boolean[] booleanArray -> {
-                yield Arrays.toString(booleanArray);
-            }
-            case byte[] byteArray -> {
-                yield Arrays.toString(byteArray);
-            }
-            case char[] charArray -> {
-                yield Arrays.toString(charArray);
-            }
-            case double[] doubleArray -> {
-                yield Arrays.toString(doubleArray);
-            }
-            case float[] floatArray -> {
-                yield Arrays.toString(floatArray);
-            }
-            case int[] intArray -> {
-                yield Arrays.toString(intArray);
-            }
-            case long[] longArray -> {
-                yield Arrays.toString(longArray);
-            }
-            case null -> {
-                yield "null";
-            }
-            case short[] shortArray -> {
-                yield Arrays.toString(shortArray);
-            }
-            default -> {
-                yield object.toString();
-            }
+            case Object[] objectArray -> Arrays.deepToString(objectArray);
+            case boolean[] booleanArray -> Arrays.toString(booleanArray);
+            case byte[] byteArray -> Arrays.toString(byteArray);
+            case char[] charArray -> Arrays.toString(charArray);
+            case double[] doubleArray -> Arrays.toString(doubleArray);
+            case float[] floatArray -> Arrays.toString(floatArray);
+            case int[] intArray -> Arrays.toString(intArray);
+            case long[] longArray -> Arrays.toString(longArray);
+            case null -> "null";
+            case short[] shortArray -> Arrays.toString(shortArray);
+            default -> object.toString();
         };
     }
 }
