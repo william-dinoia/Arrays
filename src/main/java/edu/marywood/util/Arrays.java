@@ -45,10 +45,10 @@ public class Arrays {
         } else {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append('[');
-            stringBuilder.append(String.valueOf(objectArray[0]));
+            stringBuilder.append(objectArray[0]);
             for (int index = 1; index < objectArray.length; index += 1) {
                 stringBuilder.append(", ");
-                stringBuilder.append(String.valueOf(objectArray[index]));
+                stringBuilder.append(objectArray[index]);
             }
             stringBuilder.append(']');
             return stringBuilder.toString();
