@@ -68,6 +68,7 @@ public class Arrays {
             return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.ensureCapacity(6 * booleanArray.length);
             stringBuilder.append('[');
             stringBuilder.append(booleanArray[0]);
             for (int index = 1; index < booleanArray.length; index += 1) {
