@@ -16,6 +16,7 @@ public class ArraysTest {
         Object[] blankObjectArray = null;
         Object[] emptyObjectArray = new Object[] {};
         Object[] lonerObjectArray = new Object[] {new Object()};
+        Object[] omegaObjectArray = new Object[1];
         Object[] rangeObjectArray =
                 new Object[] {
                     null,
@@ -37,6 +38,7 @@ public class ArraysTest {
                     Long.MIN_VALUE,
                     Short.MIN_VALUE
                 };
+        omegaObjectArray[0] = new Object[] {null, new Object[] {null, omegaObjectArray}};
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.deepToString(blankObjectArray)
                         .equals(java.util.Arrays.deepToString(blankObjectArray)));
@@ -46,6 +48,9 @@ public class ArraysTest {
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.deepToString(lonerObjectArray)
                         .equals(java.util.Arrays.deepToString(lonerObjectArray)));
+        Assertions.assertTrue(
+                edu.marywood.util.Arrays.deepToString(omegaObjectArray)
+                        .equals(java.util.Arrays.deepToString(omegaObjectArray)));
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.deepToString(rangeObjectArray)
                         .equals(java.util.Arrays.deepToString(rangeObjectArray)));
