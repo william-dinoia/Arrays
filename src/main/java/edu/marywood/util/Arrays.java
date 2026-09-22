@@ -245,7 +245,13 @@ public class Arrays {
      */
     private static String deepToString(Object object, Set<Object[]> objectSet) {
         return switch (object) {
-            case Object[] objectArray -> Arrays.deepToString(objectArray);
+            case Object[] objectArray -> {
+                if (objectSet.contains(objectArray)) {
+                    yield "[...]";
+                } else {
+                    yield Arrays.deepToString(objectArray);
+                }
+            }
             case boolean[] booleanArray -> Arrays.toString(booleanArray);
             case byte[] byteArray -> Arrays.toString(byteArray);
             case char[] charArray -> Arrays.toString(charArray);
