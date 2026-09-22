@@ -1,5 +1,6 @@
 package edu.marywood.util;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -16,21 +17,7 @@ public class Arrays {
      * @return {@link String}
      */
     public static String deepToString(Object[] objectArray) {
-        if (objectArray == null) {
-            return "null";
-        } else if (objectArray.length == 0) {
-            return "[]";
-        } else {
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append('[');
-            stringBuilder.append(Arrays.deepToString(objectArray[0]));
-            for (int index = 1; index < objectArray.length; index += 1) {
-                stringBuilder.append(", ");
-                stringBuilder.append(Arrays.deepToString(objectArray[index]));
-            }
-            stringBuilder.append(']');
-            return stringBuilder.toString();
-        }
+        return Arrays.deepToString(objectArray, new HashSet<>());
     }
 
     /**
