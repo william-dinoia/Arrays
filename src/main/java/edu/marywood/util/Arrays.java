@@ -140,7 +140,6 @@ public class Arrays {
             return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.ensureCapacity(5 * doubleArray.length);
             stringBuilder.append('[');
             stringBuilder.append(doubleArray[0]);
             for (int index = 1; index < doubleArray.length; index += 1) {
