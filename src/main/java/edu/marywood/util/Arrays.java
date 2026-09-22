@@ -164,7 +164,6 @@ public class Arrays {
             return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.ensureCapacity(5 * floatArray.length);
             stringBuilder.append('[');
             stringBuilder.append(floatArray[0]);
             for (int index = 1; index < floatArray.length; index += 1) {
