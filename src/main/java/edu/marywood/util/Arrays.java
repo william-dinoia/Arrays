@@ -1,5 +1,7 @@
 package edu.marywood.util;
 
+import java.util.Set;
+
 /**
  * Defines {@link Arrays}.
  *
@@ -267,5 +269,30 @@ public class Arrays {
             case short[] shortArray -> Arrays.toString(shortArray);
             default -> object.toString();
         };
+    }
+
+    /**
+     * Converts an {@link Object}{@code []} to a {@link String}.
+     *
+     * @param objectArray {@link Object}{@code []}
+     * @param objectSet {@link Object}{@link Set}
+     * @return {@link String}
+     */
+    private static String deepToString(Object[] objectArray, Set<Object[]> objectSet) {
+        if (objectArray == null) {
+            return "null";
+        } else if (objectArray.length == 0) {
+            return "[]";
+        } else {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append('[');
+            stringBuilder.append(Arrays.deepToString(objectArray[0], objectSet));
+            for (int index = 1; index < objectArray.length; index += 1) {
+                stringBuilder.append(", ");
+                stringBuilder.append(Arrays.deepToString(objectArray[index], objectSet));
+            }
+            stringBuilder.append(']');
+            return stringBuilder.toString();
+        }
     }
 }
