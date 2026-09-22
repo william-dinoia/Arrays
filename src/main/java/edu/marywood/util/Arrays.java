@@ -253,9 +253,10 @@ public class Arrays {
      * Converts an {@link Object} to a {@link String}.
      *
      * @param object {@link Object}
+     * @param objectSet {@link Object}{@link Set}
      * @return {@link String}
      */
-    private static String deepToString(Object object) {
+    private static String deepToString(Object object, Set<Object[]> objectSet) {
         return switch (object) {
             case Object[] objectArray -> Arrays.deepToString(objectArray);
             case boolean[] booleanArray -> Arrays.toString(booleanArray);
