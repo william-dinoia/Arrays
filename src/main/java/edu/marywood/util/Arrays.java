@@ -278,6 +278,7 @@ public class Arrays {
         } else if (objectArray.length == 0) {
             return "[]";
         } else {
+            objectSet.add(objectArray);
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append('[');
             stringBuilder.append(Arrays.deepToString(objectArray[0], objectSet));
