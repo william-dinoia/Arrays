@@ -249,7 +249,7 @@ public class Arrays {
                 if (objectSet.contains(objectArray)) {
                     yield "[...]";
                 } else {
-                    yield Arrays.deepToString(objectArray);
+                    yield Arrays.deepToString(objectArray, objectSet);
                 }
             }
             case boolean[] booleanArray -> Arrays.toString(booleanArray);
