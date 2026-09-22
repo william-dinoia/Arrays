@@ -236,7 +236,6 @@ public class Arrays {
             return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.ensureCapacity(3 * shortArray.length);
             stringBuilder.append('[');
             stringBuilder.append(shortArray[0]);
             for (int index = 1; index < shortArray.length; index += 1) {
