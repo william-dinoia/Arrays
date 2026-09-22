@@ -212,7 +212,6 @@ public class Arrays {
             return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.ensureCapacity(3 * longArray.length);
             stringBuilder.append('[');
             stringBuilder.append(longArray[0]);
             for (int index = 1; index < longArray.length; index += 1) {
