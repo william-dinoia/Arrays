@@ -92,7 +92,6 @@ public class Arrays {
             return "[]";
         } else {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.ensureCapacity(3 * byteArray.length);
             stringBuilder.append('[');
             stringBuilder.append(byteArray[0]);
             for (int index = 1; index < byteArray.length; index += 1) {
