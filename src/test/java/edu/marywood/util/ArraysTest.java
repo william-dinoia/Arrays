@@ -249,7 +249,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.toString(rangeObjectArray)));
     }
 
-    /** Tests {@link Arrays.toString(short[])}. */
+    /** Tests {@code Arrays.toString(short[])}. */
     @Test
     public void toStringShortArray() {
         short[] blankShortArray = null;
