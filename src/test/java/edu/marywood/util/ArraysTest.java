@@ -98,7 +98,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.toString(rangeByteArray)));
     }
 
-    /** Tests {@link Arrays.toString(char[])}. */
+    /** Tests {@code Arrays.toString(char[])}. */
     @Test
     public void toStringCharArray() {
         char[] blankCharArray = null;
