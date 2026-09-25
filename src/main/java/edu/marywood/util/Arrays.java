@@ -269,22 +269,22 @@ public class Arrays {
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
-     * @param objectSet {@link Object}{@link Set}
+     * @param objectArraySet {@link Set}{@code <}{@link Object}{@code []}{@code >}
      * @return {@link String}
      */
-    private static String deepToString(Object[] objectArray, Set<Object[]> objectSet) {
+    private static String deepToString(Object[] objectArray, Set<Object[]> objectArraySet) {
         if (objectArray == null) {
             return "null";
         } else if (objectArray.length == 0) {
             return "[]";
         } else {
-            objectSet.add(objectArray);
+            objectArraySet.add(objectArray);
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append('[');
-            stringBuilder.append(Arrays.deepToString(objectArray[0], objectSet));
+            stringBuilder.append(Arrays.deepToString(objectArray[0], objectArraySet));
             for (int index = 1; index < objectArray.length; index += 1) {
                 stringBuilder.append(", ");
-                stringBuilder.append(Arrays.deepToString(objectArray[index], objectSet));
+                stringBuilder.append(Arrays.deepToString(objectArray[index], objectArraySet));
             }
             stringBuilder.append(']');
             return stringBuilder.toString();
