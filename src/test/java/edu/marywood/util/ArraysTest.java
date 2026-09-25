@@ -119,7 +119,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.toString(rangeCharArray)));
     }
 
-    /** Tests {@link Arrays.toString(double[])}. */
+    /** Tests {@code Arrays.toString(double[])}. */
     @Test
     public void toStringDoubleArray() {
         double[] blankDoubleArray = null;
