@@ -140,7 +140,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.toString(rangeDoubleArray)));
     }
 
-    /** Tests {@link Arrays.toString(float[])}. */
+    /** Tests {@code Arrays.toString(float[])}. */
     @Test
     public void toStringFloatArray() {
         float[] blankFloatArray = null;
