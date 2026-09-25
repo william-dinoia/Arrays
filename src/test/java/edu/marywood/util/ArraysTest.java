@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 public class ArraysTest {
 
-    /** Tests {@link Arrays.deepToString(Object[])}. */
+    /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
     public void deepToStringObjectArray() {
         Object[] blankObjectArray = null;
