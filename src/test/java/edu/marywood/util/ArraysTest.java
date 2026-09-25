@@ -203,7 +203,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.toString(rangeLongArray)));
     }
 
-    /** Tests {@link Arrays.toString(Object[])}. */
+    /** Tests {@code Arrays.toString(Object[])}. */
     @Test
     public void toStringObjectArray() {
         Object[] blankObjectArray = null;
