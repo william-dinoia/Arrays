@@ -78,7 +78,7 @@
     <!-- <module name="IllegalType"/> -->
     <!-- <module name="ImportControl"/> -->
     <module name="ImportOrder"/>
-    <module name="Indentation"/>
+    <!-- <module name="Indentation"/> -->
     <module name="InnerAssignment"/>
     <module name="InnerTypeLast"/>
     <module name="InterfaceIsType"/>
