@@ -56,7 +56,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.deepToString(rangeObjectArray)));
     }
 
-    /** Tests {@link Arrays.toString(boolean[])}. */
+    /** Tests {@code Arrays.toString(boolean[])}. */
     @Test
     public void toStringBooleanArray() {
         boolean[] blankBooleanArray = null;
