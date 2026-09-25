@@ -69,7 +69,6 @@
         <configuration>
           <configLocation>src/main/resources/checkstyle/configuration.xml</configLocation>
           <includeTestSourceDirectory>true</includeTestSourceDirectory>
-          <suppressionsLocation>src/main/resources/checkstyle/suppressions.xml</suppressionsLocation>
         </configuration>
       </plugin>
       <plugin>
