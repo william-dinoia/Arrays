@@ -240,16 +240,16 @@ public class Arrays {
      * Converts an {@link Object} to a {@link String}.
      *
      * @param object {@link Object}
-     * @param objectSet {@link Object}{@link Set}
+     * @param objectArraySet {@link Set}{@code <}{@link Object}{@code []}{@code >}
      * @return {@link String}
      */
-    private static String deepToString(Object object, Set<Object[]> objectSet) {
+    private static String deepToString(Object object, Set<Object[]> objectArraySet) {
         return switch (object) {
             case Object[] objectArray -> {
-                if (objectSet.contains(objectArray)) {
+                if (objectArraySet.contains(objectArray)) {
                     yield "[...]";
                 } else {
-                    yield Arrays.deepToString(objectArray, objectSet);
+                    yield Arrays.deepToString(objectArray, objectArraySet);
                 }
             }
             case boolean[] booleanArray -> Arrays.toString(booleanArray);
