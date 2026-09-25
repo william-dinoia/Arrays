@@ -161,7 +161,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.toString(rangeFloatArray)));
     }
 
-    /** Tests {@link Arrays.toString(int[])}. */
+    /** Tests {@code Arrays.toString(int[])}. */
     @Test
     public void toStringIntArray() {
         int[] blankIntArray = null;
