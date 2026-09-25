@@ -77,7 +77,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.toString(rangeBooleanArray)));
     }
 
-    /** Tests {@link Arrays.toString(byte[])}. */
+    /** Tests {@code Arrays.toString(byte[])}. */
     @Test
     public void toStringByteArray() {
         byte[] blankByteArray = null;
