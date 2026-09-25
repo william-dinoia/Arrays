@@ -17,7 +17,7 @@ public class Arrays {
      * @return {@link String}
      */
     public static String deepToString(Object[] objectArray) {
-        return Arrays.deepToString(objectArray, new HashSet<>());
+        return Arrays.deepToString(objectArray, new HashSet<Object[]>());
     }
 
     /**
