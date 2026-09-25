@@ -182,7 +182,7 @@ public class ArraysTest {
                         .equals(java.util.Arrays.toString(rangeIntArray)));
     }
 
-    /** Tests {@link Arrays.toString(long[])}. */
+    /** Tests {@code Arrays.toString(long[])}. */
     @Test
     public void toStringLongArray() {
         long[] blankLongArray = null;
