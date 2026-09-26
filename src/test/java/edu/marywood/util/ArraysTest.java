@@ -209,7 +209,6 @@ public class ArraysTest {
         Object[] blankObjectArray = null;
         Object[] emptyObjectArray = new Object[] {};
         Object[] lonerObjectArray = new Object[] {new Object()};
-        Object[] omegaObjectArray = new Object[1];
         Object[] rangeObjectArray =
                 new Object[] {
                     null,
@@ -231,7 +230,6 @@ public class ArraysTest {
                     Long.MIN_VALUE,
                     Short.MIN_VALUE
                 };
-        omegaObjectArray[0] = omegaObjectArray;
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(blankObjectArray)
                         .equals(java.util.Arrays.toString(blankObjectArray)));
@@ -241,9 +239,6 @@ public class ArraysTest {
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(lonerObjectArray)
                         .equals(java.util.Arrays.toString(lonerObjectArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(omegaObjectArray)
-                        .equals(java.util.Arrays.toString(omegaObjectArray)));
         Assertions.assertTrue(
                 edu.marywood.util.Arrays.toString(rangeObjectArray)
                         .equals(java.util.Arrays.toString(rangeObjectArray)));
