@@ -1,6 +1,7 @@
 package edu.marywood.util;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -45,6 +46,59 @@ public class ArraysTest {
     private static long[] rangeLongArray;
     private static Object[] rangeObjectArray;
     private static short[] rangeShortArray;
+
+    /** The ``before all'' method of {@link ArraysTest}. */
+    @BeforeAll
+    public static void beforeAll() {
+        blankBooleanArray = null;
+        emptyBooleanArray = new boolean[] {};
+        lonerBooleanArray = new boolean[] {false};
+        rangeBooleanArray = new boolean[] {false, true};
+        blankByteArray = null;
+        emptyByteArray = new byte[] {};
+        lonerByteArray = new byte[] {Byte.MIN_VALUE};
+        rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
+        blankCharArray = null;
+        emptyCharArray = new char[] {};
+        lonerCharArray = new char[] {Character.MIN_VALUE};
+        rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
+        blankDoubleArray = null;
+        emptyDoubleArray = new double[] {};
+        lonerDoubleArray = new double[] {Double.MIN_VALUE};
+        rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
+        blankFloatArray = null;
+        emptyFloatArray = new float[] {};
+        lonerFloatArray = new float[] {Float.MIN_VALUE};
+        rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
+        blankIntArray = null;
+        emptyIntArray = new int[] {};
+        lonerIntArray = new int[] {Integer.MIN_VALUE};
+        rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
+        blankLongArray = null;
+        emptyLongArray = new long[] {};
+        lonerLongArray = new long[] {Long.MIN_VALUE};
+        rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
+        blankObjectArray = null;
+        emptyObjectArray = new Object[] {};
+        lonerObjectArray = new Object[] {new Object()};
+        rangeObjectArray =
+                new Object[] {
+                    null,
+                    new Object(),
+                    new boolean[] {true, false},
+                    new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE},
+                    new char[] {Character.MIN_VALUE, Character.MAX_VALUE},
+                    new double[] {Double.MIN_VALUE, Double.MAX_VALUE},
+                    new float[] {Float.MIN_VALUE, Float.MAX_VALUE},
+                    new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE},
+                    new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
+                    new short[] {Short.MIN_VALUE, Short.MAX_VALUE}
+                };
+        blankShortArray = null;
+        emptyShortArray = new short[] {};
+        lonerShortArray = new short[] {Short.MIN_VALUE};
+        rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
+    }
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
