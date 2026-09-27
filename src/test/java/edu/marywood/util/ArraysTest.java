@@ -268,42 +268,18 @@ public class ArraysTest {
     /** Tests {@code Arrays.toString(Object[])}. */
     @Test
     public void toStringObjectArray() {
-        Object[] blankObjectArray = null;
-        Object[] emptyObjectArray = new Object[] {};
-        Object[] lonerObjectArray = new Object[] {new Object()};
-        Object[] rangeObjectArray =
-                new Object[] {
-                    null,
-                    emptyObjectArray,
-                    new boolean[] {true, false},
-                    new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE},
-                    new char[] {Character.MIN_VALUE, Character.MAX_VALUE},
-                    new double[] {Double.MIN_VALUE, Double.MAX_VALUE},
-                    new float[] {Float.MIN_VALUE, Float.MAX_VALUE},
-                    new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE},
-                    new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
-                    new short[] {Short.MIN_VALUE, Short.MAX_VALUE},
-                    true,
-                    Byte.MIN_VALUE,
-                    Character.MIN_VALUE,
-                    Double.MIN_VALUE,
-                    Float.MIN_VALUE,
-                    Integer.MIN_VALUE,
-                    Long.MIN_VALUE,
-                    Short.MIN_VALUE
-                };
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(blankObjectArray)
-                        .equals(java.util.Arrays.toString(blankObjectArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(emptyObjectArray)
-                        .equals(java.util.Arrays.toString(emptyObjectArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(lonerObjectArray)
-                        .equals(java.util.Arrays.toString(lonerObjectArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(rangeObjectArray)
-                        .equals(java.util.Arrays.toString(rangeObjectArray)));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(blankObjectArray),
+                edu.marywood.util.Arrays.toString(blankObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(emptyObjectArray),
+                edu.marywood.util.Arrays.toString(emptyObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(lonerObjectArray),
+                edu.marywood.util.Arrays.toString(lonerObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(rangeObjectArray),
+                edu.marywood.util.Arrays.toString(rangeObjectArray));
     }
 
     /** Tests {@code Arrays.toString(short[])}. */
