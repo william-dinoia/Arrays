@@ -44,6 +44,7 @@ public class ArraysTest {
     private static int[] rangeIntArray;
     private static long[] rangeLongArray;
     private static Object[] rangeObjectArray;
+    private static short[] rangeShortArray;
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
