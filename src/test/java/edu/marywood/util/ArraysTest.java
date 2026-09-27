@@ -20,6 +20,7 @@ public class ArraysTest {
     private static char[] lonerCharArray;
     private static boolean[] rangeBooleanArray;
     private static byte[] rangeByteArray;
+    private static char[] rangeCharArray;
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
