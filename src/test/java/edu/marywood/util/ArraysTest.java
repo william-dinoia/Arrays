@@ -285,21 +285,17 @@ public class ArraysTest {
     /** Tests {@code Arrays.toString(short[])}. */
     @Test
     public void toStringShortArray() {
-        short[] blankShortArray = null;
-        short[] emptyShortArray = new short[] {};
-        short[] lonerShortArray = new short[] {Short.MIN_VALUE};
-        short[] rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(blankShortArray)
-                        .equals(java.util.Arrays.toString(blankShortArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(emptyShortArray)
-                        .equals(java.util.Arrays.toString(emptyShortArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(lonerShortArray)
-                        .equals(java.util.Arrays.toString(lonerShortArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(rangeShortArray)
-                        .equals(java.util.Arrays.toString(rangeShortArray)));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(blankShortArray),
+                edu.marywood.util.Arrays.toString(blankShortArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(emptyShortArray),
+                edu.marywood.util.Arrays.toString(emptyShortArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(lonerShortArray),
+                edu.marywood.util.Arrays.toString(lonerShortArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(rangeShortArray),
+                edu.marywood.util.Arrays.toString(rangeShortArray));
     }
 }
