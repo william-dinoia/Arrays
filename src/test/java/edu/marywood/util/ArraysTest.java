@@ -51,36 +51,39 @@ public class ArraysTest {
     @BeforeAll
     public static void beforeAll() {
         blankBooleanArray = null;
-        emptyBooleanArray = new boolean[] {};
-        lonerBooleanArray = new boolean[] {false};
-        rangeBooleanArray = new boolean[] {false, true};
         blankByteArray = null;
-        emptyByteArray = new byte[] {};
-        lonerByteArray = new byte[] {Byte.MIN_VALUE};
-        rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
         blankCharArray = null;
-        emptyCharArray = new char[] {};
-        lonerCharArray = new char[] {Character.MIN_VALUE};
-        rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
         blankDoubleArray = null;
-        emptyDoubleArray = new double[] {};
-        lonerDoubleArray = new double[] {Double.MIN_VALUE};
-        rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
         blankFloatArray = null;
-        emptyFloatArray = new float[] {};
-        lonerFloatArray = new float[] {Float.MIN_VALUE};
-        rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
         blankIntArray = null;
-        emptyIntArray = new int[] {};
-        lonerIntArray = new int[] {Integer.MIN_VALUE};
-        rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
         blankLongArray = null;
-        emptyLongArray = new long[] {};
-        lonerLongArray = new long[] {Long.MIN_VALUE};
-        rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
         blankObjectArray = null;
+        blankShortArray = null;
+        emptyBooleanArray = new boolean[] {};
+        emptyByteArray = new byte[] {};
+        emptyCharArray = new char[] {};
+        emptyDoubleArray = new double[] {};
+        emptyFloatArray = new float[] {};
+        emptyIntArray = new int[] {};
+        emptyLongArray = new long[] {};
         emptyObjectArray = new Object[] {};
+        emptyShortArray = new short[] {};
+        lonerBooleanArray = new boolean[] {false};
+        lonerByteArray = new byte[] {Byte.MIN_VALUE};
+        lonerCharArray = new char[] {Character.MIN_VALUE};
+        lonerDoubleArray = new double[] {Double.MIN_VALUE};
+        lonerFloatArray = new float[] {Float.MIN_VALUE};
+        lonerIntArray = new int[] {Integer.MIN_VALUE};
+        lonerLongArray = new long[] {Long.MIN_VALUE};
         lonerObjectArray = new Object[] {new Object()};
+        lonerShortArray = new short[] {Short.MIN_VALUE};
+        rangeBooleanArray = new boolean[] {false, true};
+        rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
+        rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
+        rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
+        rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
+        rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
+        rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
         rangeObjectArray =
                 new Object[] {
                     null,
@@ -94,9 +97,6 @@ public class ArraysTest {
                     new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
                     new short[] {Short.MIN_VALUE, Short.MAX_VALUE}
                 };
-        blankShortArray = null;
-        emptyShortArray = new short[] {};
-        lonerShortArray = new short[] {Short.MIN_VALUE};
         rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
     }
 
