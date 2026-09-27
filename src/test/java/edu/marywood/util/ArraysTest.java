@@ -32,6 +32,7 @@ public class ArraysTest {
     private static char[] rangeCharArray;
     private static double[] rangeDoubleArray;
     private static float[] rangeFloatArray;
+    private static int[] rangeIntArray;
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
