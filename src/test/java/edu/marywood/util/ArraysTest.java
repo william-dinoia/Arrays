@@ -16,6 +16,7 @@ public class ArraysTest {
     private static boolean[] lonerBooleanArray;
     private static byte[] lonerByteArray;
     private static boolean[] rangeBooleanArray;
+    private static byte[] rangeByteArray;
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
