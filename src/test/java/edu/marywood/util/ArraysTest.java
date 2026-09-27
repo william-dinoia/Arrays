@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class ArraysTest {
+    private static boolean[] blankBooleanArray;
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
