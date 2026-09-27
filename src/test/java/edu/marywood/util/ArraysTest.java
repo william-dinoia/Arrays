@@ -123,6 +123,23 @@ public class ArraysTest {
                 edu.marywood.util.Arrays.deepToString(rangeObjectArray));
     }
 
+    /** Tests {@code Arrays.hashCode(boolean[])}. */
+    @Test
+    public void hashCodeBooleanArray() {
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(blankBooleanArray),
+                edu.marywood.util.Arrays.hashCode(blankBooleanArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(emptyBooleanArray),
+                edu.marywood.util.Arrays.hashCode(emptyBooleanArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(lonerBooleanArray),
+                edu.marywood.util.Arrays.hashCode(lonerBooleanArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(rangeBooleanArray),
+                edu.marywood.util.Arrays.hashCode(rangeBooleanArray));
+    }
+
     /** Tests {@code Arrays.toString(boolean[])}. */
     @Test
     public void toStringBooleanArray() {
