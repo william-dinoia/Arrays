@@ -12,6 +12,7 @@ public class ArraysTest {
     private static boolean[] blankBooleanArray;
     private static byte[] blankByteArray;
     private static char[] blankCharArray;
+    private static double[] blankDoubleArray;
     private static boolean[] emptyBooleanArray;
     private static byte[] emptyByteArray;
     private static char[] emptyCharArray;
