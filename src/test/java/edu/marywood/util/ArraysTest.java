@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 public class ArraysTest {
     private static boolean[] blankBooleanArray;
     private static byte[] blankByteArray;
+    private static char[] blankCharArray;
     private static boolean[] emptyBooleanArray;
     private static byte[] emptyByteArray;
     private static boolean[] lonerBooleanArray;
