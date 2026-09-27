@@ -35,6 +35,7 @@ public class ArraysTest {
     private static int[] lonerIntArray;
     private static long[] lonerLongArray;
     private static Object[] lonerObjectArray;
+    private static short[] lonerShortArray;
     private static boolean[] rangeBooleanArray;
     private static byte[] rangeByteArray;
     private static char[] rangeCharArray;
