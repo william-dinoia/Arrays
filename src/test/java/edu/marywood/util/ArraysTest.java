@@ -17,6 +17,7 @@ public class ArraysTest {
     private static int[] blankIntArray;
     private static long[] blankLongArray;
     private static Object[] blankObjectArray;
+    private static short[] blankShortArray;
     private static boolean[] emptyBooleanArray;
     private static byte[] emptyByteArray;
     private static char[] emptyCharArray;
