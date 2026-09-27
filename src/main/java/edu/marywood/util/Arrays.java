@@ -22,6 +22,24 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code boolean[]}.
+     *
+     * @param booleanArray {@code boolean[]}
+     * @return {@code int}
+     */
+    public static int hashCode(boolean[] booleanArray) {
+        if (booleanArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (boolean element : booleanArray) {
+                hashCode = PRIME * hashCode + Boolean.hashCode(element);
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
