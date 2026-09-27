@@ -22,6 +22,7 @@ public class ArraysTest {
     private static double[] emptyDoubleArray;
     private static float[] emptyFloatArray;
     private static int[] emptyIntArray;
+    private static long[] emptyLongArray;
     private static boolean[] lonerBooleanArray;
     private static byte[] lonerByteArray;
     private static char[] lonerCharArray;
