@@ -149,22 +149,18 @@ public class ArraysTest {
     /** Tests {@code Arrays.toString(boolean[])}. */
     @Test
     public void toStringBooleanArray() {
-        boolean[] blankBooleanArray = null;
-        boolean[] emptyBooleanArray = new boolean[] {};
-        boolean[] lonerBooleanArray = new boolean[] {false};
-        boolean[] rangeBooleanArray = new boolean[] {false, true};
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(blankBooleanArray)
-                        .equals(java.util.Arrays.toString(blankBooleanArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(emptyBooleanArray)
-                        .equals(java.util.Arrays.toString(emptyBooleanArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(lonerBooleanArray)
-                        .equals(java.util.Arrays.toString(lonerBooleanArray)));
-        Assertions.assertTrue(
-                edu.marywood.util.Arrays.toString(rangeBooleanArray)
-                        .equals(java.util.Arrays.toString(rangeBooleanArray)));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(blankBooleanArray),
+                edu.marywood.util.Arrays.toString(blankBooleanArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(emptyBooleanArray),
+                edu.marywood.util.Arrays.toString(emptyBooleanArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(lonerBooleanArray),
+                edu.marywood.util.Arrays.toString(lonerBooleanArray));
+        Assertions.assertEquals(
+                java.util.Arrays.toString(rangeBooleanArray),
+                edu.marywood.util.Arrays.toString(rangeBooleanArray));
     }
 
     /** Tests {@code Arrays.toString(byte[])}. */
