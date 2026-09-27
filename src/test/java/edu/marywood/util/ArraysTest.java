@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 public class ArraysTest {
     private static boolean[] blankBooleanArray;
     private static boolean[] emptyBooleanArray;
+    private static boolean[] lonerBooleanArray;
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
