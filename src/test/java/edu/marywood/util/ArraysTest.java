@@ -107,20 +107,20 @@ public class ArraysTest {
         omegaObjectArray[0] = omegaObjectArray;
         omegaObjectArray[1] = rangeObjectArray;
         Assertions.assertEquals(
-                java.util.Arrays.toString(blankObjectArray),
-                edu.marywood.util.Arrays.toString(blankObjectArray));
+                java.util.Arrays.deepToString(blankObjectArray),
+                edu.marywood.util.Arrays.deepToString(blankObjectArray));
         Assertions.assertEquals(
-                java.util.Arrays.toString(emptyObjectArray),
-                edu.marywood.util.Arrays.toString(emptyObjectArray));
+                java.util.Arrays.deepToString(emptyObjectArray),
+                edu.marywood.util.Arrays.deepToString(emptyObjectArray));
         Assertions.assertEquals(
-                java.util.Arrays.toString(lonerObjectArray),
-                edu.marywood.util.Arrays.toString(lonerObjectArray));
+                java.util.Arrays.deepToString(lonerObjectArray),
+                edu.marywood.util.Arrays.deepToString(lonerObjectArray));
         Assertions.assertEquals(
-                java.util.Arrays.toString(omegaObjectArray),
-                edu.marywood.util.Arrays.toString(omegaObjectArray));
+                java.util.Arrays.deepToString(omegaObjectArray),
+                edu.marywood.util.Arrays.deepToString(omegaObjectArray));
         Assertions.assertEquals(
-                java.util.Arrays.toString(rangeObjectArray),
-                edu.marywood.util.Arrays.toString(rangeObjectArray));
+                java.util.Arrays.deepToString(rangeObjectArray),
+                edu.marywood.util.Arrays.deepToString(rangeObjectArray));
     }
 
     /** Tests {@code Arrays.toString(boolean[])}. */
