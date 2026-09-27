@@ -20,6 +20,7 @@ public class ArraysTest {
     private static boolean[] lonerBooleanArray;
     private static byte[] lonerByteArray;
     private static char[] lonerCharArray;
+    private static double[] lonerDoubleArray;
     private static boolean[] rangeBooleanArray;
     private static byte[] rangeByteArray;
     private static char[] rangeCharArray;
