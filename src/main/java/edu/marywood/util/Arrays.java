@@ -9,6 +9,7 @@ import java.util.Set;
  * @author William DiNoia
  */
 public class Arrays {
+    private static final int PRIME = 31;
 
     /**
      * Converts an {@link Object}{@code []} to a {@link String}.
