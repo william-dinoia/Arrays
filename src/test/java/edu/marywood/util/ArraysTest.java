@@ -40,6 +40,7 @@ public class ArraysTest {
     private static float[] rangeFloatArray;
     private static int[] rangeIntArray;
     private static long[] rangeLongArray;
+    private static Object[] rangeObjectArray;
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
