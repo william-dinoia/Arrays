@@ -24,6 +24,7 @@ public class ArraysTest {
     private static boolean[] rangeBooleanArray;
     private static byte[] rangeByteArray;
     private static char[] rangeCharArray;
+    private static double[] rangeDoubleArray;
 
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
