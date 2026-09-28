@@ -40,6 +40,24 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code byte[]}.
+     *
+     * @param byteArray {@code byte[]}
+     * @return {@code int}
+     */
+    public static int hashCode(byte[] byteArray) {
+        if (byteArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (byte element : byteArray) {
+                hashCode = PRIME * hashCode + Byte.hashCode(element);
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
