@@ -58,6 +58,24 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code char[]}.
+     *
+     * @param charArray {@code char[]}
+     * @return {@code int}
+     */
+    public static int hashCode(char[] charArray) {
+        if (charArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (char element : charArray) {
+                hashCode = PRIME * hashCode + Character.hashCode(element);
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
