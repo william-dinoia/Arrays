@@ -157,6 +157,23 @@ public class ArraysTest {
                 edu.marywood.util.Arrays.hashCode(rangeByteArray));
     }
 
+    /** Tests {@code Arrays.hashCode(char[])}. */
+    @Test
+    public void hashCodeCharArray() {
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(blankCharArray),
+                edu.marywood.util.Arrays.hashCode(blankCharArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(emptyCharArray),
+                edu.marywood.util.Arrays.hashCode(emptyCharArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(lonerCharArray),
+                edu.marywood.util.Arrays.hashCode(lonerCharArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(rangeCharArray),
+                edu.marywood.util.Arrays.hashCode(rangeCharArray));
+    }
+
     /** Tests {@code Arrays.toString(boolean[])}. */
     @Test
     public void toStringBooleanArray() {
