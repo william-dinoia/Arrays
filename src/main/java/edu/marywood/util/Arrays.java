@@ -76,6 +76,24 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code double[]}.
+     *
+     * @param doubleArray {@code double[]}
+     * @return {@code int}
+     */
+    public static int hashCode(double[] doubleArray) {
+        if (doubleArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (double element : doubleArray) {
+                hashCode = PRIME * hashCode + Double.hashCode(element);
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
