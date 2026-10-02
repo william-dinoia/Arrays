@@ -203,6 +203,13 @@ public class Benchmarks {
         java.util.Arrays.hashCode(floatArray);
     }
 
+    /** OpenJDK hashCode(int[]) Benchmark. */
+    @Benchmark
+    @Group("hashCodeIntArray")
+    public void openJDKHashCodeIntArray() {
+        java.util.Arrays.hashCode(intArray);
+    }
+
     /** OpenJDK toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
