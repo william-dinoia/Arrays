@@ -22,6 +22,28 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code Object[]}.
+     *
+     * @param objectArray {@code Object[]}
+     * @return {@code int}
+     */
+    public static int hashCode(Object[] objectArray) {
+        if (objectArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (Object element : objectArray) {
+                if (element == null) {
+                    hashCode = PRIME * hashCode;
+                } else {
+                    hashCode = PRIME * hashCode + element.hashCode();
+                }
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Gets the hashcode of a {@code boolean[]}.
      *
      * @param booleanArray {@code boolean[]}
