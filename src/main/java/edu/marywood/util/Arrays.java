@@ -94,6 +94,24 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code float[]}.
+     *
+     * @param floatArray {@code float[]}
+     * @return {@code int}
+     */
+    public static int hashCode(float[] floatArray) {
+        if (floatArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (float element : floatArray) {
+                hashCode = PRIME * hashCode + Float.hashCode(element);
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
