@@ -112,6 +112,24 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code int[]}.
+     *
+     * @param intArray {@code int[]}
+     * @return {@code int}
+     */
+    public static int hashCode(int[] intArray) {
+        if (intArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (int element : intArray) {
+                hashCode = PRIME * hashCode + Integer.hashCode(element);
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
