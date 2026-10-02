@@ -242,6 +242,23 @@ public class ArraysTest {
                 edu.marywood.util.Arrays.hashCode(rangeLongArray));
     }
 
+    /** Tests {@code Arrays.hashCode(Object[])}. */
+    @Test
+    public void hashCodeObjectArray() {
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(blankObjectArray),
+                edu.marywood.util.Arrays.hashCode(blankObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(emptyObjectArray),
+                edu.marywood.util.Arrays.hashCode(emptyObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(lonerObjectArray),
+                edu.marywood.util.Arrays.hashCode(lonerObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.hashCode(rangeObjectArray),
+                edu.marywood.util.Arrays.hashCode(rangeObjectArray));
+    }
+
     /** Tests {@code Arrays.hashCode(short[])}. */
     @Test
     public void hashCodeShortArray() {
