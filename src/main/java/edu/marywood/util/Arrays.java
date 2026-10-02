@@ -148,6 +148,24 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code short[]}.
+     *
+     * @param shortArray {@code short[]}
+     * @return {@code int}
+     */
+    public static int hashCode(short[] shortArray) {
+        if (shortArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (short element : shortArray) {
+                hashCode = PRIME * hashCode + Short.hashCode(element);
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
