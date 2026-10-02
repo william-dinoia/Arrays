@@ -231,6 +231,13 @@ public class Benchmarks {
         java.util.Arrays.hashCode(longArray);
     }
 
+    /** OpenJDK hashCode(short[]) Benchmark. */
+    @Benchmark
+    @Group("hashCodeShortArray")
+    public void openJDKHashCodeShortArray() {
+        java.util.Arrays.hashCode(shortArray);
+    }
+
     /** OpenJDK toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
