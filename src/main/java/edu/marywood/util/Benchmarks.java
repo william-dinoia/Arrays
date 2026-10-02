@@ -91,6 +91,13 @@ public class Benchmarks {
         edu.marywood.util.Arrays.hashCode(floatArray);
     }
 
+    /** Marywood hashCode(int[]) Benchmark. */
+    @Benchmark
+    @Group("hashCodeIntArray")
+    public void marywoodHashCodeIntArray() {
+        edu.marywood.util.Arrays.hashCode(intArray);
+    }
+
     /** Marywood toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
