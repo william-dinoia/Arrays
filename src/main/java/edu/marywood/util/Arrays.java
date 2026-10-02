@@ -130,6 +130,24 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@code long[]}.
+     *
+     * @param longArray {@code long[]}
+     * @return {@code int}
+     */
+    public static int hashCode(long[] longArray) {
+        if (longArray == null) {
+            return 0;
+        } else {
+            int hashCode = 1;
+            for (long element : longArray) {
+                hashCode = PRIME * hashCode + Long.hashCode(element);
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
