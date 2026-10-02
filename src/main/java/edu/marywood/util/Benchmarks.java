@@ -105,6 +105,13 @@ public class Benchmarks {
         edu.marywood.util.Arrays.hashCode(longArray);
     }
 
+    /** Marywood hashCode(Object[]) Benchmark. */
+    @Benchmark
+    @Group("hashCodeObjectArray")
+    public void marywoodHashCodeObjectArray() {
+        edu.marywood.util.Arrays.hashCode(objectArray);
+    }
+
     /** Marywood hashCode(short[]) Benchmark. */
     @Benchmark
     @Group("hashCodeShortArray")
