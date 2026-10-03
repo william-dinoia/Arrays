@@ -11,18 +11,19 @@ This project mirrors a subset of methods from the Java utility class, util.Array
 | Apache Maven            | >=3.9.9   |
 | OpenJDK Development Kit | >=21.0.12 |
 
-## Examples
-
-### Spotless
-
-```shell
-mvn spotless:apply
-```
+## Maven Commands
 
 ### Checkstyle
 
 ```shell
 mvn checkstyle:check
+```
+
+### Spotless
+
+```shell
+mvn spotless:check
+mvn spotless:apply
 ```
 
 ### JUnit
@@ -34,7 +35,7 @@ mvn test
 ### JMH
 
 ```shell
-mvn clean package
+mvn package
 java -jar target/Arrays-1.0.0-SNAPSHOT.jar
 ```
 
