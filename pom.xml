@@ -96,7 +96,7 @@
             <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>
             <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheNoticeResourceTransformer"/>
             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-              <mainClass>org.openjdk.jmh.Main</mainClass>
+              <mainClass>edu.marywood.util.Benchmarks</mainClass>
             </transformer>
           </transformers>
         </configuration>
