@@ -11,6 +11,11 @@ import java.util.Set;
 public class Arrays {
     private static final int PRIME = 31;
 
+    /** Hides the constructor. */
+    private Arrays() {
+        throw new UnsupportedOperationException();
+    }
+
     /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
