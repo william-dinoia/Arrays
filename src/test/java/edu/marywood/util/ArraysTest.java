@@ -86,15 +86,15 @@ public class ArraysTest {
         rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
         rangeObjectArray =
                 new Object[] {
-                    null,
                     new Object(),
-                    new boolean[] {true, false},
+                    new boolean[] {false, true},
                     new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE},
                     new char[] {Character.MIN_VALUE, Character.MAX_VALUE},
                     new double[] {Double.MIN_VALUE, Double.MAX_VALUE},
                     new float[] {Float.MIN_VALUE, Float.MAX_VALUE},
                     new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE},
                     new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
+                    null,
                     new short[] {Short.MIN_VALUE, Short.MAX_VALUE}
                 };
         rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
