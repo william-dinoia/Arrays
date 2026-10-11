@@ -5,11 +5,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
- * Defines {@link ArraysTest}.
+ * Defines {@link Tests}.
  *
  * @author William DiNoia
  */
-public class ArraysTest {
+public class Tests {
     private static boolean[] blankBooleanArray;
     private static byte[] blankByteArray;
     private static char[] blankCharArray;
@@ -47,7 +47,7 @@ public class ArraysTest {
     private static Object[] rangeObjectArray;
     private static short[] rangeShortArray;
 
-    /** The ``before all'' method of {@link ArraysTest}. */
+    /** The ``before all'' method of {@link Tests}. */
     @BeforeAll
     public static void beforeAll() {
         blankBooleanArray = null;
