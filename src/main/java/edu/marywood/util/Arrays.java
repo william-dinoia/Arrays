@@ -419,6 +419,30 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@link Object}{@code []}.
+     *
+     * @param objectArray {@link Object}{@code []}
+     * @param objectArraySet {@link Set}{@code <}{@link Object}{@code []}{@code >}
+     * @return {@code int}
+     */
+    private static int deepHashCode(Object[] objectArray, Set<Object[]> objectArraySet) {
+        if (objectArray == null) {
+            return 0;
+        } else {
+            objectArraySet.add(objectArray);
+            int hashCode = 1;
+            for (Object element : objectArray) {
+                if (element == null) {
+                    hashCode = PRIME * hashCode;
+                } else {
+                    hashCode = PRIME * hashCode + Arrays.deepHashCode(element, objectArraySet);
+                }
+            }
+            return hashCode;
+        }
+    }
+
+    /**
      * Converts an {@link Object} to a {@link String}.
      *
      * @param object {@link Object}
