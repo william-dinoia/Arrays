@@ -100,6 +100,36 @@ public class Tests {
         rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
     }
 
+    /** Tests {@code Arrays.deepHashCode(Object[])}. */
+    @Test
+    public void deepHashCodeObjectArray() {
+        Object[] omegaObjectArray = new Object[2];
+        omegaObjectArray[0] = omegaObjectArray;
+        omegaObjectArray[1] = rangeObjectArray;
+        Assertions.assertEquals(
+                java.util.Arrays.deepHashCode(blankObjectArray),
+                edu.marywood.util.Arrays.deepHashCode(blankObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.deepHashCode(emptyObjectArray),
+                edu.marywood.util.Arrays.deepHashCode(emptyObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.deepHashCode(lonerObjectArray),
+                edu.marywood.util.Arrays.deepHashCode(lonerObjectArray));
+        Assertions.assertEquals(
+                java.util.Arrays.deepHashCode(rangeObjectArray),
+                edu.marywood.util.Arrays.deepHashCode(rangeObjectArray));
+        Assertions.assertThrows(
+                StackOverflowError.class,
+                () -> {
+                    java.util.Arrays.deepHashCode(omegaObjectArray);
+                });
+        Assertions.assertThrows(
+                IllegalArgumentException.class,
+                () -> {
+                    edu.marywood.util.Arrays.deepHashCode(omegaObjectArray);
+                });
+    }
+
     /** Tests {@code Arrays.deepToString(Object[])}. */
     @Test
     public void deepToStringObjectArray() {
