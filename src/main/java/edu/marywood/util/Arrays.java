@@ -17,6 +17,16 @@ public class Arrays {
     }
 
     /**
+     * Gets the hashcode of a {@link Object}{@code []}.
+     *
+     * @param objectArray {@link Object}{@code []}
+     * @return {@code int}
+     */
+    public static int deepHashCode(Object[] objectArray) {
+        return Arrays.deepHashCode(objectArray, new HashSet<Object[]>());
+    }
+
+    /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
      * @param objectArray {@link Object}{@code []}
