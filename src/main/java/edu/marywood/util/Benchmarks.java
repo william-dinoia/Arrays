@@ -49,6 +49,13 @@ public class Benchmarks {
         runner.run();
     }
 
+    /** Marywood deepHashCode(Object[]) Benchmark. */
+    @Benchmark
+    @Group("deepHashCodeObjectArray")
+    public void marywoodDeepHashCodeObjectArray() {
+        edu.marywood.util.Arrays.deepHashCode(objectArray);
+    }
+
     /** Marywood deepToString(Object[]) Benchmark. */
     @Benchmark
     @Group("deepToStringObjectArray")
