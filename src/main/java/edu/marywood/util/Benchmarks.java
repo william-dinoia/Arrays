@@ -189,6 +189,13 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(shortArray);
     }
 
+    /** OpenJDK deepHashCode(Object[]) Benchmark. */
+    @Benchmark
+    @Group("deepHashCodeObjectArray")
+    public void openJDKDeepHashCodeObjectArray() {
+        java.util.Arrays.deepHashCode(objectArray);
+    }
+
     /** OpenJDK deepToString(Object[]) Benchmark. */
     @Benchmark
     @Group("deepToStringObjectArray")
