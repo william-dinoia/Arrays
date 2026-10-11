@@ -351,7 +351,7 @@ public class Benchmarks {
             longArray[index] = (index % 2 == 0) ? Long.MIN_VALUE : Long.MAX_VALUE;
             objectArray[index] =
                     switch (index % 10) {
-                        case 0 -> new boolean[] {true, false};
+                        case 0 -> new boolean[] {false, true};
                         case 1 -> new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
                         case 2 -> new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
                         case 3 -> new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
