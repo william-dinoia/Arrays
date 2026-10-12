@@ -95,6 +95,28 @@ public class Arrays {
         }
     }
 
+    private static String deepToString(Object object, Set<Object[]> objectArraySet) {
+        return switch (object) {
+            case Object[] objectArray -> {
+                if (objectArraySet.contains(objectArray)) {
+                    yield "[...]";
+                } else {
+                    yield Arrays.deepToString(objectArray, objectArraySet);
+                }
+            }
+            case boolean[] booleanArray -> Arrays.toString(booleanArray);
+            case byte[] byteArray -> Arrays.toString(byteArray);
+            case char[] charArray -> Arrays.toString(charArray);
+            case double[] doubleArray -> Arrays.toString(doubleArray);
+            case float[] floatArray -> Arrays.toString(floatArray);
+            case int[] intArray -> Arrays.toString(intArray);
+            case long[] longArray -> Arrays.toString(longArray);
+            case null -> "null";
+            case short[] shortArray -> Arrays.toString(shortArray);
+            default -> object.toString();
+        };
+    }
+
     /**
      * Gets the hashcode of a {@code Object[]}.
      *
@@ -475,34 +497,5 @@ public class Arrays {
             stringBuilder.append(']');
             return stringBuilder.toString();
         }
-    }
-
-    /**
-     * Converts an {@link Object} to a {@link String}.
-     *
-     * @param object {@link Object}
-     * @param objectArraySet {@link Set}{@code <}{@link Object}{@code []}{@code >}
-     * @return {@link String}
-     */
-    private static String deepToString(Object object, Set<Object[]> objectArraySet) {
-        return switch (object) {
-            case Object[] objectArray -> {
-                if (objectArraySet.contains(objectArray)) {
-                    yield "[...]";
-                } else {
-                    yield Arrays.deepToString(objectArray, objectArraySet);
-                }
-            }
-            case boolean[] booleanArray -> Arrays.toString(booleanArray);
-            case byte[] byteArray -> Arrays.toString(byteArray);
-            case char[] charArray -> Arrays.toString(charArray);
-            case double[] doubleArray -> Arrays.toString(doubleArray);
-            case float[] floatArray -> Arrays.toString(floatArray);
-            case int[] intArray -> Arrays.toString(intArray);
-            case long[] longArray -> Arrays.toString(longArray);
-            case null -> "null";
-            case short[] shortArray -> Arrays.toString(shortArray);
-            default -> object.toString();
-        };
     }
 }
