@@ -117,7 +117,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of an {@code Object[]}.
+     * Gets the hash code of an {@code Object[]}.
      *
      * @param objectArray {@code Object[]}
      * @return {@code int}
