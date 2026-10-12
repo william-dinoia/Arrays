@@ -355,7 +355,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts a {@code char[]} to a {@link String}.
+     * Converts a {@code char[]} to a {@link String} representation.
      *
      * @param charArray {@code char[]}
      * @return {@link String}
