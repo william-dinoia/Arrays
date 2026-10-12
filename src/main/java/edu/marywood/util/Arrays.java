@@ -427,7 +427,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts a {@code int[]} to a {@link String}.
+     * Converts a {@code int[]} to a {@link String} representation.
      *
      * @param intArray {@code int[]}
      * @return {@link String}
