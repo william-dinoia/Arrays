@@ -229,7 +229,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of a {@code int[]}.
+     * Gets the hash code of a {@code int[]}.
      *
      * @param intArray {@code int[]}
      * @return {@code int}
