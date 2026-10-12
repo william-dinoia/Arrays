@@ -283,7 +283,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts an {@link Object}{@code []} to a {@link String}.
+     * Converts an {@link Object}{@code []} to a {@link String} representation.
      *
      * @param objectArray {@link Object}{@code []}
      * @return {@link String}
