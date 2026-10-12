@@ -379,7 +379,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts a {@code double[]} to a {@link String}.
+     * Converts a {@code double[]} to a {@link String} representation.
      *
      * @param doubleArray {@code double[]}
      * @return {@link String}
