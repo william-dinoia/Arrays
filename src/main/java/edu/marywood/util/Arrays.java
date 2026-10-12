@@ -16,7 +16,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hash code of an {@link Object}{@code []}.
+     * Gets the deep hash code of an {@link Object}{@code []}.
      *
      * @param objectArray {@link Object}{@code []}
      * @return {@code int}
