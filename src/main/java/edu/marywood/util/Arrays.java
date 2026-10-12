@@ -139,7 +139,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of a {@code boolean[]}.
+     * Gets the hash code of a {@code boolean[]}.
      *
      * @param booleanArray {@code boolean[]}
      * @return {@code int}
