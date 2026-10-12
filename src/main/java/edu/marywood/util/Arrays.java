@@ -211,7 +211,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of a {@code float[]}.
+     * Gets the hash code of a {@code float[]}.
      *
      * @param floatArray {@code float[]}
      * @return {@code int}
