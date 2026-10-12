@@ -157,7 +157,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of a {@code byte[]}.
+     * Gets the hash code of a {@code byte[]}.
      *
      * @param byteArray {@code byte[]}
      * @return {@code int}
