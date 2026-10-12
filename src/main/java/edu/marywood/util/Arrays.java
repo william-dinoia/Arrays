@@ -43,6 +43,29 @@ public class Arrays {
         }
     }
 
+    private static int deepHashCode(Object object, Set<Object[]> objectArraySet)
+            throws IllegalArgumentException {
+        return switch (object) {
+            case Object[] objectArray -> {
+                if (objectArraySet.contains(objectArray)) {
+                    throw new IllegalArgumentException();
+                } else {
+                    yield Arrays.deepHashCode(objectArray, objectArraySet);
+                }
+            }
+            case boolean[] booleanArray -> Arrays.hashCode(booleanArray);
+            case byte[] byteArray -> Arrays.hashCode(byteArray);
+            case char[] charArray -> Arrays.hashCode(charArray);
+            case double[] doubleArray -> Arrays.hashCode(doubleArray);
+            case float[] floatArray -> Arrays.hashCode(floatArray);
+            case int[] intArray -> Arrays.hashCode(intArray);
+            case long[] longArray -> Arrays.hashCode(longArray);
+            case null -> 0;
+            case short[] shortArray -> Arrays.hashCode(shortArray);
+            default -> object.hashCode();
+        };
+    }
+
     /**
      * Converts an {@link Object}{@code []} to a {@link String}.
      *
@@ -433,37 +456,6 @@ public class Arrays {
             stringBuilder.append(']');
             return stringBuilder.toString();
         }
-    }
-
-    /**
-     * Gets the hashcode of a {@link Object}{@code []}.
-     *
-     * @param object {@link Object}
-     * @param objectArraySet {@link Set}{@code <}{@link Object}{@code []}{@code >}
-     * @return {@code int}
-     * @throws IllegalArgumentException If object references a parent {@link Object}{@code[]}.
-     */
-    private static int deepHashCode(Object object, Set<Object[]> objectArraySet)
-            throws IllegalArgumentException {
-        return switch (object) {
-            case Object[] objectArray -> {
-                if (objectArraySet.contains(objectArray)) {
-                    throw new IllegalArgumentException();
-                } else {
-                    yield Arrays.deepHashCode(objectArray, objectArraySet);
-                }
-            }
-            case boolean[] booleanArray -> Arrays.hashCode(booleanArray);
-            case byte[] byteArray -> Arrays.hashCode(byteArray);
-            case char[] charArray -> Arrays.hashCode(charArray);
-            case double[] doubleArray -> Arrays.hashCode(doubleArray);
-            case float[] floatArray -> Arrays.hashCode(floatArray);
-            case int[] intArray -> Arrays.hashCode(intArray);
-            case long[] longArray -> Arrays.hashCode(longArray);
-            case null -> 0;
-            case short[] shortArray -> Arrays.hashCode(shortArray);
-            default -> object.hashCode();
-        };
     }
 
     /**
