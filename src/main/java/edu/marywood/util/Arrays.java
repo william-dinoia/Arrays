@@ -451,7 +451,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts a {@code long[]} to a {@link String}.
+     * Converts a {@code long[]} to a {@link String} representation.
      *
      * @param longArray {@code long[]}
      * @return {@link String}
