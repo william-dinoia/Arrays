@@ -475,7 +475,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts a {@code short[]} to a {@link String}.
+     * Converts a {@code short[]} to a {@link String} representation.
      *
      * @param shortArray {@code short[]}
      * @return {@link String}
