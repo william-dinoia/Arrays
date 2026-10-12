@@ -66,7 +66,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts an {@link Object}{@code []} to a {@link String} representation.
+     * Converts an {@link Object}{@code []} to a deep {@link String} representation.
      *
      * @param objectArray {@link Object}{@code []}
      * @return {@link String}
