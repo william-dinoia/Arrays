@@ -265,7 +265,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of a {@code short[]}.
+     * Gets the hash code of a {@code short[]}.
      *
      * @param shortArray {@code short[]}
      * @return {@code int}
