@@ -331,7 +331,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts a {@code byte[]} to a {@link String}.
+     * Converts a {@code byte[]} to a {@link String} representation.
      *
      * @param byteArray {@code byte[]}
      * @return {@link String}
