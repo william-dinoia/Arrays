@@ -247,7 +247,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of a {@code long[]}.
+     * Gets the hash code of a {@code long[]}.
      *
      * @param longArray {@code long[]}
      * @return {@code int}
