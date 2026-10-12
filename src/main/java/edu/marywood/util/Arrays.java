@@ -307,7 +307,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts a {@code boolean[]} to a {@link String}.
+     * Converts a {@code boolean[]} to a {@link String} representation.
      *
      * @param booleanArray {@code boolean[]}
      * @return {@link String}
