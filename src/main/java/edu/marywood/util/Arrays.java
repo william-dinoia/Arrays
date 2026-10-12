@@ -403,7 +403,7 @@ public final class Arrays {
     }
 
     /**
-     * Converts a {@code float[]} to a {@link String}.
+     * Converts a {@code float[]} to a {@link String} representation.
      *
      * @param floatArray {@code float[]}
      * @return {@link String}
