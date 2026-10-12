@@ -11,8 +11,7 @@ import java.util.Set;
 public final class Arrays {
     private static final int PRIME = 31;
 
-    /** Hides the constructor. */
-    private Arrays() {
+    private Arrays() throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
 
