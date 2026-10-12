@@ -25,23 +25,6 @@ public final class Arrays {
         return Arrays.deepHashCode(objectArray, new HashSet<Object[]>());
     }
 
-    private static int deepHashCode(Object[] objectArray, Set<Object[]> objectArraySet) {
-        if (objectArray == null) {
-            return 0;
-        } else {
-            objectArraySet.add(objectArray);
-            int hashCode = 1;
-            for (Object element : objectArray) {
-                if (element == null) {
-                    hashCode = PRIME * hashCode;
-                } else {
-                    hashCode = PRIME * hashCode + Arrays.deepHashCode(element, objectArraySet);
-                }
-            }
-            return hashCode;
-        }
-    }
-
     private static int deepHashCode(Object object, Set<Object[]> objectArraySet)
             throws IllegalArgumentException {
         return switch (object) {
@@ -63,6 +46,23 @@ public final class Arrays {
             case short[] shortArray -> Arrays.hashCode(shortArray);
             default -> object.hashCode();
         };
+    }
+
+    private static int deepHashCode(Object[] objectArray, Set<Object[]> objectArraySet) {
+        if (objectArray == null) {
+            return 0;
+        } else {
+            objectArraySet.add(objectArray);
+            int hashCode = 1;
+            for (Object element : objectArray) {
+                if (element == null) {
+                    hashCode = PRIME * hashCode;
+                } else {
+                    hashCode = PRIME * hashCode + Arrays.deepHashCode(element, objectArraySet);
+                }
+            }
+            return hashCode;
+        }
     }
 
     /**
