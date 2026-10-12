@@ -193,7 +193,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of a {@code double[]}.
+     * Gets the hash code of a {@code double[]}.
      *
      * @param doubleArray {@code double[]}
      * @return {@code int}
