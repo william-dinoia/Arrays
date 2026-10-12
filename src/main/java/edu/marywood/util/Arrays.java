@@ -175,7 +175,7 @@ public final class Arrays {
     }
 
     /**
-     * Gets the hashcode of a {@code char[]}.
+     * Gets the hash code of a {@code char[]}.
      *
      * @param charArray {@code char[]}
      * @return {@code int}
