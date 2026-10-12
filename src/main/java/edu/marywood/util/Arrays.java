@@ -8,7 +8,7 @@ import java.util.Set;
  *
  * @author William DiNoia
  */
-public class Arrays {
+public final class Arrays {
     private static final int PRIME = 31;
 
     /** Hides the constructor. */
