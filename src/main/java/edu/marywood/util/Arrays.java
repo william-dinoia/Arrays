@@ -76,6 +76,25 @@ public class Arrays {
         return Arrays.deepToString(objectArray, new HashSet<Object[]>());
     }
 
+    private static String deepToString(Object[] objectArray, Set<Object[]> objectArraySet) {
+        if (objectArray == null) {
+            return "null";
+        } else if (objectArray.length == 0) {
+            return "[]";
+        } else {
+            objectArraySet.add(objectArray);
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append('[');
+            stringBuilder.append(Arrays.deepToString(objectArray[0], objectArraySet));
+            for (int index = 1; index < objectArray.length; index += 1) {
+                stringBuilder.append(", ");
+                stringBuilder.append(Arrays.deepToString(objectArray[index], objectArraySet));
+            }
+            stringBuilder.append(']');
+            return stringBuilder.toString();
+        }
+    }
+
     /**
      * Gets the hashcode of a {@code Object[]}.
      *
@@ -485,31 +504,5 @@ public class Arrays {
             case short[] shortArray -> Arrays.toString(shortArray);
             default -> object.toString();
         };
-    }
-
-    /**
-     * Converts an {@link Object}{@code []} to a {@link String}.
-     *
-     * @param objectArray {@link Object}{@code []}
-     * @param objectArraySet {@link Set}{@code <}{@link Object}{@code []}{@code >}
-     * @return {@link String}
-     */
-    private static String deepToString(Object[] objectArray, Set<Object[]> objectArraySet) {
-        if (objectArray == null) {
-            return "null";
-        } else if (objectArray.length == 0) {
-            return "[]";
-        } else {
-            objectArraySet.add(objectArray);
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append('[');
-            stringBuilder.append(Arrays.deepToString(objectArray[0], objectArraySet));
-            for (int index = 1; index < objectArray.length; index += 1) {
-                stringBuilder.append(", ");
-                stringBuilder.append(Arrays.deepToString(objectArray[index], objectArraySet));
-            }
-            stringBuilder.append(']');
-            return stringBuilder.toString();
-        }
     }
 }
