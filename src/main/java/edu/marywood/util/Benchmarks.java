@@ -27,7 +27,7 @@ public class Benchmarks {
     private static byte[] rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
     private static char[] rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
     private static double[] rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
-    private static final float[] rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
+    private static float[] rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
     private static final int[] rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
     private static final long[] rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
     private static final short[] rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
