@@ -75,6 +75,25 @@ public final class Arrays {
         return Arrays.deepToString(objectArray, new HashSet<Object[]>());
     }
 
+    private static String deepToString(Object[] objectArray, Set<Object[]> objectArraySet) {
+        if (objectArray == null) {
+            return "null";
+        } else if (objectArray.length == 0) {
+            return "[]";
+        } else {
+            objectArraySet.add(objectArray);
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append('[');
+            stringBuilder.append(Arrays.deepToString(objectArray[0], objectArraySet));
+            for (int index = 1; index < objectArray.length; index += 1) {
+                stringBuilder.append(", ");
+                stringBuilder.append(Arrays.deepToString(objectArray[index], objectArraySet));
+            }
+            stringBuilder.append(']');
+            return stringBuilder.toString();
+        }
+    }
+
     private static String deepToString(Object object, Set<Object[]> objectArraySet) {
         return switch (object) {
             case Object[] objectArray -> {
@@ -95,25 +114,6 @@ public final class Arrays {
             case short[] shortArray -> Arrays.toString(shortArray);
             default -> object.toString();
         };
-    }
-
-    private static String deepToString(Object[] objectArray, Set<Object[]> objectArraySet) {
-        if (objectArray == null) {
-            return "null";
-        } else if (objectArray.length == 0) {
-            return "[]";
-        } else {
-            objectArraySet.add(objectArray);
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append('[');
-            stringBuilder.append(Arrays.deepToString(objectArray[0], objectArraySet));
-            for (int index = 1; index < objectArray.length; index += 1) {
-                stringBuilder.append(", ");
-                stringBuilder.append(Arrays.deepToString(objectArray[index], objectArraySet));
-            }
-            stringBuilder.append(']');
-            return stringBuilder.toString();
-        }
     }
 
     /**
