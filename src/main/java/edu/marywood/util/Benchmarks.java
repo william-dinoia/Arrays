@@ -24,7 +24,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Warmup(iterations = 1)
 public class Benchmarks {
     private static boolean[] rangeBooleanArray = new boolean[] {false, true};
-    private static final byte[] rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
+    private static byte[] rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
     private static final char[] rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
     private static final double[] rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
     private static final float[] rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
