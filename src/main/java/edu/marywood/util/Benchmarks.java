@@ -30,6 +30,7 @@ public class Benchmarks {
     private static final float[] rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
     private static final int[] rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
     private static final long[] rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
+    private static final short[] rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
 
     @Param({"0", "1", "10", "100", "1000", "10000", "100000"})
     public int size;
