@@ -23,6 +23,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Measurement(iterations = 1)
 @Warmup(iterations = 1)
 public class Benchmarks {
+    private static final boolean[] rangeBooleanArray = new boolean[] {false, true};
 
     @Param({"0", "1", "10", "100", "1000", "10000", "100000"})
     public int size;
