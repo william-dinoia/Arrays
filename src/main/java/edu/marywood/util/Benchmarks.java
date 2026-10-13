@@ -175,11 +175,11 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(this.doubleArray);
     }
 
-    /** Marywood toString(float[]) Benchmark. */
+    /** The Marywood toString(float[]) Benchmark. */
     @Benchmark
     @Group("toStringFloatArray")
     public void marywoodToStringFloatArray() {
-        edu.marywood.util.Arrays.toString(floatArray);
+        edu.marywood.util.Arrays.toString(this.floatArray);
     }
 
     /** Marywood toString(int[]) Benchmark. */
