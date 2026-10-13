@@ -154,11 +154,11 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(this.booleanArray);
     }
 
-    /** Marywood toString(byte[]) Benchmark. */
+    /** The Marywood toString(byte[]) Benchmark. */
     @Benchmark
     @Group("toStringByteArray")
     public void marywoodToStringByteArray() {
-        edu.marywood.util.Arrays.toString(byteArray);
+        edu.marywood.util.Arrays.toString(this.byteArray);
     }
 
     /** Marywood toString(char[]) Benchmark. */
