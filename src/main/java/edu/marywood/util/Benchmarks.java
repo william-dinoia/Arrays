@@ -119,11 +119,11 @@ public class Benchmarks {
         edu.marywood.util.Arrays.hashCode(this.floatArray);
     }
 
-    /** Marywood hashCode(int[]) Benchmark. */
+    /** The Marywood hashCode(int[]) Benchmark. */
     @Benchmark
     @Group("hashCodeIntArray")
     public void marywoodHashCodeIntArray() {
-        edu.marywood.util.Arrays.hashCode(intArray);
+        edu.marywood.util.Arrays.hashCode(this.intArray);
     }
 
     /** Marywood hashCode(long[]) Benchmark. */
