@@ -26,6 +26,7 @@ public class Benchmarks {
     private static final boolean[] rangeBooleanArray = new boolean[] {false, true};
     private static final byte[] rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
     private static final char[] rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
+    private static final double[] rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
 
     @Param({"0", "1", "10", "100", "1000", "10000", "100000"})
     public int size;
