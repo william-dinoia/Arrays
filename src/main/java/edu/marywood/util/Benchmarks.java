@@ -363,27 +363,15 @@ public class Benchmarks {
         objectArray = new Object[size];
         shortArray = new short[size];
         for (int index = 0; index < size; index += 1) {
-            booleanArray[index] = index % 2 == 0;
-            byteArray[index] = (index % 2 == 0) ? Byte.MIN_VALUE : Byte.MAX_VALUE;
-            charArray[index] = (index % 2 == 0) ? Character.MIN_VALUE : Character.MAX_VALUE;
-            doubleArray[index] = (index % 2 == 0) ? Double.MIN_VALUE : Double.MAX_VALUE;
-            floatArray[index] = (index % 2 == 0) ? Float.MIN_VALUE : Float.MAX_VALUE;
-            intArray[index] = (index % 2 == 0) ? Integer.MIN_VALUE : Integer.MAX_VALUE;
-            longArray[index] = (index % 2 == 0) ? Long.MIN_VALUE : Long.MAX_VALUE;
-            objectArray[index] =
-                    switch (index % 10) {
-                        case 0 -> new boolean[] {false, true};
-                        case 1 -> new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
-                        case 2 -> new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
-                        case 3 -> new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
-                        case 4 -> new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
-                        case 5 -> new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
-                        case 6 -> new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
-                        case 7 -> new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
-                        case 8 -> new Object();
-                        default -> null;
-                    };
-            shortArray[index] = (index % 2 == 0) ? Short.MIN_VALUE : Short.MAX_VALUE;
+            booleanArray[index] = rangeBooleanArray[index % rangeBooleanArray.length];
+            byteArray[index] = rangeByteArray[index % rangeByteArray.length];
+            charArray[index] = rangeCharArray[index % rangeCharArray.length];
+            doubleArray[index] = rangeDoubleArray[index % rangeDoubleArray.length];
+            floatArray[index] = rangeFloatArray[index % rangeFloatArray.length];
+            intArray[index] = rangeIntArray[index % rangeIntArray.length];
+            longArray[index] = rangeLongArray[index % rangeLongArray.length];
+            objectArray[index] = rangeObjectArray[index % rangeObjectArray.length];
+            shortArray[index] = rangeShortArray[index % rangeShortArray.length];
         }
     }
 }
