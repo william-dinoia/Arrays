@@ -353,25 +353,25 @@ public class Benchmarks {
     /** The setup method of {@link Benchmarks}. */
     @Setup
     public void setup() {
-        booleanArray = new boolean[size];
-        byteArray = new byte[size];
-        charArray = new char[size];
-        doubleArray = new double[size];
-        floatArray = new float[size];
-        intArray = new int[size];
-        longArray = new long[size];
-        objectArray = new Object[size];
-        shortArray = new short[size];
-        for (int index = 0; index < size; index += 1) {
-            booleanArray[index] = rangeBooleanArray[index % rangeBooleanArray.length];
-            byteArray[index] = rangeByteArray[index % rangeByteArray.length];
-            charArray[index] = rangeCharArray[index % rangeCharArray.length];
-            doubleArray[index] = rangeDoubleArray[index % rangeDoubleArray.length];
-            floatArray[index] = rangeFloatArray[index % rangeFloatArray.length];
-            intArray[index] = rangeIntArray[index % rangeIntArray.length];
-            longArray[index] = rangeLongArray[index % rangeLongArray.length];
-            objectArray[index] = rangeObjectArray[index % rangeObjectArray.length];
-            shortArray[index] = rangeShortArray[index % rangeShortArray.length];
+        this.booleanArray = new boolean[this.size];
+        this.byteArray = new byte[this.size];
+        this.charArray = new char[this.size];
+        this.doubleArray = new double[this.size];
+        this.floatArray = new float[this.size];
+        this.intArray = new int[this.size];
+        this.longArray = new long[this.size];
+        this.objectArray = new Object[this.size];
+        this.shortArray = new short[this.size];
+        for (int index = 0; index < this.size; index += 1) {
+            this.booleanArray[index] = rangeBooleanArray[index % rangeBooleanArray.length];
+            this.byteArray[index] = rangeByteArray[index % rangeByteArray.length];
+            this.charArray[index] = rangeCharArray[index % rangeCharArray.length];
+            this.doubleArray[index] = rangeDoubleArray[index % rangeDoubleArray.length];
+            this.floatArray[index] = rangeFloatArray[index % rangeFloatArray.length];
+            this.intArray[index] = rangeIntArray[index % rangeIntArray.length];
+            this.longArray[index] = rangeLongArray[index % rangeLongArray.length];
+            this.objectArray[index] = rangeObjectArray[index % rangeObjectArray.length];
+            this.shortArray[index] = rangeShortArray[index % rangeShortArray.length];
         }
     }
 }
