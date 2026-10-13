@@ -203,11 +203,11 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(this.objectArray);
     }
 
-    /** Marywood toString(short[]) Benchmark. */
+    /** The Marywood toString(short[]) Benchmark. */
     @Benchmark
     @Group("toStringShortArray")
     public void marywoodToStringShortArray() {
-        edu.marywood.util.Arrays.toString(shortArray);
+        edu.marywood.util.Arrays.toString(this.shortArray);
     }
 
     /** OpenJDK deepHashCode(Object[]) Benchmark. */
