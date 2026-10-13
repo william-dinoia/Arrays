@@ -25,7 +25,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 public class Benchmarks {
 
     @Param({"0", "1", "10", "100", "1000", "10000", "100000"})
-    private static int size;
+    public int size;
 
     private boolean[] booleanArray;
     private byte[] byteArray;
