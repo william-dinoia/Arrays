@@ -84,11 +84,11 @@ public class Benchmarks {
         edu.marywood.util.Arrays.deepToString(this.objectArray);
     }
 
-    /** Marywood hashCode(boolean[]) Benchmark. */
+    /** The Marywood hashCode(boolean[]) Benchmark. */
     @Benchmark
     @Group("hashCodeBooleanArray")
     public void marywoodHashCodeBooleanArray() {
-        edu.marywood.util.Arrays.hashCode(booleanArray);
+        edu.marywood.util.Arrays.hashCode(this.booleanArray);
     }
 
     /** Marywood hashCode(byte[]) Benchmark. */
