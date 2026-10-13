@@ -24,6 +24,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Warmup(iterations = 1)
 public class Benchmarks {
     private static final boolean[] rangeBooleanArray = new boolean[] {false, true};
+    private static final byte[] rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
 
     @Param({"0", "1", "10", "100", "1000", "10000", "100000"})
     public int size;
