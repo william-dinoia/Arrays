@@ -19,7 +19,7 @@ public class Tests {
     private static long[] blankLongArray = null;
     private static Object[] blankObjectArray = null;
     private static short[] blankShortArray = null;
-    private static boolean[] emptyBooleanArray;
+    private static boolean[] emptyBooleanArray = new boolean[] {};
     private static byte[] emptyByteArray;
     private static char[] emptyCharArray;
     private static double[] emptyDoubleArray;
