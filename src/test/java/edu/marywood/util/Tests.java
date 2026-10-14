@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  */
 public class Tests {
     private static boolean[] blankBooleanArray = null;
-    private static byte[] blankByteArray;
+    private static byte[] blankByteArray = null;
     private static char[] blankCharArray;
     private static double[] blankDoubleArray;
     private static float[] blankFloatArray;
