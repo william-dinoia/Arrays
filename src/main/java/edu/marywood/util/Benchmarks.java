@@ -252,11 +252,11 @@ public class Benchmarks {
         java.util.Arrays.hashCode(this.doubleArray);
     }
 
-    /** OpenJDK hashCode(float[]) Benchmark. */
+    /** The OpenJDK hashCode(float[]) Benchmark. */
     @Benchmark
     @Group("hashCodeFloatArray")
     public void openJDKHashCodeFloatArray() {
-        java.util.Arrays.hashCode(floatArray);
+        java.util.Arrays.hashCode(this.floatArray);
     }
 
     /** OpenJDK hashCode(int[]) Benchmark. */
