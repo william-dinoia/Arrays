@@ -13,7 +13,7 @@ public class Tests {
     private static boolean[] blankBooleanArray = null;
     private static byte[] blankByteArray = null;
     private static char[] blankCharArray = null;
-    private static double[] blankDoubleArray;
+    private static double[] blankDoubleArray = null;
     private static float[] blankFloatArray;
     private static int[] blankIntArray;
     private static long[] blankLongArray;
