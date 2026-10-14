@@ -22,7 +22,7 @@ public class Tests {
     private static boolean[] emptyBooleanArray = new boolean[] {};
     private static byte[] emptyByteArray = new byte[] {};
     private static char[] emptyCharArray = new char[] {};
-    private static double[] emptyDoubleArray;
+    private static double[] emptyDoubleArray = new double[] {};
     private static float[] emptyFloatArray;
     private static int[] emptyIntArray;
     private static long[] emptyLongArray;
