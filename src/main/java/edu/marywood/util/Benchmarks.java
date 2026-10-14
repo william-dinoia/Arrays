@@ -287,11 +287,11 @@ public class Benchmarks {
         java.util.Arrays.hashCode(this.shortArray);
     }
 
-    /** OpenJDK toString(boolean[]) Benchmark. */
+    /** The OpenJDK toString(boolean[]) Benchmark. */
     @Benchmark
     @Group("toStringBooleanArray")
     public void openJDKToStringBooleanArray() {
-        java.util.Arrays.toString(booleanArray);
+        java.util.Arrays.toString(this.booleanArray);
     }
 
     /** OpenJDK toString(byte[]) Benchmark. */
