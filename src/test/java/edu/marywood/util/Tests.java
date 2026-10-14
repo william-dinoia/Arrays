@@ -33,7 +33,7 @@ public class Tests {
     private static char[] lonerCharArray = new char[] {Character.MIN_VALUE};
     private static double[] lonerDoubleArray = new double[] {Double.MIN_VALUE};
     private static float[] lonerFloatArray = new float[] {Float.MIN_VALUE};
-    private static int[] lonerIntArray;
+    private static int[] lonerIntArray = new int[] {Integer.MIN_VALUE};
     private static long[] lonerLongArray;
     private static Object[] lonerObjectArray;
     private static short[] lonerShortArray;
