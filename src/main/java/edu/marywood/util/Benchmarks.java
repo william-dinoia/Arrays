@@ -329,11 +329,11 @@ public class Benchmarks {
         java.util.Arrays.toString(this.intArray);
     }
 
-    /** OpenJDK toString(long[]) Benchmark. */
+    /** The OpenJDK toString(long[]) Benchmark. */
     @Benchmark
     @Group("toStringLongArray")
     public void openJDKToStringLongArray() {
-        java.util.Arrays.toString(longArray);
+        java.util.Arrays.toString(this.longArray);
     }
 
     /** OpenJDK toString(Object[]) Benchmark. */
