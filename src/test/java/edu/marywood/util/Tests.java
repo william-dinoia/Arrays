@@ -23,7 +23,7 @@ public class Tests {
     private static byte[] emptyByteArray = new byte[] {};
     private static char[] emptyCharArray = new char[] {};
     private static double[] emptyDoubleArray = new double[] {};
-    private static float[] emptyFloatArray;
+    private static float[] emptyFloatArray = new float[] {};
     private static int[] emptyIntArray;
     private static long[] emptyLongArray;
     private static Object[] emptyObjectArray;
