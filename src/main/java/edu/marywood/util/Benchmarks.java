@@ -45,9 +45,6 @@ public class Benchmarks {
             };
     private static short[] rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
 
-    @Param({"0", "1", "10", "100", "1000", "10000", "100000"})
-    public int size;
-
     private boolean[] booleanArray;
     private byte[] byteArray;
     private char[] charArray;
@@ -57,6 +54,9 @@ public class Benchmarks {
     private long[] longArray;
     private Object[] objectArray;
     private short[] shortArray;
+
+    @Param({"0", "1", "10", "100", "1000", "10000", "100000", "1000000"})
+    private int size;
 
     /**
      * The main method of {@link Benchmarks}.
