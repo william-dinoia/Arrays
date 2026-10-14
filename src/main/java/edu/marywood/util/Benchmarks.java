@@ -308,11 +308,11 @@ public class Benchmarks {
         java.util.Arrays.toString(this.charArray);
     }
 
-    /** OpenJDK toString(double[]) Benchmark. */
+    /** The OpenJDK toString(double[]) Benchmark. */
     @Benchmark
     @Group("toStringDoubleArray")
     public void openJDKToStringDoubleArray() {
-        java.util.Arrays.toString(doubleArray);
+        java.util.Arrays.toString(this.doubleArray);
     }
 
     /** OpenJDK toString(float[]) Benchmark. */
