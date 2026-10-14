@@ -40,7 +40,7 @@ public class Tests {
     private static boolean[] rangeBooleanArray = new boolean[] {false, true};
     private static byte[] rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
     private static char[] rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
-    private static double[] rangeDoubleArray;
+    private static double[] rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
     private static float[] rangeFloatArray;
     private static int[] rangeIntArray;
     private static long[] rangeLongArray;
