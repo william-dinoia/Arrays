@@ -14,7 +14,7 @@ public class Tests {
     private static byte[] blankByteArray = null;
     private static char[] blankCharArray = null;
     private static double[] blankDoubleArray = null;
-    private static float[] blankFloatArray;
+    private static float[] blankFloatArray = null;
     private static int[] blankIntArray;
     private static long[] blankLongArray;
     private static Object[] blankObjectArray;
