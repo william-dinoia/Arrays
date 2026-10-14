@@ -238,11 +238,11 @@ public class Benchmarks {
         java.util.Arrays.hashCode(this.byteArray);
     }
 
-    /** OpenJDK hashCode(char[]) Benchmark. */
+    /** The OpenJDK hashCode(char[]) Benchmark. */
     @Benchmark
     @Group("hashCodeCharArray")
     public void openJDKHashCodeCharArray() {
-        java.util.Arrays.hashCode(charArray);
+        java.util.Arrays.hashCode(this.charArray);
     }
 
     /** OpenJDK hashCode(double[]) Benchmark. */
