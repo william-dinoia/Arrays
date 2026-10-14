@@ -217,11 +217,11 @@ public class Benchmarks {
         java.util.Arrays.deepHashCode(this.objectArray);
     }
 
-    /** OpenJDK deepToString(Object[]) Benchmark. */
+    /** The OpenJDK deepToString(Object[]) Benchmark. */
     @Benchmark
     @Group("deepToStringObjectArray")
     public void openJDKDeepToStringObjectArray() {
-        java.util.Arrays.deepToString(objectArray);
+        java.util.Arrays.deepToString(this.objectArray);
     }
 
     /** OpenJDK hashCode(boolean[]) Benchmark. */
