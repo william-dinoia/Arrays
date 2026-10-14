@@ -322,11 +322,11 @@ public class Benchmarks {
         java.util.Arrays.toString(this.floatArray);
     }
 
-    /** OpenJDK toString(int[]) Benchmark. */
+    /** The OpenJDK toString(int[]) Benchmark. */
     @Benchmark
     @Group("toStringIntArray")
     public void openJDKToStringIntArray() {
-        java.util.Arrays.toString(intArray);
+        java.util.Arrays.toString(this.intArray);
     }
 
     /** OpenJDK toString(long[]) Benchmark. */
