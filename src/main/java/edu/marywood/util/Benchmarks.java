@@ -301,11 +301,11 @@ public class Benchmarks {
         java.util.Arrays.toString(this.byteArray);
     }
 
-    /** OpenJDK toString(char[]) Benchmark. */
+    /** The OpenJDK toString(char[]) Benchmark. */
     @Benchmark
     @Group("toStringCharArray")
     public void openJDKToStringCharArray() {
-        java.util.Arrays.toString(charArray);
+        java.util.Arrays.toString(this.charArray);
     }
 
     /** OpenJDK toString(double[]) Benchmark. */
