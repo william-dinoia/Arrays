@@ -28,7 +28,7 @@ public class Tests {
     private static long[] emptyLongArray = new long[] {};
     private static Object[] emptyObjectArray = new Object[] {};
     private static short[] emptyShortArray = new short[] {};
-    private static boolean[] lonerBooleanArray;
+    private static boolean[] lonerBooleanArray = new boolean[] {false};
     private static byte[] lonerByteArray;
     private static char[] lonerCharArray;
     private static double[] lonerDoubleArray;
