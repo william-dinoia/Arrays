@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class Tests {
-    private static boolean[] blankBooleanArray;
+    private static boolean[] blankBooleanArray = null;
     private static byte[] blankByteArray;
     private static char[] blankCharArray;
     private static double[] blankDoubleArray;
