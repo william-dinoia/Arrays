@@ -42,7 +42,7 @@ public class Tests {
     private static char[] rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
     private static double[] rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
     private static float[] rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
-    private static int[] rangeIntArray;
+    private static int[] rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
     private static long[] rangeLongArray;
     private static Object[] rangeObjectArray;
     private static short[] rangeShortArray;
