@@ -1,7 +1,6 @@
 package edu.marywood.util;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -58,59 +57,6 @@ public class Tests {
                 null
             };
     private static short[] rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
-
-    /** The ``before all'' method of {@link Tests}. */
-    @BeforeAll
-    public static void beforeAll() {
-        blankBooleanArray = null;
-        blankByteArray = null;
-        blankCharArray = null;
-        blankDoubleArray = null;
-        blankFloatArray = null;
-        blankIntArray = null;
-        blankLongArray = null;
-        blankObjectArray = null;
-        blankShortArray = null;
-        emptyBooleanArray = new boolean[] {};
-        emptyByteArray = new byte[] {};
-        emptyCharArray = new char[] {};
-        emptyDoubleArray = new double[] {};
-        emptyFloatArray = new float[] {};
-        emptyIntArray = new int[] {};
-        emptyLongArray = new long[] {};
-        emptyObjectArray = new Object[] {};
-        emptyShortArray = new short[] {};
-        lonerBooleanArray = new boolean[] {false};
-        lonerByteArray = new byte[] {Byte.MIN_VALUE};
-        lonerCharArray = new char[] {Character.MIN_VALUE};
-        lonerDoubleArray = new double[] {Double.MIN_VALUE};
-        lonerFloatArray = new float[] {Float.MIN_VALUE};
-        lonerIntArray = new int[] {Integer.MIN_VALUE};
-        lonerLongArray = new long[] {Long.MIN_VALUE};
-        lonerObjectArray = new Object[] {new Object()};
-        lonerShortArray = new short[] {Short.MIN_VALUE};
-        rangeBooleanArray = new boolean[] {false, true};
-        rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
-        rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
-        rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
-        rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
-        rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
-        rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
-        rangeObjectArray =
-                new Object[] {
-                    new Object(),
-                    new boolean[] {false, true},
-                    new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE},
-                    new char[] {Character.MIN_VALUE, Character.MAX_VALUE},
-                    new double[] {Double.MIN_VALUE, Double.MAX_VALUE},
-                    new float[] {Float.MIN_VALUE, Float.MAX_VALUE},
-                    new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE},
-                    new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
-                    null,
-                    new short[] {Short.MIN_VALUE, Short.MAX_VALUE}
-                };
-        rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
-    }
 
     /** Tests {@code Arrays.deepHashCode(Object[])}. */
     @Test
