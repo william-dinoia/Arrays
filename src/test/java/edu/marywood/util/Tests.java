@@ -44,7 +44,19 @@ public class Tests {
     private static float[] rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
     private static int[] rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
     private static long[] rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
-    private static Object[] rangeObjectArray;
+    private static Object[] rangeObjectArray =
+            new Object[] {
+                new Object(),
+                new boolean[] {false, true},
+                new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE},
+                new char[] {Character.MIN_VALUE, Character.MAX_VALUE},
+                new double[] {Double.MIN_VALUE, Double.MAX_VALUE},
+                new float[] {Float.MIN_VALUE, Float.MAX_VALUE},
+                new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE},
+                new long[] {Long.MIN_VALUE, Long.MAX_VALUE},
+                new short[] {Short.MIN_VALUE, Short.MAX_VALUE},
+                null
+            };
     private static short[] rangeShortArray;
 
     /** The ``before all'' method of {@link Tests}. */
