@@ -294,11 +294,11 @@ public class Benchmarks {
         java.util.Arrays.toString(this.booleanArray);
     }
 
-    /** OpenJDK toString(byte[]) Benchmark. */
+    /** The OpenJDK toString(byte[]) Benchmark. */
     @Benchmark
     @Group("toStringByteArray")
     public void openJDKToStringByteArray() {
-        java.util.Arrays.toString(byteArray);
+        java.util.Arrays.toString(this.byteArray);
     }
 
     /** OpenJDK toString(char[]) Benchmark. */
