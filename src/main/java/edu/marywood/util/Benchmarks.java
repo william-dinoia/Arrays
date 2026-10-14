@@ -259,11 +259,11 @@ public class Benchmarks {
         java.util.Arrays.hashCode(this.floatArray);
     }
 
-    /** OpenJDK hashCode(int[]) Benchmark. */
+    /** The OpenJDK hashCode(int[]) Benchmark. */
     @Benchmark
     @Group("hashCodeIntArray")
     public void openJDKHashCodeIntArray() {
-        java.util.Arrays.hashCode(intArray);
+        java.util.Arrays.hashCode(this.intArray);
     }
 
     /** OpenJDK hashCode(long[]) Benchmark. */
