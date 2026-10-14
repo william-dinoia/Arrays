@@ -29,7 +29,7 @@ public class Tests {
     private static Object[] emptyObjectArray = new Object[] {};
     private static short[] emptyShortArray = new short[] {};
     private static boolean[] lonerBooleanArray = new boolean[] {false};
-    private static byte[] lonerByteArray;
+    private static byte[] lonerByteArray = new byte[] {Byte.MIN_VALUE};
     private static char[] lonerCharArray;
     private static double[] lonerDoubleArray;
     private static float[] lonerFloatArray;
