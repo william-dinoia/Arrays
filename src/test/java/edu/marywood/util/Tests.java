@@ -57,7 +57,7 @@ public class Tests {
                 new short[] {Short.MIN_VALUE, Short.MAX_VALUE},
                 null
             };
-    private static short[] rangeShortArray;
+    private static short[] rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
 
     /** The ``before all'' method of {@link Tests}. */
     @BeforeAll
