@@ -35,7 +35,7 @@ public class Tests {
     private static float[] lonerFloatArray = new float[] {Float.MIN_VALUE};
     private static int[] lonerIntArray = new int[] {Integer.MIN_VALUE};
     private static long[] lonerLongArray = new long[] {Long.MIN_VALUE};
-    private static Object[] lonerObjectArray;
+    private static Object[] lonerObjectArray = new Object[] {new Object()};
     private static short[] lonerShortArray;
     private static boolean[] rangeBooleanArray;
     private static byte[] rangeByteArray;
