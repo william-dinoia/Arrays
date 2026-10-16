@@ -16,7 +16,7 @@ public class Tests {
     private static final float[] BLANK_FLOAT_ARRAY = null;
     private static final int[] BLANK_INT_ARRAY = null;
     private static final long[] BLANK_LONG_ARRAY = null;
-    private static Object[] blankObjectArray = null;
+    private static final Object[] BLANK_OBJECT_ARRAY = null;
     private static short[] blankShortArray = null;
     private static boolean[] emptyBooleanArray = new boolean[] {};
     private static byte[] emptyByteArray = new byte[] {};
@@ -65,8 +65,8 @@ public class Tests {
         omegaObjectArray[0] = omegaObjectArray;
         omegaObjectArray[1] = rangeObjectArray;
         Assertions.assertEquals(
-                java.util.Arrays.deepHashCode(blankObjectArray),
-                edu.marywood.util.Arrays.deepHashCode(blankObjectArray));
+                java.util.Arrays.deepHashCode(BLANK_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepHashCode(BLANK_OBJECT_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.deepHashCode(emptyObjectArray),
                 edu.marywood.util.Arrays.deepHashCode(emptyObjectArray));
@@ -95,8 +95,8 @@ public class Tests {
         omegaObjectArray[0] = omegaObjectArray;
         omegaObjectArray[1] = rangeObjectArray;
         Assertions.assertEquals(
-                java.util.Arrays.deepToString(blankObjectArray),
-                edu.marywood.util.Arrays.deepToString(blankObjectArray));
+                java.util.Arrays.deepToString(BLANK_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepToString(BLANK_OBJECT_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.deepToString(emptyObjectArray),
                 edu.marywood.util.Arrays.deepToString(emptyObjectArray));
@@ -234,8 +234,8 @@ public class Tests {
     @Test
     public void hashCodeObjectArray() {
         Assertions.assertEquals(
-                java.util.Arrays.hashCode(blankObjectArray),
-                edu.marywood.util.Arrays.hashCode(blankObjectArray));
+                java.util.Arrays.hashCode(BLANK_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.hashCode(BLANK_OBJECT_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.hashCode(emptyObjectArray),
                 edu.marywood.util.Arrays.hashCode(emptyObjectArray));
@@ -387,8 +387,8 @@ public class Tests {
     @Test
     public void toStringObjectArray() {
         Assertions.assertEquals(
-                java.util.Arrays.toString(blankObjectArray),
-                edu.marywood.util.Arrays.toString(blankObjectArray));
+                java.util.Arrays.toString(BLANK_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.toString(BLANK_OBJECT_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.toString(emptyObjectArray),
                 edu.marywood.util.Arrays.toString(emptyObjectArray));
