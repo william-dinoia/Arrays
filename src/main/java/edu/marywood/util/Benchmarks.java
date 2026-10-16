@@ -32,7 +32,7 @@ public class Benchmarks {
     private static final float[] RANGE_FLOAT_ARRAY = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
     private static final int[] RANGE_INT_ARRAY = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
     private static final long[] RANGE_LONG_ARRAY = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
-    private static Object[] rangeObjectArray =
+    private static final Object[] RANGE_OBJECT_ARRAY =
             new Object[] {
                 new Object(),
                 new boolean[] {false, true},
@@ -372,7 +372,7 @@ public class Benchmarks {
             this.floatArray[index] = RANGE_FLOAT_ARRAY[index % RANGE_FLOAT_ARRAY.length];
             this.intArray[index] = RANGE_INT_ARRAY[index % RANGE_INT_ARRAY.length];
             this.longArray[index] = RANGE_LONG_ARRAY[index % RANGE_LONG_ARRAY.length];
-            this.objectArray[index] = rangeObjectArray[index % rangeObjectArray.length];
+            this.objectArray[index] = RANGE_OBJECT_ARRAY[index % RANGE_OBJECT_ARRAY.length];
             this.shortArray[index] = rangeShortArray[index % rangeShortArray.length];
         }
     }
