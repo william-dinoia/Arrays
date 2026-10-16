@@ -17,7 +17,7 @@ public class Tests {
     private static final int[] BLANK_INT_ARRAY = null;
     private static final long[] BLANK_LONG_ARRAY = null;
     private static final Object[] BLANK_OBJECT_ARRAY = null;
-    private static short[] blankShortArray = null;
+    private static final short[] BLANK_SHORT_ARRAY = null;
     private static boolean[] emptyBooleanArray = new boolean[] {};
     private static byte[] emptyByteArray = new byte[] {};
     private static char[] emptyCharArray = new char[] {};
@@ -251,8 +251,8 @@ public class Tests {
     @Test
     public void hashCodeShortArray() {
         Assertions.assertEquals(
-                java.util.Arrays.hashCode(blankShortArray),
-                edu.marywood.util.Arrays.hashCode(blankShortArray));
+                java.util.Arrays.hashCode(BLANK_SHORT_ARRAY),
+                edu.marywood.util.Arrays.hashCode(BLANK_SHORT_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.hashCode(emptyShortArray),
                 edu.marywood.util.Arrays.hashCode(emptyShortArray));
@@ -404,8 +404,8 @@ public class Tests {
     @Test
     public void toStringShortArray() {
         Assertions.assertEquals(
-                java.util.Arrays.toString(blankShortArray),
-                edu.marywood.util.Arrays.toString(blankShortArray));
+                java.util.Arrays.toString(BLANK_SHORT_ARRAY),
+                edu.marywood.util.Arrays.toString(BLANK_SHORT_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.toString(emptyShortArray),
                 edu.marywood.util.Arrays.toString(emptyShortArray));
