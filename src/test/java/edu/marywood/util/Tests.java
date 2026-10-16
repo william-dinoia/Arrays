@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 public class Tests {
     private static final boolean[] BLANK_BOOLEAN_ARRAY = null;
     private static final byte[] BLANK_BYTE_ARRAY = null;
-    private static char[] blankCharArray = null;
+    private static final char[] BLANK_CHAR_ARRAY = null;
     private static double[] blankDoubleArray = null;
     private static float[] blankFloatArray = null;
     private static int[] blankIntArray = null;
@@ -149,8 +149,8 @@ public class Tests {
     @Test
     public void hashCodeCharArray() {
         Assertions.assertEquals(
-                java.util.Arrays.hashCode(blankCharArray),
-                edu.marywood.util.Arrays.hashCode(blankCharArray));
+                java.util.Arrays.hashCode(BLANK_CHAR_ARRAY),
+                edu.marywood.util.Arrays.hashCode(BLANK_CHAR_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.hashCode(emptyCharArray),
                 edu.marywood.util.Arrays.hashCode(emptyCharArray));
@@ -302,8 +302,8 @@ public class Tests {
     @Test
     public void toStringCharArray() {
         Assertions.assertEquals(
-                java.util.Arrays.toString(blankCharArray),
-                edu.marywood.util.Arrays.toString(blankCharArray));
+                java.util.Arrays.toString(BLANK_CHAR_ARRAY),
+                edu.marywood.util.Arrays.toString(BLANK_CHAR_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.toString(emptyCharArray),
                 edu.marywood.util.Arrays.toString(emptyCharArray));
