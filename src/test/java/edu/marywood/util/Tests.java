@@ -58,7 +58,7 @@ public class Tests {
                 new short[] {Short.MIN_VALUE, Short.MAX_VALUE},
                 null
             };
-    private static short[] rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
+    private static final short[] RANGE_SHORT_ARRAY = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
 
     /** Tests {@code Arrays.deepHashCode(Object[])}. */
     @Test
@@ -262,8 +262,8 @@ public class Tests {
                 java.util.Arrays.hashCode(LONER_SHORT_ARRAY),
                 edu.marywood.util.Arrays.hashCode(LONER_SHORT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.hashCode(rangeShortArray),
-                edu.marywood.util.Arrays.hashCode(rangeShortArray));
+                java.util.Arrays.hashCode(RANGE_SHORT_ARRAY),
+                edu.marywood.util.Arrays.hashCode(RANGE_SHORT_ARRAY));
     }
 
     /** Tests {@code Arrays.toString(boolean[])}. */
@@ -415,7 +415,7 @@ public class Tests {
                 java.util.Arrays.toString(LONER_SHORT_ARRAY),
                 edu.marywood.util.Arrays.toString(LONER_SHORT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.toString(rangeShortArray),
-                edu.marywood.util.Arrays.toString(rangeShortArray));
+                java.util.Arrays.toString(RANGE_SHORT_ARRAY),
+                edu.marywood.util.Arrays.toString(RANGE_SHORT_ARRAY));
     }
 }
