@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @author William DiNoia
  */
 public class Tests {
-    private static boolean[] blankBooleanArray = null;
+    private static final boolean[] BLANK_BOOLEAN_ARRAY = null;
     private static byte[] blankByteArray = null;
     private static char[] blankCharArray = null;
     private static double[] blankDoubleArray = null;
@@ -115,8 +115,8 @@ public class Tests {
     @Test
     public void hashCodeBooleanArray() {
         Assertions.assertEquals(
-                java.util.Arrays.hashCode(blankBooleanArray),
-                edu.marywood.util.Arrays.hashCode(blankBooleanArray));
+                java.util.Arrays.hashCode(BLANK_BOOLEAN_ARRAY),
+                edu.marywood.util.Arrays.hashCode(BLANK_BOOLEAN_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.hashCode(emptyBooleanArray),
                 edu.marywood.util.Arrays.hashCode(emptyBooleanArray));
@@ -268,8 +268,8 @@ public class Tests {
     @Test
     public void toStringBooleanArray() {
         Assertions.assertEquals(
-                java.util.Arrays.toString(blankBooleanArray),
-                edu.marywood.util.Arrays.toString(blankBooleanArray));
+                java.util.Arrays.toString(BLANK_BOOLEAN_ARRAY),
+                edu.marywood.util.Arrays.toString(BLANK_BOOLEAN_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.toString(emptyBooleanArray),
                 edu.marywood.util.Arrays.toString(emptyBooleanArray));
