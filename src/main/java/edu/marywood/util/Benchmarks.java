@@ -100,7 +100,7 @@ public class Benchmarks {
         edu.marywood.util.Arrays.hashCode(this.byteArray);
     }
 
-    /** The Marywood hashCode(char[]) Benchmark. */
+    /** The Marywood {@code Arrays.hashCode(char[])} benchmark. */
     @Benchmark
     @Group("hashCodeCharArray")
     public void marywoodHashCodeCharArray() {
