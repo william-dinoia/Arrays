@@ -23,7 +23,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Measurement(iterations = 1)
 @Warmup(iterations = 1)
 public class Benchmarks {
-    private static boolean[] rangeBooleanArray = new boolean[] {false, true};
+    private static final boolean[] RANGE_BOOLEAN_ARRAY = new boolean[] {false, true};
     private static byte[] rangeByteArray = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
     private static char[] rangeCharArray = new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
     private static double[] rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
@@ -363,7 +363,7 @@ public class Benchmarks {
         this.objectArray = new Object[this.size];
         this.shortArray = new short[this.size];
         for (int index = 0; index < this.size; index += 1) {
-            this.booleanArray[index] = rangeBooleanArray[index % rangeBooleanArray.length];
+            this.booleanArray[index] = RANGE_BOOLEAN_ARRAY[index % RANGE_BOOLEAN_ARRAY.length];
             this.byteArray[index] = rangeByteArray[index % rangeByteArray.length];
             this.charArray[index] = rangeCharArray[index % rangeCharArray.length];
             this.doubleArray[index] = rangeDoubleArray[index % rangeDoubleArray.length];
