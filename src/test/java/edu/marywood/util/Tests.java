@@ -28,7 +28,7 @@ public class Tests {
     private static final Object[] EMPTY_OBJECT_ARRAY = new Object[] {};
     private static final short[] EMPTY_SHORT_ARRAY = new short[] {};
     private static final boolean[] LONER_BOOLEAN_ARRAY = new boolean[] {false};
-    private static byte[] lonerByteArray = new byte[] {Byte.MIN_VALUE};
+    private static final byte[] LONER_BYTE_ARRAY = new byte[] {Byte.MIN_VALUE};
     private static char[] lonerCharArray = new char[] {Character.MIN_VALUE};
     private static double[] lonerDoubleArray = new double[] {Double.MIN_VALUE};
     private static float[] lonerFloatArray = new float[] {Float.MIN_VALUE};
@@ -138,8 +138,8 @@ public class Tests {
                 java.util.Arrays.hashCode(EMPTY_BYTE_ARRAY),
                 edu.marywood.util.Arrays.hashCode(EMPTY_BYTE_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.hashCode(lonerByteArray),
-                edu.marywood.util.Arrays.hashCode(lonerByteArray));
+                java.util.Arrays.hashCode(LONER_BYTE_ARRAY),
+                edu.marywood.util.Arrays.hashCode(LONER_BYTE_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.hashCode(rangeByteArray),
                 edu.marywood.util.Arrays.hashCode(rangeByteArray));
@@ -291,8 +291,8 @@ public class Tests {
                 java.util.Arrays.toString(EMPTY_BYTE_ARRAY),
                 edu.marywood.util.Arrays.toString(EMPTY_BYTE_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.toString(lonerByteArray),
-                edu.marywood.util.Arrays.toString(lonerByteArray));
+                java.util.Arrays.toString(LONER_BYTE_ARRAY),
+                edu.marywood.util.Arrays.toString(LONER_BYTE_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.toString(rangeByteArray),
                 edu.marywood.util.Arrays.toString(rangeByteArray));
