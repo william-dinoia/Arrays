@@ -45,7 +45,7 @@ public class Benchmarks {
                 new short[] {Short.MIN_VALUE, Short.MAX_VALUE},
                 null
             };
-    private static short[] rangeShortArray = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
+    private static final short[] RANGE_SHORT_ARRAY = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
 
     private boolean[] booleanArray;
     private byte[] byteArray;
@@ -373,7 +373,7 @@ public class Benchmarks {
             this.intArray[index] = RANGE_INT_ARRAY[index % RANGE_INT_ARRAY.length];
             this.longArray[index] = RANGE_LONG_ARRAY[index % RANGE_LONG_ARRAY.length];
             this.objectArray[index] = RANGE_OBJECT_ARRAY[index % RANGE_OBJECT_ARRAY.length];
-            this.shortArray[index] = rangeShortArray[index % rangeShortArray.length];
+            this.shortArray[index] = RANGE_SHORT_ARRAY[index % RANGE_SHORT_ARRAY.length];
         }
     }
 }
