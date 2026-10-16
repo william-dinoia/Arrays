@@ -19,7 +19,7 @@ public class Tests {
     private static final Object[] BLANK_OBJECT_ARRAY = null;
     private static final short[] BLANK_SHORT_ARRAY = null;
     private static final boolean[] EMPTY_BOOLEAN_ARRAY = new boolean[] {};
-    private static byte[] emptyByteArray = new byte[] {};
+    private static final byte[] EMPTY_BYTE_ARRAY = new byte[] {};
     private static char[] emptyCharArray = new char[] {};
     private static double[] emptyDoubleArray = new double[] {};
     private static float[] emptyFloatArray = new float[] {};
@@ -135,8 +135,8 @@ public class Tests {
                 java.util.Arrays.hashCode(BLANK_BYTE_ARRAY),
                 edu.marywood.util.Arrays.hashCode(BLANK_BYTE_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.hashCode(emptyByteArray),
-                edu.marywood.util.Arrays.hashCode(emptyByteArray));
+                java.util.Arrays.hashCode(EMPTY_BYTE_ARRAY),
+                edu.marywood.util.Arrays.hashCode(EMPTY_BYTE_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.hashCode(lonerByteArray),
                 edu.marywood.util.Arrays.hashCode(lonerByteArray));
@@ -288,8 +288,8 @@ public class Tests {
                 java.util.Arrays.toString(BLANK_BYTE_ARRAY),
                 edu.marywood.util.Arrays.toString(BLANK_BYTE_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.toString(emptyByteArray),
-                edu.marywood.util.Arrays.toString(emptyByteArray));
+                java.util.Arrays.toString(EMPTY_BYTE_ARRAY),
+                edu.marywood.util.Arrays.toString(EMPTY_BYTE_ARRAY));
         Assertions.assertEquals(
                 java.util.Arrays.toString(lonerByteArray),
                 edu.marywood.util.Arrays.toString(lonerByteArray));
