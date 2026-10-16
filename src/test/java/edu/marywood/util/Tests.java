@@ -45,7 +45,7 @@ public class Tests {
     private static final float[] RANGE_FLOAT_ARRAY = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
     private static final int[] RANGE_INT_ARRAY = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
     private static final long[] RANGE_LONG_ARRAY = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
-    private static Object[] rangeObjectArray =
+    private static final Object[] RANGE_OBJECT_ARRAY =
             new Object[] {
                 new Object(),
                 new boolean[] {false, true},
@@ -65,7 +65,7 @@ public class Tests {
     public void deepHashCodeObjectArray() {
         Object[] omegaObjectArray = new Object[2];
         omegaObjectArray[0] = omegaObjectArray;
-        omegaObjectArray[1] = rangeObjectArray;
+        omegaObjectArray[1] = RANGE_OBJECT_ARRAY;
         Assertions.assertEquals(
                 java.util.Arrays.deepHashCode(BLANK_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepHashCode(BLANK_OBJECT_ARRAY));
@@ -76,8 +76,8 @@ public class Tests {
                 java.util.Arrays.deepHashCode(LONER_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepHashCode(LONER_OBJECT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.deepHashCode(rangeObjectArray),
-                edu.marywood.util.Arrays.deepHashCode(rangeObjectArray));
+                java.util.Arrays.deepHashCode(RANGE_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepHashCode(RANGE_OBJECT_ARRAY));
         Assertions.assertThrows(
                 StackOverflowError.class,
                 () -> {
@@ -95,7 +95,7 @@ public class Tests {
     public void deepToStringObjectArray() {
         Object[] omegaObjectArray = new Object[2];
         omegaObjectArray[0] = omegaObjectArray;
-        omegaObjectArray[1] = rangeObjectArray;
+        omegaObjectArray[1] = RANGE_OBJECT_ARRAY;
         Assertions.assertEquals(
                 java.util.Arrays.deepToString(BLANK_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepToString(BLANK_OBJECT_ARRAY));
@@ -109,8 +109,8 @@ public class Tests {
                 java.util.Arrays.deepToString(omegaObjectArray),
                 edu.marywood.util.Arrays.deepToString(omegaObjectArray));
         Assertions.assertEquals(
-                java.util.Arrays.deepToString(rangeObjectArray),
-                edu.marywood.util.Arrays.deepToString(rangeObjectArray));
+                java.util.Arrays.deepToString(RANGE_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepToString(RANGE_OBJECT_ARRAY));
     }
 
     /** Tests {@code Arrays.hashCode(boolean[])}. */
@@ -245,8 +245,8 @@ public class Tests {
                 java.util.Arrays.hashCode(LONER_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.hashCode(LONER_OBJECT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.hashCode(rangeObjectArray),
-                edu.marywood.util.Arrays.hashCode(rangeObjectArray));
+                java.util.Arrays.hashCode(RANGE_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.hashCode(RANGE_OBJECT_ARRAY));
     }
 
     /** Tests {@code Arrays.hashCode(short[])}. */
@@ -398,8 +398,8 @@ public class Tests {
                 java.util.Arrays.toString(LONER_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.toString(LONER_OBJECT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.toString(rangeObjectArray),
-                edu.marywood.util.Arrays.toString(rangeObjectArray));
+                java.util.Arrays.toString(RANGE_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.toString(RANGE_OBJECT_ARRAY));
     }
 
     /** Tests {@code Arrays.toString(short[])}. */
