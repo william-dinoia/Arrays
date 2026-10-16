@@ -79,7 +79,7 @@ public class Benchmarks {
         edu.marywood.util.Arrays.deepHashCode(this.objectArray);
     }
 
-    /** The Marywood deepToString(Object[]) Benchmark. */
+    /** The Marywood {@code Arrays.deepToString(Object[])} benchmark. */
     @Benchmark
     @Group("deepToStringObjectArray")
     public void marywoodDeepToStringObjectArray() {
