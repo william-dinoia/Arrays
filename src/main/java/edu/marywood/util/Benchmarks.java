@@ -27,7 +27,8 @@ public class Benchmarks {
     private static final byte[] RANGE_BYTE_ARRAY = new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE};
     private static final char[] RANGE_CHAR_ARRAY =
             new char[] {Character.MIN_VALUE, Character.MAX_VALUE};
-    private static double[] rangeDoubleArray = new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
+    private static final double[] RANGE_DOUBLE_ARRAY =
+            new double[] {Double.MIN_VALUE, Double.MAX_VALUE};
     private static float[] rangeFloatArray = new float[] {Float.MIN_VALUE, Float.MAX_VALUE};
     private static int[] rangeIntArray = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
     private static long[] rangeLongArray = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
@@ -367,7 +368,7 @@ public class Benchmarks {
             this.booleanArray[index] = RANGE_BOOLEAN_ARRAY[index % RANGE_BOOLEAN_ARRAY.length];
             this.byteArray[index] = RANGE_BYTE_ARRAY[index % RANGE_BYTE_ARRAY.length];
             this.charArray[index] = RANGE_CHAR_ARRAY[index % RANGE_CHAR_ARRAY.length];
-            this.doubleArray[index] = rangeDoubleArray[index % rangeDoubleArray.length];
+            this.doubleArray[index] = RANGE_DOUBLE_ARRAY[index % RANGE_DOUBLE_ARRAY.length];
             this.floatArray[index] = rangeFloatArray[index % rangeFloatArray.length];
             this.intArray[index] = rangeIntArray[index % rangeIntArray.length];
             this.longArray[index] = rangeLongArray[index % rangeLongArray.length];
