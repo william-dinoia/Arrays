@@ -128,7 +128,7 @@ public class Benchmarks {
         edu.marywood.util.Arrays.hashCode(this.intArray);
     }
 
-    /** The Marywood hashCode(long[]) Benchmark. */
+    /** The Marywood {@code Arrays.hashCode(long[])} benchmark. */
     @Benchmark
     @Group("hashCodeLongArray")
     public void marywoodHashCodeLongArray() {
