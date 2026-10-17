@@ -233,7 +233,7 @@ public class Benchmarks {
         java.util.Arrays.hashCode(this.booleanArray);
     }
 
-    /** The OpenJDK hashCode(byte[]) Benchmark. */
+    /** The OpenJDK {@code Arrays.hashCode(byte[])} benchmark. */
     @Benchmark
     @Group("hashCodeByteArray")
     public void openJDKHashCodeByteArray() {
