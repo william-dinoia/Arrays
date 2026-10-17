@@ -283,7 +283,7 @@ public class Tests {
                 edu.marywood.util.Arrays.toString(RANGE_BOOLEAN_ARRAY));
     }
 
-    /** Tests {@code Arrays.toString(byte[])}. */
+    /** The {@code Arrays.toString(byte[])} test. */
     @Test
     public void toStringByteArray() {
         Assertions.assertEquals(
