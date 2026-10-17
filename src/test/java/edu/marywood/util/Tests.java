@@ -402,7 +402,7 @@ public class Tests {
                 edu.marywood.util.Arrays.toString(RANGE_OBJECT_ARRAY));
     }
 
-    /** Tests {@code Arrays.toString(short[])}. */
+    /** The {@code Arrays.toString(short[])} test. */
     @Test
     public void toStringShortArray() {
         Assertions.assertEquals(
