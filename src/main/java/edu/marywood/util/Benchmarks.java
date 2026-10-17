@@ -338,7 +338,7 @@ public class Benchmarks {
         java.util.Arrays.toString(this.longArray);
     }
 
-    /** The OpenJDK toString(Object[]) Benchmark. */
+    /** The OpenJDK {@code Arrays.toString(Object[])} benchmark. */
     @Benchmark
     @Group("toStringObjectArray")
     public void openJDKToStringObjectArray() {
