@@ -90,12 +90,9 @@ public class Tests {
                 });
     }
 
-    /** Tests {@code Arrays.deepToString(Object[])}. */
+    /** The {@code Arrays.deepToString(Object[])} test. */
     @Test
     public void deepToStringObjectArray() {
-        Object[] omegaObjectArray = new Object[2];
-        omegaObjectArray[0] = omegaObjectArray;
-        omegaObjectArray[1] = RANGE_OBJECT_ARRAY;
         Assertions.assertEquals(
                 java.util.Arrays.deepToString(BLANK_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepToString(BLANK_OBJECT_ARRAY));
@@ -106,11 +103,14 @@ public class Tests {
                 java.util.Arrays.deepToString(LONER_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepToString(LONER_OBJECT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.deepToString(omegaObjectArray),
-                edu.marywood.util.Arrays.deepToString(omegaObjectArray));
-        Assertions.assertEquals(
                 java.util.Arrays.deepToString(RANGE_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepToString(RANGE_OBJECT_ARRAY));
+        Object[] omegaObjectArray = new Object[2];
+        omegaObjectArray[0] = omegaObjectArray;
+        omegaObjectArray[1] = RANGE_OBJECT_ARRAY;
+        Assertions.assertEquals(
+                java.util.Arrays.deepToString(omegaObjectArray),
+                edu.marywood.util.Arrays.deepToString(omegaObjectArray));
     }
 
     /** Tests {@code Arrays.hashCode(boolean[])}. */
