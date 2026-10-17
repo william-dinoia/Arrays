@@ -198,7 +198,7 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(this.longArray);
     }
 
-    /** The Marywood toString(Object[]) Benchmark. */
+    /** The Marywood {@code Arrays.toString(Object[])} benchmark. */
     @Benchmark
     @Group("toStringObjectArray")
     public void marywoodToStringObjectArray() {
