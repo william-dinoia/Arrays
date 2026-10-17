@@ -249,7 +249,7 @@ public class Tests {
                 edu.marywood.util.Arrays.hashCode(RANGE_OBJECT_ARRAY));
     }
 
-    /** Tests {@code Arrays.hashCode(short[])}. */
+    /** The {@code Arrays.hashCode(short[])} test. */
     @Test
     public void hashCodeShortArray() {
         Assertions.assertEquals(
