@@ -113,7 +113,7 @@ public class Tests {
                 edu.marywood.util.Arrays.deepToString(omegaObjectArray));
     }
 
-    /** Tests {@code Arrays.hashCode(boolean[])}. */
+    /** The {@code Arrays.hashCode(boolean[])} test. */
     @Test
     public void hashCodeBooleanArray() {
         Assertions.assertEquals(
