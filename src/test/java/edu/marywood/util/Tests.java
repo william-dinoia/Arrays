@@ -266,7 +266,7 @@ public class Tests {
                 edu.marywood.util.Arrays.hashCode(RANGE_SHORT_ARRAY));
     }
 
-    /** Tests {@code Arrays.toString(boolean[])}. */
+    /** The {@code Arrays.toString(boolean[])} test. */
     @Test
     public void toStringBooleanArray() {
         Assertions.assertEquals(
