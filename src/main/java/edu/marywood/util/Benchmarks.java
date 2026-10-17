@@ -282,7 +282,7 @@ public class Benchmarks {
         java.util.Arrays.hashCode(this.objectArray);
     }
 
-    /** The OpenJDK hashCode(short[]) Benchmark. */
+    /** The OpenJDK {@code Arrays.hashCode(short[])} benchmark. */
     @Benchmark
     @Group("hashCodeShortArray")
     public void openJDKHashCodeShortArray() {
