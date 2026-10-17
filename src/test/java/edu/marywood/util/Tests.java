@@ -60,12 +60,9 @@ public class Tests {
             };
     private static final short[] RANGE_SHORT_ARRAY = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
 
-    /** Tests {@code Arrays.deepHashCode(Object[])}. */
+    /** The {@code Arrays.deepHashCode(Object[])} test. */
     @Test
     public void deepHashCodeObjectArray() {
-        Object[] omegaObjectArray = new Object[2];
-        omegaObjectArray[0] = omegaObjectArray;
-        omegaObjectArray[1] = RANGE_OBJECT_ARRAY;
         Assertions.assertEquals(
                 java.util.Arrays.deepHashCode(BLANK_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepHashCode(BLANK_OBJECT_ARRAY));
@@ -78,6 +75,9 @@ public class Tests {
         Assertions.assertEquals(
                 java.util.Arrays.deepHashCode(RANGE_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepHashCode(RANGE_OBJECT_ARRAY));
+        Object[] omegaObjectArray = new Object[2];
+        omegaObjectArray[0] = omegaObjectArray;
+        omegaObjectArray[1] = RANGE_OBJECT_ARRAY;
         Assertions.assertThrows(
                 StackOverflowError.class,
                 () -> {
