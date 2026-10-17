@@ -198,7 +198,7 @@ public class Tests {
                 edu.marywood.util.Arrays.hashCode(RANGE_FLOAT_ARRAY));
     }
 
-    /** Tests {@code Arrays.hashCode(int[])}. */
+    /** The {@code Arrays.hashCode(int[])} test. */
     @Test
     public void hashCodeIntArray() {
         Assertions.assertEquals(
