@@ -303,7 +303,7 @@ public class Benchmarks {
         java.util.Arrays.toString(this.byteArray);
     }
 
-    /** The OpenJDK toString(char[]) Benchmark. */
+    /** The OpenJDK {@code Arrays.toString(char[])} benchmark. */
     @Benchmark
     @Group("toStringCharArray")
     public void openJDKToStringCharArray() {
