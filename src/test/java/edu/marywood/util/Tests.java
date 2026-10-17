@@ -300,7 +300,7 @@ public class Tests {
                 edu.marywood.util.Arrays.toString(RANGE_BYTE_ARRAY));
     }
 
-    /** Tests {@code Arrays.toString(char[])}. */
+    /** The {@code Arrays.toString(char[])} test. */
     @Test
     public void toStringCharArray() {
         Assertions.assertEquals(
