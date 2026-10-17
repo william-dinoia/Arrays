@@ -212,7 +212,7 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(this.shortArray);
     }
 
-    /** The OpenJDK deepHashCode(Object[]) Benchmark. */
+    /** The OpenJDK {@code Arrays.deepHashCode(Object[])} benchmark. */
     @Benchmark
     @Group("deepHashCodeObjectArray")
     public void openJDKDeepHashCodeObjectArray() {
