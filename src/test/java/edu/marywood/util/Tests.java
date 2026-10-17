@@ -334,7 +334,7 @@ public class Tests {
                 edu.marywood.util.Arrays.toString(RANGE_DOUBLE_ARRAY));
     }
 
-    /** Tests {@code Arrays.toString(float[])}. */
+    /** The {@code Arrays.toString(float[])} test. */
     @Test
     public void toStringFloatArray() {
         Assertions.assertEquals(
