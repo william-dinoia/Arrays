@@ -130,7 +130,7 @@ public class Tests {
                 edu.marywood.util.Arrays.hashCode(RANGE_BOOLEAN_ARRAY));
     }
 
-    /** Tests {@code Arrays.hashCode(byte[])}. */
+    /** The {@code Arrays.hashCode(byte[])} test. */
     @Test
     public void hashCodeByteArray() {
         Assertions.assertEquals(
