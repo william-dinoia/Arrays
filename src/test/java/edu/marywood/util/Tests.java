@@ -385,7 +385,7 @@ public class Tests {
                 edu.marywood.util.Arrays.toString(RANGE_LONG_ARRAY));
     }
 
-    /** Tests {@code Arrays.toString(Object[])}. */
+    /** The {@code Arrays.toString(Object[])} test. */
     @Test
     public void toStringObjectArray() {
         Assertions.assertEquals(
