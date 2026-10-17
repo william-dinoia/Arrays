@@ -324,7 +324,7 @@ public class Benchmarks {
         java.util.Arrays.toString(this.floatArray);
     }
 
-    /** The OpenJDK toString(int[]) Benchmark. */
+    /** The OpenJDK {@code Arrays.toString(int[])} benchmark. */
     @Benchmark
     @Group("toStringIntArray")
     public void openJDKToStringIntArray() {
