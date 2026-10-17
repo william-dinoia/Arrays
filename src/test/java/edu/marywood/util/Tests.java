@@ -317,7 +317,7 @@ public class Tests {
                 edu.marywood.util.Arrays.toString(RANGE_CHAR_ARRAY));
     }
 
-    /** Tests {@code Arrays.toString(double[])}. */
+    /** The {@code Arrays.toString(double[])} test. */
     @Test
     public void toStringDoubleArray() {
         Assertions.assertEquals(
