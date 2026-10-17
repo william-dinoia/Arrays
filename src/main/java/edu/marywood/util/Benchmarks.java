@@ -156,7 +156,7 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(this.booleanArray);
     }
 
-    /** The Marywood toString(byte[]) Benchmark. */
+    /** The Marywood {@code Arrays.toString(byte[])} benchmark. */
     @Benchmark
     @Group("toStringByteArray")
     public void marywoodToStringByteArray() {
