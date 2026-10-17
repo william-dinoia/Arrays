@@ -147,7 +147,7 @@ public class Tests {
                 edu.marywood.util.Arrays.hashCode(RANGE_BYTE_ARRAY));
     }
 
-    /** Tests {@code Arrays.hashCode(char[])}. */
+    /** The {@code Arrays.hashCode(char[])} test. */
     @Test
     public void hashCodeCharArray() {
         Assertions.assertEquals(
