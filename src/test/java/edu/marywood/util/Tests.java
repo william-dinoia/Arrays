@@ -181,7 +181,7 @@ public class Tests {
                 edu.marywood.util.Arrays.hashCode(RANGE_DOUBLE_ARRAY));
     }
 
-    /** Tests {@code Arrays.hashCode(float[])}. */
+    /** The {@code Arrays.hashCode(float[])} test. */
     @Test
     public void hashCodeFloatArray() {
         Assertions.assertEquals(
