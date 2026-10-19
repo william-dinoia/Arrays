@@ -117,6 +117,30 @@ public final class Arrays {
     }
 
     /**
+     * Tests the equality of two {@code boolean[]}.
+     *
+     * @param booleanArrayA {@code boolean[]}
+     * @param booleanArrayB {@code boolean[]}
+     * @return {@code boolean}
+     */
+    public static boolean equals(boolean[] booleanArrayA, boolean[] booleanArrayB) {
+        if (booleanArrayA == null) {
+            return booleanArrayB == null;
+        } else if (booleanArrayB == null) {
+            return booleanArrayA == null;
+        } else if (booleanArrayA.length == booleanArrayB.length) {
+            for (int index = 0; index < booleanArrayA.length; index += 1) {
+                if (booleanArrayA[index] != booleanArrayB[index]) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * Gets the hash code of an {@code Object[]}.
      *
      * @param objectArray {@code Object[]}
