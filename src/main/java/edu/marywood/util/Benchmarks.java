@@ -233,6 +233,13 @@ public class Benchmarks {
         java.util.Arrays.deepToString(this.objectArray);
     }
 
+    /** The OpenJDK {@code Arrays.equals(boolean[], boolean[])} benchmark. */
+    @Benchmark
+    @Group("equalsBooleanArrayBooleanArray")
+    public void openJDKEqualsBooleanArrayBooleanArray() {
+        java.util.Arrays.equals(this.booleanArray, this.booleanArray);
+    }
+
     /** The OpenJDK {@code Arrays.hashCode(boolean[])} benchmark. */
     @Benchmark
     @Group("hashCodeBooleanArray")
