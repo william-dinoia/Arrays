@@ -124,10 +124,10 @@ public final class Arrays {
      * @return {@code boolean}
      */
     public static boolean equals(boolean[] booleanArrayA, boolean[] booleanArrayB) {
-        if (booleanArrayA == null) {
-            return booleanArrayB == null;
-        } else if (booleanArrayB == null) {
-            return booleanArrayA == null;
+        if (booleanArrayA == booleanArrayB) {
+            return true;
+        } else if (booleanArrayA == null || booleanArrayB == null) {
+            return false;
         } else if (booleanArrayA.length == booleanArrayB.length) {
             for (int index = 0; index < booleanArrayA.length; index += 1) {
                 if (booleanArrayA[index] != booleanArrayB[index]) {
