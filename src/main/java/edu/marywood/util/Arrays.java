@@ -141,6 +141,30 @@ public final class Arrays {
     }
 
     /**
+     * Tests the equality of two {@code byte[]}.
+     *
+     * @param byteArrayA {@code byte[]}
+     * @param byteArrayB {@code byte[]}
+     * @return {@code boolean}
+     */
+    public static boolean equals(byte[] byteArrayA, byte[] byteArrayB) {
+        if (byteArrayA == byteArrayB) {
+            return true;
+        } else if (byteArrayA == null || byteArrayB == null) {
+            return false;
+        } else if (byteArrayA.length == byteArrayB.length) {
+            for (int index = 0; index < byteArrayA.length; index += 1) {
+                if (byteArrayA[index] != byteArrayB[index]) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * Gets the hash code of an {@code Object[]}.
      *
      * @param objectArray {@code Object[]}
