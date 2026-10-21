@@ -247,6 +247,13 @@ public class Benchmarks {
         java.util.Arrays.equals(this.booleanArray, this.booleanArray);
     }
 
+    /** The OpenJDK {@code Arrays.equals(byte[], byte[])} benchmark. */
+    @Benchmark
+    @Group("equalsByteArrayByteArray")
+    public void openJDKEqualsByteArrayByteArray() {
+        java.util.Arrays.equals(this.byteArray, this.byteArray);
+    }
+
     /** The OpenJDK {@code Arrays.hashCode(boolean[])} benchmark. */
     @Benchmark
     @Group("hashCodeBooleanArray")
