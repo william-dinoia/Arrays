@@ -166,6 +166,59 @@ public class Tests {
                 edu.marywood.util.Arrays.equals(RANGE_BOOLEAN_ARRAY, RANGE_BOOLEAN_ARRAY));
     }
 
+    /** The {@code Arrays.equals(byte[], byte[])} test. */
+    @Test
+    public void equalsByteArrayByteArray() {
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_BYTE_ARRAY, BLANK_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_BYTE_ARRAY, BLANK_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_BYTE_ARRAY, EMPTY_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_BYTE_ARRAY, EMPTY_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_BYTE_ARRAY, LONER_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_BYTE_ARRAY, LONER_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_BYTE_ARRAY, RANGE_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_BYTE_ARRAY, RANGE_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_BYTE_ARRAY, BLANK_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_BYTE_ARRAY, BLANK_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_BYTE_ARRAY, EMPTY_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_BYTE_ARRAY, EMPTY_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_BYTE_ARRAY, LONER_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_BYTE_ARRAY, LONER_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_BYTE_ARRAY, RANGE_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_BYTE_ARRAY, RANGE_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_BYTE_ARRAY, BLANK_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_BYTE_ARRAY, BLANK_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_BYTE_ARRAY, EMPTY_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_BYTE_ARRAY, EMPTY_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_BYTE_ARRAY, LONER_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_BYTE_ARRAY, LONER_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_BYTE_ARRAY, RANGE_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_BYTE_ARRAY, RANGE_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_BYTE_ARRAY, BLANK_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_BYTE_ARRAY, BLANK_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_BYTE_ARRAY, EMPTY_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_BYTE_ARRAY, EMPTY_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_BYTE_ARRAY, LONER_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_BYTE_ARRAY, LONER_BYTE_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_BYTE_ARRAY, RANGE_BYTE_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_BYTE_ARRAY, RANGE_BYTE_ARRAY));
+    }
+
     /** The {@code Arrays.hashCode(boolean[])} test. */
     @Test
     public void hashCodeBooleanArray() {
