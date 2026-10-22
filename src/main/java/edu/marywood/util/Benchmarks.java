@@ -247,7 +247,8 @@ public class Benchmarks {
     @Benchmark
     @Group("equalsBooleanArrayBooleanArray")
     public void openJDKEqualsBooleanArrayBooleanArray() {
-        java.util.Arrays.equals(this.booleanArray, this.booleanArray);
+        java.util.Arrays.equals(
+                this.booleanArray, Arrays.copyOf(this.booleanArray, this.booleanArray.length));
     }
 
     /** The OpenJDK {@code Arrays.equals(byte[], byte[])} benchmark. */
