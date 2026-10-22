@@ -99,7 +99,8 @@ public class Benchmarks {
     @Benchmark
     @Group("equalsByteArrayByteArray")
     public void marywoodEqualsByteArrayByteArray() {
-        edu.marywood.util.Arrays.equals(this.byteArray, this.byteArray);
+        edu.marywood.util.Arrays.equals(
+                this.byteArray, Arrays.copyOf(this.byteArray, this.byteArray.length));
     }
 
     /** The Marywood {@code Arrays.hashCode(boolean[])} benchmark. */
