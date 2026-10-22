@@ -255,7 +255,8 @@ public class Benchmarks {
     @Benchmark
     @Group("equalsByteArrayByteArray")
     public void openJDKEqualsByteArrayByteArray() {
-        java.util.Arrays.equals(this.byteArray, this.byteArray);
+        java.util.Arrays.equals(
+                this.byteArray, Arrays.copyOf(this.byteArray, this.byteArray.length));
     }
 
     /** The OpenJDK {@code Arrays.hashCode(boolean[])} benchmark. */
