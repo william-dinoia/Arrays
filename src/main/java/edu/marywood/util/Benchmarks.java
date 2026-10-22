@@ -1,5 +1,6 @@
 package edu.marywood.util;
 
+import java.util.Arrays;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Group;
@@ -90,7 +91,8 @@ public class Benchmarks {
     @Benchmark
     @Group("equalsBooleanArrayBooleanArray")
     public void marywoodEqualsBooleanArrayBooleanArray() {
-        edu.marywood.util.Arrays.equals(this.booleanArray, this.booleanArray);
+        edu.marywood.util.Arrays.equals(
+                this.booleanArray, Arrays.copyOf(this.booleanArray, this.booleanArray.length));
     }
 
     /** The Marywood {@code Arrays.equals(byte[], byte[])} benchmark. */
