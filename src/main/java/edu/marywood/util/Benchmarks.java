@@ -267,6 +267,14 @@ public class Benchmarks {
                 this.byteArray, Arrays.copyOf(this.byteArray, this.byteArray.length));
     }
 
+    /** The OpenJDK {@code Arrays.equals(char[], char[])} benchmark. */
+    @Benchmark
+    @Group("equalsCharArrayCharArray")
+    public void openJDKEqualsCharArrayCharArray() {
+        java.util.Arrays.equals(
+                this.charArray, Arrays.copyOf(this.charArray, this.charArray.length));
+    }
+
     /** The OpenJDK {@code Arrays.hashCode(boolean[])} benchmark. */
     @Benchmark
     @Group("hashCodeBooleanArray")
