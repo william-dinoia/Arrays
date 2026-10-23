@@ -165,6 +165,30 @@ public final class Arrays {
     }
 
     /**
+     * Tests the equality of two {@code char[]}.
+     *
+     * @param charArrayA {@code char[]}
+     * @param charArrayB {@code char[]}
+     * @return {@code boolean}
+     */
+    public static boolean equals(char[] charArrayA, char[] charArrayB) {
+        if (charArrayA == charArrayB) {
+            return true;
+        } else if (charArrayA == null || charArrayB == null) {
+            return false;
+        } else if (charArrayA.length == charArrayB.length) {
+            for (int index = 0; index < charArrayA.length; index += 1) {
+                if (charArrayA[index] != charArrayB[index]) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * Gets the hash code of an {@code Object[]}.
      *
      * @param objectArray {@code Object[]}
