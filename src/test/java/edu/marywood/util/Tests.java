@@ -219,6 +219,59 @@ public class Tests {
                 edu.marywood.util.Arrays.equals(RANGE_BYTE_ARRAY, RANGE_BYTE_ARRAY));
     }
 
+    /** The {@code Arrays.equals(char[], char[])} test. */
+    @Test
+    public void equalsCharArrayCharArray() {
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_CHAR_ARRAY, BLANK_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_CHAR_ARRAY, BLANK_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_CHAR_ARRAY, EMPTY_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_CHAR_ARRAY, EMPTY_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_CHAR_ARRAY, LONER_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_CHAR_ARRAY, LONER_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_CHAR_ARRAY, RANGE_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_CHAR_ARRAY, RANGE_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_CHAR_ARRAY, BLANK_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_CHAR_ARRAY, BLANK_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_CHAR_ARRAY, EMPTY_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_CHAR_ARRAY, EMPTY_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_CHAR_ARRAY, LONER_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_CHAR_ARRAY, LONER_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_CHAR_ARRAY, RANGE_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_CHAR_ARRAY, RANGE_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_CHAR_ARRAY, BLANK_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_CHAR_ARRAY, BLANK_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_CHAR_ARRAY, EMPTY_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_CHAR_ARRAY, EMPTY_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_CHAR_ARRAY, LONER_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_CHAR_ARRAY, LONER_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_CHAR_ARRAY, RANGE_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_CHAR_ARRAY, RANGE_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_CHAR_ARRAY, BLANK_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_CHAR_ARRAY, BLANK_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_CHAR_ARRAY, EMPTY_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_CHAR_ARRAY, EMPTY_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_CHAR_ARRAY, LONER_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_CHAR_ARRAY, LONER_CHAR_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_CHAR_ARRAY, RANGE_CHAR_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_CHAR_ARRAY, RANGE_CHAR_ARRAY));
+    }
+
     /** The {@code Arrays.hashCode(boolean[])} test. */
     @Test
     public void hashCodeBooleanArray() {
