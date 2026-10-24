@@ -237,6 +237,30 @@ public final class Arrays {
     }
 
     /**
+     * Tests the equality of two {@code int[}.
+     *
+     * @param intArrayA {@code int[]}
+     * @param intArrayB {@code int[]}
+     * @return {@code boolean}
+     */
+    public static boolean equals(int[] intArrayA, int[] intArrayB) {
+        if (intArrayA == intArrayB) {
+            return true;
+        } else if (intArrayA == null || intArrayB == null) {
+            return false;
+        } else if (intArrayA.length == intArrayB.length) {
+            for (int index = 0; index < intArrayA.length; index += 1) {
+                if (intArrayA[index] != intArrayB[index]) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * Gets the hash code of an {@code Object[]}.
      *
      * @param objectArray {@code Object[]}
