@@ -127,6 +127,14 @@ public class Benchmarks {
                 this.floatArray, Arrays.copyOf(this.floatArray, this.floatArray.length));
     }
 
+    /** The Marywood {@code Arrays.equals(int[], int[])} benchmark. */
+    @Benchmark
+    @Group("equalsIntArrayIntArray")
+    public void marywoodEqualsIntArrayIntArray() {
+        edu.marywood.util.Arrays.equals(
+                this.intArray, Arrays.copyOf(this.intArray, this.intArray.length));
+    }
+
     /** The Marywood {@code Arrays.hashCode(boolean[])} benchmark. */
     @Benchmark
     @Group("hashCodeBooleanArray")
