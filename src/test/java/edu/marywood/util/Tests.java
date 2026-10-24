@@ -325,6 +325,59 @@ public class Tests {
                 edu.marywood.util.Arrays.equals(RANGE_DOUBLE_ARRAY, RANGE_DOUBLE_ARRAY));
     }
 
+    /** The {@code Arrays.equals(float[], float[])} test. */
+    @Test
+    public void equalsFloatArrayFloatArray() {
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_FLOAT_ARRAY, BLANK_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_FLOAT_ARRAY, BLANK_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_FLOAT_ARRAY, LONER_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_FLOAT_ARRAY, LONER_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(BLANK_FLOAT_ARRAY, RANGE_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(BLANK_FLOAT_ARRAY, RANGE_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_FLOAT_ARRAY, BLANK_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_FLOAT_ARRAY, BLANK_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_FLOAT_ARRAY, LONER_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_FLOAT_ARRAY, LONER_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(EMPTY_FLOAT_ARRAY, RANGE_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(EMPTY_FLOAT_ARRAY, RANGE_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_FLOAT_ARRAY, BLANK_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_FLOAT_ARRAY, BLANK_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_FLOAT_ARRAY, LONER_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_FLOAT_ARRAY, LONER_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(LONER_FLOAT_ARRAY, RANGE_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(LONER_FLOAT_ARRAY, RANGE_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_FLOAT_ARRAY, BLANK_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_FLOAT_ARRAY, BLANK_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_FLOAT_ARRAY, LONER_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_FLOAT_ARRAY, LONER_FLOAT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.equals(RANGE_FLOAT_ARRAY, RANGE_FLOAT_ARRAY),
+                edu.marywood.util.Arrays.equals(RANGE_FLOAT_ARRAY, RANGE_FLOAT_ARRAY));
+    }
+
     /** The {@code Arrays.hashCode(boolean[])} test. */
     @Test
     public void hashCodeBooleanArray() {
