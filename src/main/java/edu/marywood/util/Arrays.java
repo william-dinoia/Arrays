@@ -213,6 +213,30 @@ public final class Arrays {
     }
 
     /**
+     * Tests the equality of two {@code float[}.
+     *
+     * @param floatArrayA {@code float[]}
+     * @param floatArrayB {@code float[]}
+     * @return {@code boolean}
+     */
+    public static boolean equals(float[] floatArrayA, float[] floatArrayB) {
+        if (floatArrayA == floatArrayB) {
+            return true;
+        } else if (floatArrayA == null || floatArrayB == null) {
+            return false;
+        } else if (floatArrayA.length == floatArrayB.length) {
+            for (int index = 0; index < floatArrayA.length; index += 1) {
+                if (floatArrayA[index] != floatArrayB[index]) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * Gets the hash code of an {@code Object[]}.
      *
      * @param objectArray {@code Object[]}
