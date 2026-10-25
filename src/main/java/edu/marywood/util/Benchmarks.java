@@ -354,6 +354,14 @@ public class Benchmarks {
                 this.longArray, Arrays.copyOf(this.longArray, this.longArray.length));
     }
 
+    /** The OpenJDK {@code Arrays.equals(Object[], Object[])} benchmark. */
+    @Benchmark
+    @Group("equalsObjectArrayObjectArray")
+    public void openJDKEqualsObjectArrayObjectArray() {
+        java.util.Arrays.equals(
+                this.objectArray, Arrays.copyOf(this.objectArray, this.objectArray.length));
+    }
+
     /** The OpenJDK {@code Arrays.equals(short[], short[])} benchmark. */
     @Benchmark
     @Group("equalsShortArrayShortArray")
