@@ -330,6 +330,14 @@ public class Benchmarks {
         java.util.Arrays.equals(this.intArray, Arrays.copyOf(this.intArray, this.intArray.length));
     }
 
+    /** The OpenJDK {@code Arrays.equals(long[], long[])} benchmark. */
+    @Benchmark
+    @Group("equalsLongArrayLongArray")
+    public void openJDKEqualsLongArrayLongArray() {
+        java.util.Arrays.equals(
+                this.longArray, Arrays.copyOf(this.longArray, this.longArray.length));
+    }
+
     /** The OpenJDK {@code Arrays.hashCode(boolean[])} benchmark. */
     @Benchmark
     @Group("hashCodeBooleanArray")
