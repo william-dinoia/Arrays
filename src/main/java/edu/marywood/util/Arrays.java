@@ -285,6 +285,30 @@ public final class Arrays {
     }
 
     /**
+     * Tests the equality of two {@code short[]}.
+     *
+     * @param shortArrayA {@code short[]}
+     * @param shortArrayB {@code short[]}
+     * @return {@code boolean}
+     */
+    public static boolean equals(short[] shortArrayA, short[] shortArrayB) {
+        if (shortArrayA == shortArrayB) {
+            return true;
+        } else if (shortArrayA == null || shortArrayB == null) {
+            return false;
+        } else if (shortArrayA.length == shortArrayB.length) {
+            for (int index = 0; index < shortArrayA.length; index += 1) {
+                if (shortArrayA[index] != shortArrayB[index]) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * Gets the hash code of an {@code Object[]}.
      *
      * @param objectArray {@code Object[]}
