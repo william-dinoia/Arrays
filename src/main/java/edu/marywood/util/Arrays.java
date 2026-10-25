@@ -26,6 +26,25 @@ public final class Arrays {
         return Arrays.deepEquals(objectArrayA, objectArrayB, new HashSet<Object[]>());
     }
 
+    private static boolean deepEquals(
+            Object[] objectArrayA, Object[] objectArrayB, Set<Object[]> objectArraySet) {
+        if (objectArrayA == objectArrayB) {
+            return true;
+        } else if (objectArrayA == null || objectArrayB == null) {
+            return false;
+        } else if (objectArrayA.length == objectArrayB.length) {
+            objectArraySet.add(objectArrayA);
+            for (int index = 0; index < objectArrayA.length; index += 1) {
+                if (!Arrays.deepEquals(objectArrayA[index], objectArrayB[index], objectArraySet)) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     /**
      * Gets the deep hash code of an {@link Object}{@code []}.
      *
