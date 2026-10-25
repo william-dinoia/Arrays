@@ -117,6 +117,30 @@ public final class Arrays {
     }
 
     /**
+     * Tests the equality of two {@code Object[]}.
+     *
+     * @param objectArrayA {@code Object[]}
+     * @param objectArrayB {@code Object[]}
+     * @return {@code boolean}
+     */
+    public static boolean equals(Object[] objectArrayA, Object[] objectArrayB) {
+        if (objectArrayA == objectArrayB) {
+            return true;
+        } else if (objectArrayA == null || objectArrayB == null) {
+            return false;
+        } else if (objectArrayA.length == objectArrayB.length) {
+            for (int index = 0; index < objectArrayA.length; index += 1) {
+                if (!objectArrayA[index].equals(objectArrayB[index])) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * Tests the equality of two {@code boolean[]}.
      *
      * @param booleanArrayA {@code boolean[]}
