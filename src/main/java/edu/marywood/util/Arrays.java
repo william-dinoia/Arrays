@@ -16,6 +16,17 @@ public final class Arrays {
     }
 
     /**
+     * Tests the deep equality of two {@link Object}{@code []}.
+     *
+     * @param objectArrayA {@link Object}{@code []}
+     * @param objectArrayB {@link Object}{@code []}
+     * @return {@code boolean}
+     */
+    public static boolean deepEquals(Object[] objectArrayA, Object[] objectArrayB) {
+        return Arrays.deepEquals(objectArrayA, objectArrayB, new HashSet<Object[]>());
+    }
+
+    /**
      * Gets the deep hash code of an {@link Object}{@code []}.
      *
      * @param objectArray {@link Object}{@code []}
