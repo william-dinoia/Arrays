@@ -213,7 +213,7 @@ public final class Arrays {
     }
 
     /**
-     * Tests the equality of two {@code float[}.
+     * Tests the equality of two {@code float[]}.
      *
      * @param floatArrayA {@code float[]}
      * @param floatArrayB {@code float[]}
