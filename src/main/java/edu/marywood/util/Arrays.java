@@ -237,7 +237,7 @@ public final class Arrays {
     }
 
     /**
-     * Tests the equality of two {@code int[}.
+     * Tests the equality of two {@code int[]}.
      *
      * @param intArrayA {@code int[]}
      * @param intArrayB {@code int[]}
