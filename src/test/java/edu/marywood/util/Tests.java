@@ -47,7 +47,7 @@ public class Tests {
     private static final long[] RANGE_LONG_ARRAY = new long[] {Long.MIN_VALUE, Long.MAX_VALUE};
     private static final Object[] RANGE_OBJECT_ARRAY =
             new Object[] {
-                new Object(),
+                "",
                 new boolean[] {false, true},
                 new byte[] {Byte.MIN_VALUE, Byte.MAX_VALUE},
                 new char[] {Character.MIN_VALUE, Character.MAX_VALUE},
