@@ -80,8 +80,12 @@ public class Tests {
                 java.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, BLANK_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, BLANK_OBJECT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY),
-                edu.marywood.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY));
+                java.util.Arrays.deepEquals(
+                        EMPTY_OBJECT_ARRAY,
+                        Arrays.copyOf(EMPTY_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY.length)),
+                edu.marywood.util.Arrays.deepEquals(
+                        EMPTY_OBJECT_ARRAY,
+                        Arrays.copyOf(EMPTY_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY.length)));
         Assertions.assertEquals(
                 java.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, LONER_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, LONER_OBJECT_ARRAY));
@@ -95,8 +99,12 @@ public class Tests {
                 java.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, LONER_OBJECT_ARRAY),
-                edu.marywood.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, LONER_OBJECT_ARRAY));
+                java.util.Arrays.deepEquals(
+                        LONER_OBJECT_ARRAY,
+                        Arrays.copyOf(LONER_OBJECT_ARRAY, LONER_OBJECT_ARRAY.length)),
+                edu.marywood.util.Arrays.deepEquals(
+                        LONER_OBJECT_ARRAY,
+                        Arrays.copyOf(LONER_OBJECT_ARRAY, LONER_OBJECT_ARRAY.length)));
         Assertions.assertEquals(
                 java.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, RANGE_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, RANGE_OBJECT_ARRAY));
@@ -110,8 +118,12 @@ public class Tests {
                 java.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, LONER_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, LONER_OBJECT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, RANGE_OBJECT_ARRAY),
-                edu.marywood.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, RANGE_OBJECT_ARRAY));
+                java.util.Arrays.deepEquals(
+                        RANGE_OBJECT_ARRAY,
+                        Arrays.copyOf(RANGE_OBJECT_ARRAY, RANGE_OBJECT_ARRAY.length)),
+                edu.marywood.util.Arrays.deepEquals(
+                        RANGE_OBJECT_ARRAY,
+                        Arrays.copyOf(RANGE_OBJECT_ARRAY, RANGE_OBJECT_ARRAY.length)));
     }
 
     /** The {@code Arrays.deepHashCode(Object[])} test. */
