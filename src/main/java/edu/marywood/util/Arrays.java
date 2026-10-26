@@ -239,8 +239,14 @@ public final class Arrays {
             return false;
         } else if (objectArrayA.length == objectArrayB.length) {
             for (int index = 0; index < objectArrayA.length; index += 1) {
-                if (!objectArrayA[index].equals(objectArrayB[index])) {
-                    return false;
+                if (objectArrayA[index] == null) {
+                    if (objectArrayB[index] != null) {
+                        return false;
+                    }
+                } else {
+                    if (!objectArrayA[index].equals(objectArrayB[index])) {
+                        return false;
+                    }
                 }
             }
             return true;
