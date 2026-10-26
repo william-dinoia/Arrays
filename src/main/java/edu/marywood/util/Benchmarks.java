@@ -73,6 +73,14 @@ public class Benchmarks {
         runner.run();
     }
 
+    /** The Marywood {@code Arrays.deepEquals(Object[], Object[])} benchmark. */
+    @Benchmark
+    @Group("deepEqualsObjectArrayObjectArray")
+    public void marywoodDeepEqualsObjectArrayObjectArray() {
+        edu.marywood.util.Arrays.deepEquals(
+                this.objectArray, Arrays.copyOf(this.objectArray, this.objectArray.length));
+    }
+
     /** The Marywood {@code Arrays.deepHashCode(Object[])} benchmark. */
     @Benchmark
     @Group("deepHashCodeObjectArray")
