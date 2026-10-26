@@ -60,6 +60,59 @@ public class Tests {
             };
     private static final short[] RANGE_SHORT_ARRAY = new short[] {Short.MIN_VALUE, Short.MAX_VALUE};
 
+    /** The {@code Arrays.deepEquals(Object[], Object[])} test. */
+    @Test
+    public void deepEqualsObjectArrayObjectArray() {
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(BLANK_OBJECT_ARRAY, BLANK_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(BLANK_OBJECT_ARRAY, BLANK_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(BLANK_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(BLANK_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(BLANK_OBJECT_ARRAY, LONER_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(BLANK_OBJECT_ARRAY, LONER_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(BLANK_OBJECT_ARRAY, RANGE_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(BLANK_OBJECT_ARRAY, RANGE_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, BLANK_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, BLANK_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, LONER_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, LONER_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, RANGE_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(EMPTY_OBJECT_ARRAY, RANGE_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, BLANK_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, BLANK_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, LONER_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, LONER_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, RANGE_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(LONER_OBJECT_ARRAY, RANGE_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, BLANK_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, BLANK_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, EMPTY_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, LONER_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, LONER_OBJECT_ARRAY));
+        Assertions.assertEquals(
+                java.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, RANGE_OBJECT_ARRAY),
+                edu.marywood.util.Arrays.deepEquals(RANGE_OBJECT_ARRAY, RANGE_OBJECT_ARRAY));
+    }
+
     /** The {@code Arrays.deepHashCode(Object[])} test. */
     @Test
     public void deepHashCodeObjectArray() {
