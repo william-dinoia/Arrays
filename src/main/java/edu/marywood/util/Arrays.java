@@ -51,8 +51,10 @@ public final class Arrays {
             case Object[] objectArray -> {
                 if (objectArraySet.contains(objectArray)) {
                     throw new IllegalArgumentException();
-                } else {
+                } else if (objectB instanceof Object[]) {
                     yield Arrays.deepEquals(objectArray, (Object[]) objectB, objectArraySet);
+                } else {
+                    yield false;
                 }
             }
             case boolean[] booleanArray -> {
@@ -104,7 +106,13 @@ public final class Arrays {
                     yield false;
                 }
             }
-            case null -> false;
+            case null -> {
+                if (objectB == null) {
+                    yield true;
+                } else {
+                    yield false;
+                }
+            }
             case short[] shortArray -> {
                 if (objectB instanceof short[]) {
                     yield Arrays.equals(shortArray, (short[]) objectB);
