@@ -45,6 +45,77 @@ public final class Arrays {
         }
     }
 
+    private static boolean deepEquals(Object objectA, Object objectB, Set<Object[]> objectArraySet)
+            throws IllegalArgumentException {
+        return switch (objectA) {
+            case Object[] objectArray -> {
+                if (objectArraySet.contains(objectArray)) {
+                    throw new IllegalArgumentException();
+                } else {
+                    yield Arrays.deepEquals(objectArray, objectB, objectArraySet);
+                }
+            }
+            case boolean[] booleanArray -> {
+                if (objectB instanceof boolean[]) {
+                    yield Arrays.equals(booleanArray, (boolean[]) objectB);
+                } else {
+                    yield false;
+                }
+            }
+            case byte[] byteArray -> {
+                if (objectB instanceof byte[]) {
+                    yield Arrays.equals(byteArray, (byte[]) objectB);
+                } else {
+                    yield false;
+                }
+            }
+            case char[] charArray -> {
+                if (objectB instanceof char[]) {
+                    yield Arrays.equals(charArray, (char[]) objectB);
+                } else {
+                    yield false;
+                }
+            }
+            case double[] doubleArray -> {
+                if (objectB instanceof double[]) {
+                    yield Arrays.equals(doubleArray, (double[]) objectB);
+                } else {
+                    yield false;
+                }
+            }
+            case float[] floatArray -> {
+                if (objectB instanceof float[]) {
+                    yield Arrays.equals(floatArray, (float[]) objectB);
+                } else {
+                    yield false;
+                }
+            }
+            case int[] intArray -> {
+                if (objectB instanceof int[]) {
+                    yield Arrays.equals(intArray, (int[]) objectB);
+                } else {
+                    yield false;
+                }
+            }
+            case long[] longArray -> {
+                if (objectB instanceof long[]) {
+                    yield Arrays.equals(longArray, (long[]) objectB);
+                } else {
+                    yield false;
+                }
+            }
+            case null -> false;
+            case short[] shortArray -> {
+                if (objectB instanceof short[]) {
+                    yield Arrays.equals(shortArray, (short[]) objectB);
+                } else {
+                    yield false;
+                }
+            }
+            default -> objectA.equals(objectB);
+        };
+    }
+
     /**
      * Gets the deep hash code of an {@link Object}{@code []}.
      *
