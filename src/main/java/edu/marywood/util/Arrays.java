@@ -52,7 +52,7 @@ public final class Arrays {
                 if (objectArraySet.contains(objectArray)) {
                     throw new IllegalArgumentException();
                 } else {
-                    yield Arrays.deepEquals(objectArray, objectB, objectArraySet);
+                    yield Arrays.deepEquals(objectArray, (Object[]) objectB, objectArraySet);
                 }
             }
             case boolean[] booleanArray -> {
