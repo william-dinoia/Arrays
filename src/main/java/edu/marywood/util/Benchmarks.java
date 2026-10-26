@@ -293,6 +293,14 @@ public class Benchmarks {
         edu.marywood.util.Arrays.toString(this.shortArray);
     }
 
+    /** The OpenJDK {@code Arrays.deepEquals(Object[], Object[])} benchmark. */
+    @Benchmark
+    @Group("deepEqualsObjectArrayObjectArray")
+    public void openJDKDeepEqualsObjectArrayObjectArray() {
+        java.util.Arrays.deepEquals(
+                this.objectArray, Arrays.copyOf(this.objectArray, this.objectArray.length));
+    }
+
     /** The OpenJDK {@code Arrays.deepHashCode(Object[])} benchmark. */
     @Benchmark
     @Group("deepHashCodeObjectArray")
