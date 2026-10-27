@@ -203,8 +203,12 @@ public class Tests {
                 java.util.Arrays.equals(EMPTY_BOOLEAN_ARRAY, BLANK_BOOLEAN_ARRAY),
                 edu.marywood.util.Arrays.equals(EMPTY_BOOLEAN_ARRAY, BLANK_BOOLEAN_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(EMPTY_BOOLEAN_ARRAY, EMPTY_BOOLEAN_ARRAY),
-                edu.marywood.util.Arrays.equals(EMPTY_BOOLEAN_ARRAY, EMPTY_BOOLEAN_ARRAY));
+                java.util.Arrays.equals(
+                        EMPTY_BOOLEAN_ARRAY,
+                        Arrays.copyOf(EMPTY_BOOLEAN_ARRAY, EMPTY_BOOLEAN_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        EMPTY_BOOLEAN_ARRAY,
+                        Arrays.copyOf(EMPTY_BOOLEAN_ARRAY, EMPTY_BOOLEAN_ARRAY.length)));
         Assertions.assertEquals(
                 java.util.Arrays.equals(EMPTY_BOOLEAN_ARRAY, LONER_BOOLEAN_ARRAY),
                 edu.marywood.util.Arrays.equals(EMPTY_BOOLEAN_ARRAY, LONER_BOOLEAN_ARRAY));
@@ -218,8 +222,12 @@ public class Tests {
                 java.util.Arrays.equals(LONER_BOOLEAN_ARRAY, EMPTY_BOOLEAN_ARRAY),
                 edu.marywood.util.Arrays.equals(LONER_BOOLEAN_ARRAY, EMPTY_BOOLEAN_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(LONER_BOOLEAN_ARRAY, LONER_BOOLEAN_ARRAY),
-                edu.marywood.util.Arrays.equals(LONER_BOOLEAN_ARRAY, LONER_BOOLEAN_ARRAY));
+                java.util.Arrays.equals(
+                        LONER_BOOLEAN_ARRAY,
+                        Arrays.copyOf(LONER_BOOLEAN_ARRAY, LONER_BOOLEAN_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        LONER_BOOLEAN_ARRAY,
+                        Arrays.copyOf(LONER_BOOLEAN_ARRAY, LONER_BOOLEAN_ARRAY.length)));
         Assertions.assertEquals(
                 java.util.Arrays.equals(LONER_BOOLEAN_ARRAY, RANGE_BOOLEAN_ARRAY),
                 edu.marywood.util.Arrays.equals(LONER_BOOLEAN_ARRAY, RANGE_BOOLEAN_ARRAY));
@@ -233,8 +241,12 @@ public class Tests {
                 java.util.Arrays.equals(RANGE_BOOLEAN_ARRAY, LONER_BOOLEAN_ARRAY),
                 edu.marywood.util.Arrays.equals(RANGE_BOOLEAN_ARRAY, LONER_BOOLEAN_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(RANGE_BOOLEAN_ARRAY, RANGE_BOOLEAN_ARRAY),
-                edu.marywood.util.Arrays.equals(RANGE_BOOLEAN_ARRAY, RANGE_BOOLEAN_ARRAY));
+                java.util.Arrays.equals(
+                        RANGE_BOOLEAN_ARRAY,
+                        Arrays.copyOf(RANGE_BOOLEAN_ARRAY, RANGE_BOOLEAN_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        RANGE_BOOLEAN_ARRAY,
+                        Arrays.copyOf(RANGE_BOOLEAN_ARRAY, RANGE_BOOLEAN_ARRAY.length)));
     }
 
     /** The {@code Arrays.equals(byte[], byte[])} test. */
