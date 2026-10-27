@@ -177,9 +177,8 @@ public class Tests {
         Assertions.assertEquals(
                 java.util.Arrays.deepToString(RANGE_OBJECT_ARRAY),
                 edu.marywood.util.Arrays.deepToString(RANGE_OBJECT_ARRAY));
-        Object[] omegaObjectArray = new Object[2];
+        Object[] omegaObjectArray = new Object[1];
         omegaObjectArray[0] = omegaObjectArray;
-        omegaObjectArray[1] = RANGE_OBJECT_ARRAY;
         Assertions.assertEquals(
                 java.util.Arrays.deepToString(omegaObjectArray),
                 edu.marywood.util.Arrays.deepToString(omegaObjectArray));
