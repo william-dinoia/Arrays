@@ -457,8 +457,12 @@ public class Tests {
                 java.util.Arrays.equals(EMPTY_FLOAT_ARRAY, BLANK_FLOAT_ARRAY),
                 edu.marywood.util.Arrays.equals(EMPTY_FLOAT_ARRAY, BLANK_FLOAT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(EMPTY_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY),
-                edu.marywood.util.Arrays.equals(EMPTY_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY));
+                java.util.Arrays.equals(
+                        EMPTY_FLOAT_ARRAY,
+                        Arrays.copyOf(EMPTY_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        EMPTY_FLOAT_ARRAY,
+                        Arrays.copyOf(EMPTY_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY.length)));
         Assertions.assertEquals(
                 java.util.Arrays.equals(EMPTY_FLOAT_ARRAY, LONER_FLOAT_ARRAY),
                 edu.marywood.util.Arrays.equals(EMPTY_FLOAT_ARRAY, LONER_FLOAT_ARRAY));
@@ -472,8 +476,12 @@ public class Tests {
                 java.util.Arrays.equals(LONER_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY),
                 edu.marywood.util.Arrays.equals(LONER_FLOAT_ARRAY, EMPTY_FLOAT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(LONER_FLOAT_ARRAY, LONER_FLOAT_ARRAY),
-                edu.marywood.util.Arrays.equals(LONER_FLOAT_ARRAY, LONER_FLOAT_ARRAY));
+                java.util.Arrays.equals(
+                        LONER_FLOAT_ARRAY,
+                        Arrays.copyOf(LONER_FLOAT_ARRAY, LONER_FLOAT_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        LONER_FLOAT_ARRAY,
+                        Arrays.copyOf(LONER_FLOAT_ARRAY, LONER_FLOAT_ARRAY.length)));
         Assertions.assertEquals(
                 java.util.Arrays.equals(LONER_FLOAT_ARRAY, RANGE_FLOAT_ARRAY),
                 edu.marywood.util.Arrays.equals(LONER_FLOAT_ARRAY, RANGE_FLOAT_ARRAY));
@@ -487,8 +495,12 @@ public class Tests {
                 java.util.Arrays.equals(RANGE_FLOAT_ARRAY, LONER_FLOAT_ARRAY),
                 edu.marywood.util.Arrays.equals(RANGE_FLOAT_ARRAY, LONER_FLOAT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(RANGE_FLOAT_ARRAY, RANGE_FLOAT_ARRAY),
-                edu.marywood.util.Arrays.equals(RANGE_FLOAT_ARRAY, RANGE_FLOAT_ARRAY));
+                java.util.Arrays.equals(
+                        RANGE_FLOAT_ARRAY,
+                        Arrays.copyOf(RANGE_FLOAT_ARRAY, RANGE_FLOAT_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        RANGE_FLOAT_ARRAY,
+                        Arrays.copyOf(RANGE_FLOAT_ARRAY, RANGE_FLOAT_ARRAY.length)));
     }
 
     /** The {@code Arrays.equals(int[], int[])} test. */
