@@ -124,6 +124,13 @@ public class Tests {
                 edu.marywood.util.Arrays.deepEquals(
                         RANGE_OBJECT_ARRAY,
                         Arrays.copyOf(RANGE_OBJECT_ARRAY, RANGE_OBJECT_ARRAY.length)));
+        Object[] omegaObjectArray = new Object[1];
+        omegaObjectArray[0] = omegaObjectArray;
+        Assertions.assertThrows(
+                IllegalArgumentException.class,
+                () -> {
+                    edu.marywood.util.Arrays.deepEquals(omegaObjectArray, LONER_OBJECT_ARRAY);
+                });
     }
 
     /** The {@code Arrays.deepHashCode(Object[])} test. */
