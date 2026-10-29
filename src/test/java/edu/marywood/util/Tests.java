@@ -522,8 +522,10 @@ public class Tests {
                 java.util.Arrays.equals(EMPTY_INT_ARRAY, BLANK_INT_ARRAY),
                 edu.marywood.util.Arrays.equals(EMPTY_INT_ARRAY, BLANK_INT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(EMPTY_INT_ARRAY, EMPTY_INT_ARRAY),
-                edu.marywood.util.Arrays.equals(EMPTY_INT_ARRAY, EMPTY_INT_ARRAY));
+                java.util.Arrays.equals(
+                        EMPTY_INT_ARRAY, Arrays.copyOf(EMPTY_INT_ARRAY, EMPTY_INT_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        EMPTY_INT_ARRAY, Arrays.copyOf(EMPTY_INT_ARRAY, EMPTY_INT_ARRAY.length)));
         Assertions.assertEquals(
                 java.util.Arrays.equals(EMPTY_INT_ARRAY, LONER_INT_ARRAY),
                 edu.marywood.util.Arrays.equals(EMPTY_INT_ARRAY, LONER_INT_ARRAY));
@@ -537,8 +539,10 @@ public class Tests {
                 java.util.Arrays.equals(LONER_INT_ARRAY, EMPTY_INT_ARRAY),
                 edu.marywood.util.Arrays.equals(LONER_INT_ARRAY, EMPTY_INT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(LONER_INT_ARRAY, LONER_INT_ARRAY),
-                edu.marywood.util.Arrays.equals(LONER_INT_ARRAY, LONER_INT_ARRAY));
+                java.util.Arrays.equals(
+                        LONER_INT_ARRAY, Arrays.copyOf(LONER_INT_ARRAY, LONER_INT_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        LONER_INT_ARRAY, Arrays.copyOf(LONER_INT_ARRAY, LONER_INT_ARRAY.length)));
         Assertions.assertEquals(
                 java.util.Arrays.equals(LONER_INT_ARRAY, RANGE_INT_ARRAY),
                 edu.marywood.util.Arrays.equals(LONER_INT_ARRAY, RANGE_INT_ARRAY));
@@ -552,8 +556,10 @@ public class Tests {
                 java.util.Arrays.equals(RANGE_INT_ARRAY, LONER_INT_ARRAY),
                 edu.marywood.util.Arrays.equals(RANGE_INT_ARRAY, LONER_INT_ARRAY));
         Assertions.assertEquals(
-                java.util.Arrays.equals(RANGE_INT_ARRAY, RANGE_INT_ARRAY),
-                edu.marywood.util.Arrays.equals(RANGE_INT_ARRAY, RANGE_INT_ARRAY));
+                java.util.Arrays.equals(
+                        RANGE_INT_ARRAY, Arrays.copyOf(RANGE_INT_ARRAY, RANGE_INT_ARRAY.length)),
+                edu.marywood.util.Arrays.equals(
+                        RANGE_INT_ARRAY, Arrays.copyOf(RANGE_INT_ARRAY, RANGE_INT_ARRAY.length)));
     }
 
     /** The {@code Arrays.equals(long[], long[])} test. */
