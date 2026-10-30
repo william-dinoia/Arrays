@@ -24,6 +24,7 @@ public final class Arrays {
             IntVector.SPECIES_PREFERRED;
     private static final VectorSpecies<Long> LONG_VECTOR_SPECIES = LongVector.SPECIES_PREFERRED;
     private static final int PRIME = 31;
+    private static final VectorSpecies<Short> SHORT_VECTOR_SPECIES = ShortVector.SPECIES_PREFERRED;
 
     private Arrays() throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
