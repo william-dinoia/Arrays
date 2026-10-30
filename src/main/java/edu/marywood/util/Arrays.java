@@ -19,6 +19,7 @@ public final class Arrays {
     private static final VectorSpecies<Byte> BYTE_VECTOR_SPECIES = ByteVector.SPECIES_PREFERRED;
     private static final VectorSpecies<Double> DOUBLE_VECTOR_SPECIES =
             DoubleVector.SPECIES_PREFERRED;
+    private static final VectorSpecies<Float> FLOAT_VECTOR_SPECIES = FloatVector.SPECIES_PREFERRED;
     private static final int PRIME = 31;
 
     private Arrays() throws UnsupportedOperationException {
