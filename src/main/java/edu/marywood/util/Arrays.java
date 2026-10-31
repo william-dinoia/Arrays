@@ -8,7 +8,6 @@ import jdk.incubator.vector.FloatVector;
 import jdk.incubator.vector.IntVector;
 import jdk.incubator.vector.LongVector;
 import jdk.incubator.vector.ShortVector;
-import jdk.incubator.vector.VectorSpecies;
 
 /**
  * Defines {@link Arrays}.
@@ -17,7 +16,6 @@ import jdk.incubator.vector.VectorSpecies;
  */
 public final class Arrays {
     private static final int PRIME = 31;
-    private static final VectorSpecies<Short> SHORT_VECTOR_SPECIES = ShortVector.SPECIES_PREFERRED;
 
     private Arrays() throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
@@ -353,7 +351,7 @@ public final class Arrays {
             return false;
         } else if (charArrayA.length == charArrayB.length) {
             int index = 0;
-            int remainder = charArrayA.length % SHORT_VECTOR_SPECIES.length();
+            int remainder = charArrayA.length % ShortVector.SPECIES_PREFERRED.length();
             while (index < remainder) {
                 if (charArrayA[index] != charArrayB[index]) {
                     return false;
@@ -362,13 +360,13 @@ public final class Arrays {
             }
             while (index < charArrayA.length) {
                 ShortVector shortVectorA =
-                        ShortVector.fromCharArray(SHORT_VECTOR_SPECIES, charArrayA, index);
+                        ShortVector.fromCharArray(ShortVector.SPECIES_PREFERRED, charArrayA, index);
                 ShortVector shortVectorB =
-                        ShortVector.fromCharArray(SHORT_VECTOR_SPECIES, charArrayB, index);
+                        ShortVector.fromCharArray(ShortVector.SPECIES_PREFERRED, charArrayB, index);
                 if (!shortVectorA.eq(shortVectorB).allTrue()) {
                     return false;
                 }
-                index += SHORT_VECTOR_SPECIES.length();
+                index += ShortVector.SPECIES_PREFERRED.length();
             }
             return true;
         } else {
@@ -538,7 +536,7 @@ public final class Arrays {
             return false;
         } else if (shortArrayA.length == shortArrayB.length) {
             int index = 0;
-            int remainder = shortArrayA.length % SHORT_VECTOR_SPECIES.length();
+            int remainder = shortArrayA.length % ShortVector.SPECIES_PREFERRED.length();
             while (index < remainder) {
                 if (shortArrayA[index] != shortArrayB[index]) {
                     return false;
@@ -547,13 +545,13 @@ public final class Arrays {
             }
             while (index < shortArrayA.length) {
                 ShortVector shortVectorA =
-                        ShortVector.fromArray(SHORT_VECTOR_SPECIES, shortArrayA, index);
+                        ShortVector.fromArray(ShortVector.SPECIES_PREFERRED, shortArrayA, index);
                 ShortVector shortVectorB =
-                        ShortVector.fromArray(SHORT_VECTOR_SPECIES, shortArrayB, index);
+                        ShortVector.fromArray(ShortVector.SPECIES_PREFERRED, shortArrayB, index);
                 if (!shortVectorA.eq(shortVectorB).allTrue()) {
                     return false;
                 }
-                index += SHORT_VECTOR_SPECIES.length();
+                index += ShortVector.SPECIES_PREFERRED.length();
             }
             return true;
         } else {
