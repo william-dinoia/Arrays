@@ -468,10 +468,23 @@ public final class Arrays {
         } else if (intArrayA == null || intArrayB == null) {
             return false;
         } else if (intArrayA.length == intArrayB.length) {
-            for (int index = 0; index < intArrayA.length; index += 1) {
+            int index = 0;
+            int remainder = intArrayA.length % INTEGER_VECTOR_SPECIES.length();
+            while (index < remainder) {
                 if (intArrayA[index] != intArrayB[index]) {
                     return false;
                 }
+                index += 1;
+            }
+            while (index < intArrayA.length) {
+                IntVector intVectorA =
+                        IntVector.fromArray(INTEGER_VECTOR_SPECIES, intArrayA, index);
+                IntVector intVectorB =
+                        IntVector.fromArray(INTEGER_VECTOR_SPECIES, intArrayB, index);
+                if (!intVectorA.eq(intVectorB).allTrue()) {
+                    return false;
+                }
+                index += INTEGER_VECTOR_SPECIES.length();
             }
             return true;
         } else {
