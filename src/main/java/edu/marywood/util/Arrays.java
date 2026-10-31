@@ -16,7 +16,6 @@ import jdk.incubator.vector.VectorSpecies;
  * @author William DiNoia
  */
 public final class Arrays {
-    private static final VectorSpecies<Byte> BYTE_VECTOR_SPECIES = ByteVector.SPECIES_PREFERRED;
     private static final VectorSpecies<Double> DOUBLE_VECTOR_SPECIES =
             DoubleVector.SPECIES_PREFERRED;
     private static final VectorSpecies<Float> FLOAT_VECTOR_SPECIES = FloatVector.SPECIES_PREFERRED;
@@ -284,7 +283,7 @@ public final class Arrays {
             return false;
         } else if (booleanArrayA.length == booleanArrayB.length) {
             int index = 0;
-            int remainder = booleanArrayA.length % BYTE_VECTOR_SPECIES.length();
+            int remainder = booleanArrayA.length % ByteVector.SPECIES_PREFERRED.length();
             while (index < remainder) {
                 if (booleanArrayA[index] != booleanArrayB[index]) {
                     return false;
@@ -293,13 +292,15 @@ public final class Arrays {
             }
             while (index < booleanArrayA.length) {
                 ByteVector byteVectorA =
-                        ByteVector.fromBooleanArray(BYTE_VECTOR_SPECIES, booleanArrayA, index);
+                        ByteVector.fromBooleanArray(
+                                ByteVector.SPECIES_PREFERRED, booleanArrayA, index);
                 ByteVector byteVectorB =
-                        ByteVector.fromBooleanArray(BYTE_VECTOR_SPECIES, booleanArrayB, index);
+                        ByteVector.fromBooleanArray(
+                                ByteVector.SPECIES_PREFERRED, booleanArrayB, index);
                 if (!byteVectorA.eq(byteVectorB).allTrue()) {
                     return false;
                 }
-                index += BYTE_VECTOR_SPECIES.length();
+                index += ByteVector.SPECIES_PREFERRED.length();
             }
             return true;
         } else {
@@ -321,7 +322,7 @@ public final class Arrays {
             return false;
         } else if (byteArrayA.length == byteArrayB.length) {
             int index = 0;
-            int remainder = byteArrayA.length % BYTE_VECTOR_SPECIES.length();
+            int remainder = byteArrayA.length % ByteVector.SPECIES_PREFERRED.length();
             while (index < remainder) {
                 if (byteArrayA[index] != byteArrayB[index]) {
                     return false;
@@ -330,13 +331,13 @@ public final class Arrays {
             }
             while (index < byteArrayA.length) {
                 ByteVector byteVectorA =
-                        ByteVector.fromArray(BYTE_VECTOR_SPECIES, byteArrayA, index);
+                        ByteVector.fromArray(ByteVector.SPECIES_PREFERRED, byteArrayA, index);
                 ByteVector byteVectorB =
-                        ByteVector.fromArray(BYTE_VECTOR_SPECIES, byteArrayB, index);
+                        ByteVector.fromArray(ByteVector.SPECIES_PREFERRED, byteArrayB, index);
                 if (!byteVectorA.eq(byteVectorB).allTrue()) {
                     return false;
                 }
-                index += BYTE_VECTOR_SPECIES.length();
+                index += ByteVector.SPECIES_PREFERRED.length();
             }
             return true;
         } else {
