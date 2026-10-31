@@ -16,7 +16,6 @@ import jdk.incubator.vector.VectorSpecies;
  * @author William DiNoia
  */
 public final class Arrays {
-    private static final VectorSpecies<Long> LONG_VECTOR_SPECIES = LongVector.SPECIES_PREFERRED;
     private static final int PRIME = 31;
     private static final VectorSpecies<Short> SHORT_VECTOR_SPECIES = ShortVector.SPECIES_PREFERRED;
 
@@ -502,7 +501,7 @@ public final class Arrays {
             return false;
         } else if (longArrayA.length == longArrayB.length) {
             int index = 0;
-            int remainder = longArrayA.length % LONG_VECTOR_SPECIES.length();
+            int remainder = longArrayA.length % LongVector.SPECIES_PREFERRED.length();
             while (index < remainder) {
                 if (longArrayA[index] != longArrayB[index]) {
                     return false;
@@ -511,13 +510,13 @@ public final class Arrays {
             }
             while (index < longArrayA.length) {
                 LongVector longVectorA =
-                        LongVector.fromArray(LONG_VECTOR_SPECIES, longArrayA, index);
+                        LongVector.fromArray(LongVector.SPECIES_PREFERRED, longArrayA, index);
                 LongVector longVectorB =
-                        LongVector.fromArray(LONG_VECTOR_SPECIES, longArrayB, index);
+                        LongVector.fromArray(LongVector.SPECIES_PREFERRED, longArrayB, index);
                 if (!longVectorA.eq(longVectorB).allTrue()) {
                     return false;
                 }
-                index += LONG_VECTOR_SPECIES.length();
+                index += LongVector.SPECIES_PREFERRED.length();
             }
             return true;
         } else {
