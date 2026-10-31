@@ -320,10 +320,23 @@ public final class Arrays {
         } else if (byteArrayA == null || byteArrayB == null) {
             return false;
         } else if (byteArrayA.length == byteArrayB.length) {
-            for (int index = 0; index < byteArrayA.length; index += 1) {
+            int index = 0;
+            int remainder = byteArrayA.length % BYTE_VECTOR_SPECIES.length();
+            while (index < remainder) {
                 if (byteArrayA[index] != byteArrayB[index]) {
                     return false;
                 }
+                index += 1;
+            }
+            while (index < byteArrayA.length) {
+                ByteVector byteVectorA =
+                        ByteVector.fromArray(BYTE_VECTOR_SPECIES, byteArrayA, index);
+                ByteVector byteVectorB =
+                        ByteVector.fromArray(BYTE_VECTOR_SPECIES, byteArrayB, index);
+                if (!byteVectorA.eq(byteVectorB).allTrue()) {
+                    return false;
+                }
+                index += BYTE_VECTOR_SPECIES.length();
             }
             return true;
         } else {
