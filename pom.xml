@@ -80,8 +80,7 @@
           </annotationProcessors>
           <compilerArgs>
             <arg>--enable-preview</arg>
-            <arg>--add-modules</arg>
-            <arg>jdk.incubator.vector</arg>
+            <arg>--add-modules=jdk.incubator.vector</arg>
           </compilerArgs>
         </configuration>
       </plugin>
@@ -118,7 +117,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.6</version>
         <configuration>
-          <argLine>--enable-preview --add-modules jdk.incubator.vector</argLine>
+          <argLine>--enable-preview --add-modules=jdk.incubator.vector</argLine>
         </configuration>
       </plugin>
     </plugins>
