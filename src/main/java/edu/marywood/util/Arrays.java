@@ -357,10 +357,23 @@ public final class Arrays {
         } else if (charArrayA == null || charArrayB == null) {
             return false;
         } else if (charArrayA.length == charArrayB.length) {
-            for (int index = 0; index < charArrayA.length; index += 1) {
+            int index = 0;
+            int remainder = charArrayA.length % SHORT_VECTOR_SPECIES.length();
+            while (index < remainder) {
                 if (charArrayA[index] != charArrayB[index]) {
                     return false;
                 }
+                index += 1;
+            }
+            while (index < charArrayA.length) {
+                ShortVector shortVectorA =
+                        ShortVector.fromCharArray(SHORT_VECTOR_SPECIES, charArrayA, index);
+                ShortVector shortVectorB =
+                        ShortVector.fromCharArray(SHORT_VECTOR_SPECIES, charArrayB, index);
+                if (!shortVectorA.eq(shortVectorB).allTrue()) {
+                    return false;
+                }
+                index += SHORT_VECTOR_SPECIES.length();
             }
             return true;
         } else {
