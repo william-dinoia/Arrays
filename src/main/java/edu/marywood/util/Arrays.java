@@ -283,10 +283,23 @@ public final class Arrays {
         } else if (booleanArrayA == null || booleanArrayB == null) {
             return false;
         } else if (booleanArrayA.length == booleanArrayB.length) {
-            for (int index = 0; index < booleanArrayA.length; index += 1) {
+            int index = 0;
+            int remainder = booleanArrayA.length % BYTE_VECTOR_SPECIES.length();
+            while (index < remainder) {
                 if (booleanArrayA[index] != booleanArrayB[index]) {
                     return false;
                 }
+                index += 1;
+            }
+            while (index < booleanArrayA.length) {
+                ByteVector byteVectorA =
+                        ByteVector.fromBooleanArray(BYTE_VECTOR_SPECIES, booleanArrayA, index);
+                ByteVector byteVectorB =
+                        ByteVector.fromBooleanArray(BYTE_VECTOR_SPECIES, booleanArrayB, index);
+                if (!byteVectorA.eq(byteVectorB).allTrue()) {
+                    return false;
+                }
+                index += BYTE_VECTOR_SPECIES.length();
             }
             return true;
         } else {
