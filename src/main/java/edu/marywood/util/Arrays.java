@@ -16,7 +16,6 @@ import jdk.incubator.vector.VectorSpecies;
  * @author William DiNoia
  */
 public final class Arrays {
-    private static final VectorSpecies<Float> FLOAT_VECTOR_SPECIES = FloatVector.SPECIES_PREFERRED;
     private static final VectorSpecies<Integer> INTEGER_VECTOR_SPECIES =
             IntVector.SPECIES_PREFERRED;
     private static final VectorSpecies<Long> LONG_VECTOR_SPECIES = LongVector.SPECIES_PREFERRED;
@@ -431,7 +430,7 @@ public final class Arrays {
             return false;
         } else if (floatArrayA.length == floatArrayB.length) {
             int index = 0;
-            int remainder = floatArrayA.length % FLOAT_VECTOR_SPECIES.length();
+            int remainder = floatArrayA.length % FloatVector.SPECIES_PREFERRED.length();
             while (index < remainder) {
                 if (floatArrayA[index] != floatArrayB[index]) {
                     return false;
@@ -440,13 +439,13 @@ public final class Arrays {
             }
             while (index < floatArrayA.length) {
                 FloatVector floatVectorA =
-                        FloatVector.fromArray(FLOAT_VECTOR_SPECIES, floatArrayA, index);
+                        FloatVector.fromArray(FloatVector.SPECIES_PREFERRED, floatArrayA, index);
                 FloatVector floatVectorB =
-                        FloatVector.fromArray(FLOAT_VECTOR_SPECIES, floatArrayB, index);
+                        FloatVector.fromArray(FloatVector.SPECIES_PREFERRED, floatArrayB, index);
                 if (!floatVectorA.eq(floatVectorB).allTrue()) {
                     return false;
                 }
-                index += FLOAT_VECTOR_SPECIES.length();
+                index += FloatVector.SPECIES_PREFERRED.length();
             }
             return true;
         } else {
