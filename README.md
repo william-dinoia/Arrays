@@ -36,7 +36,7 @@ mvn test
 
 ```shell
 mvn package
-java -jar target/Arrays-1.0.0-SNAPSHOT.jar
+java --add-modules=jdk.incubator.vector --enable-preview -jar target/Arrays-1.0.0-SNAPSHOT.jar
 ```
 
 ### JavaDoc
