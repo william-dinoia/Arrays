@@ -542,10 +542,23 @@ public final class Arrays {
         } else if (shortArrayA == null || shortArrayB == null) {
             return false;
         } else if (shortArrayA.length == shortArrayB.length) {
-            for (int index = 0; index < shortArrayA.length; index += 1) {
+            int index = 0;
+            int remainder = shortArrayA.length % SHORT_VECTOR_SPECIES.length();
+            while (index < remainder) {
                 if (shortArrayA[index] != shortArrayB[index]) {
                     return false;
                 }
+                index += 1;
+            }
+            while (index < shortArrayA.length) {
+                ShortVector shortVectorA =
+                        ShortVector.fromArray(SHORT_VECTOR_SPECIES, shortArrayA, index);
+                ShortVector shortVectorB =
+                        ShortVector.fromArray(SHORT_VECTOR_SPECIES, shortArrayB, index);
+                if (!shortVectorA.eq(shortVectorB).allTrue()) {
+                    return false;
+                }
+                index += SHORT_VECTOR_SPECIES.length();
             }
             return true;
         } else {
