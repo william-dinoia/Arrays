@@ -61,12 +61,8 @@ public class Benchmarks {
     @Param({"0", "1", "10", "100", "1000", "10000", "100000", "1000000"})
     private int size;
 
-    /**
-     * The main method of {@link Benchmarks}.
-     *
-     * @param stringArray {@link String}{@code []}
-     */
-    public static void main(String[] stringArray) throws RunnerException {
+    /** The main method of {@link Benchmarks}. */
+    public static void main() throws RunnerException {
         OptionsBuilder optionsBuilder = new OptionsBuilder();
         optionsBuilder.include(Benchmarks.class.getSimpleName());
         Runner runner = new Runner(optionsBuilder.build());
