@@ -20,8 +20,8 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  * @author William DiNoia
  */
 @State(Scope.Group)
-@Fork(value = 1)
-@Measurement(iterations = 1)
+@Fork(value = 2)
+@Measurement(iterations = 2)
 @Warmup(iterations = 1)
 public class Benchmarks {
     private static final boolean[] RANGE_BOOLEAN_ARRAY = new boolean[] {false, true};
